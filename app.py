@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 
 myGenerator = NGramGenerator()
-myGenerator.generateUnigramCorpus("/Users/ashishbulchandani/PycharmProjects/SE_Web/cleaned_files")
+myGenerator.generateUnigramCorpus("cleaned_files")
 
 
 

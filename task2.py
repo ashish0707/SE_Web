@@ -9,7 +9,7 @@ from cosine_similarity import CosineSimilarity
 
 myGenerator = NGramGenerator()
 
-myGenerator.generate_stopped_cleaned_files("/Users/ashishbulchandani/PycharmProjects/SE_Web/wiki_webpages",
+myGenerator.generate_stopped_cleaned_files("wiki_webpages",
                                         "/Users/ashishbulchandani/PycharmProjects/SE_Web/cleaned_files",
                                         "/Users/ashishbulchandani/PycharmProjects/SE_Web/common_words.txt")
 
