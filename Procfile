@@ -1,1 +1,1 @@
-web: python SE_Web/app.py
+web: python app.py
