@@ -1,5 +1,6 @@
 import json
 from collections import defaultdict
+import requests
 
 from flask import Flask,render_template, request
 import time
@@ -23,6 +24,11 @@ myGenerator.generateUnigramCorpus("cleaned_files")
 cs = CosineSimilarity()
 
 cs.createMatix(myGenerator.one_gram_corpus)
+
+def index(request):
+    r = requests.get('http://httpbin.org/status/418')
+    print r.text
+    return HttpResponse('<pre>' + r.text + '</pre>')
 
 
 @app.route("/")
