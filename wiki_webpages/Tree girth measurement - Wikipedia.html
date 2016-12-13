@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tree girth measurement - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tree_girth_measurement","wgTitle":"Tree girth measurement","wgCurRevisionId":738162067,"wgRevisionId":738162067,"wgArticleId":39004701,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles created via the Article Wizard","Trees","Forest modelling","Measurement"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tree_girth_measurement","wgRelevantArticleId":39004701,"wgRequestId":"WE4-HwpAAEMAAg24dD0AAAAV","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q17164799","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.5"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Tree_girth_measurement"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Tree_girth_measurement&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Tree_girth_measurement&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Tree_girth_measurement"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tree_girth_measurement rootpage-Tree_girth_measurement skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Tree girth measurement</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><p><b>Tree girth measurement</b> is one of the most ancient, quickest, and simplest, of <a href="/wiki/Forester" title="Forester">foresters</a>' measures of size and records of growth of living and standing trees. The methods and equipment have been standardized differently in different countries. A popular use of this <a href="/wiki/Tree_measurement" title="Tree measurement">measurement</a> is to compare outstanding individual trees from different locations or of different species.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Tree_girth_measurements"><span class="tocnumber">1</span> <span class="toctext">Tree girth measurements</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Maximum_girth_records"><span class="tocnumber">2</span> <span class="toctext">Maximum girth records</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Single-trunk_versus_multi-trunk_trees"><span class="tocnumber">3</span> <span class="toctext">Single-trunk versus multi-trunk trees</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Direct_girth_measurement_procedures"><span class="tocnumber">4</span> <span class="toctext">Direct girth measurement procedures</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Remote_girth_measurements"><span class="tocnumber">5</span> <span class="toctext">Remote girth measurements</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Multi-trunk_trees"><span class="tocnumber">6</span> <span class="toctext">Multi-trunk trees</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Trees_with_unusual_forms"><span class="tocnumber">7</span> <span class="toctext">Trees with unusual forms</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Changes_in_girth_values_with_age"><span class="tocnumber">8</span> <span class="toctext">Changes in girth values with age</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Tree_girth_measurements">Tree girth measurements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=edit&amp;section=1" title="Edit section: Tree girth measurements">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Girth is a measurement of the distance around the trunk of a tree measured perpendicular to the axis of the trunk. In the United States it is measured at breast height, or at 4.5 feet (1.4&#160;m) above ground level.<sup id="cite_ref-Blozan2004_1-0" class="reference"><a href="#cite_note-Blozan2004-1">[1]</a></sup><sup id="cite_ref-Blozan2006_2-0" class="reference"><a href="#cite_note-Blozan2006-2">[2]</a></sup><sup id="cite_ref-afmg_3-0" class="reference"><a href="#cite_note-afmg-3">[3]</a></sup> Elsewhere in the world it is measured at a height of 1.3 meters (4.3&#160;ft),<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> 1.35 meters (4.4&#160;ft)<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup>1.4 meters (4.6&#160;ft),<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> or 1.5 meters (4.9&#160;ft).<sup id="cite_ref-uktr_8-0" class="reference"><a href="#cite_note-uktr-8">[8]</a></sup> The base of the tree is measured for both height and girth as being the elevation at which the pith of the tree intersects the ground surface beneath, or where the acorn sprouted.<sup id="cite_ref-Blozan2004_1-1" class="reference"><a href="#cite_note-Blozan2004-1">[1]</a></sup><sup id="cite_ref-Blozan2006_2-1" class="reference"><a href="#cite_note-Blozan2006-2">[2]</a></sup> On a slope this is considered as halfway between the ground level at the upper and lower sides of the tree. This "breast height" value is a measurement grandfathered from decades of forestry applications. It was developed because of the simplicity and ease of measurement. There is no one ideal height at which to measure girth. Tree trunks flare outward at their base. In some trees this flare or buttressing extends only a short distance up the trunk, while in others it may extend thirty feet (9.1&#160;m) or more up the tree, but the measurement is still taken at this default height for consistency. If the flare at the base of the tree extends above this default girth height, then ideally a second girth measurement should be collected where possible above the basal flare and this height noted.</p>
+<p>Tree girth is one of the parameters commonly measured as part of various champion tree programs and documentation efforts. Other commonly used parameters, outlined in <a href="/wiki/Tree_measurement" title="Tree measurement">Tree measurement</a> include height, crown spread, and volume. Additional details on the methodology of <a href="/wiki/Tree_height_measurement" title="Tree height measurement">Tree height measurement</a>, <a href="/wiki/Tree_crown_measurement" title="Tree crown measurement">Tree crown measurement</a>, and <a href="/wiki/Tree_volume_measurement" title="Tree volume measurement">Tree volume measurement</a> are presented in the links herein. American Forests, for example, uses a formula to calculate Big Tree Points as part of their Big Tree Program<sup id="cite_ref-afmg_3-1" class="reference"><a href="#cite_note-afmg-3">[3]</a></sup> that awards a tree 1 point for each foot of height, 1 point for each inch of girth, and ¼ point for each foot of average crown spread. The tree whose point total is the highest for that species is crowned as the champion in their registry. The other parameter commonly measured, in addition to the species and location information, is wood volume. A general outline of tree measurements is provided in the article <a href="/wiki/Tree_measurement" title="Tree measurement">Tree Measurement Overview</a> with more detailed instructions in taking these basic measurements is provided in "The Tree Measuring Guidelines of the Eastern Native Tree Society" by Will Blozan.<sup id="cite_ref-Blozan2004_1-2" class="reference"><a href="#cite_note-Blozan2004-1">[1]</a></sup><sup id="cite_ref-Blozan2006_2-2" class="reference"><a href="#cite_note-Blozan2006-2">[2]</a></sup></p>
+<h2><span class="mw-headline" id="Maximum_girth_records">Maximum girth records</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=edit&amp;section=2" title="Edit section: Maximum girth records">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The tree with the largest girth was the Glencoe Baobab (Adansonia digitata) in South Africa with a diameter near ground level of 52.2 feet (15.9&#160;m), equivalent to a girth of 164 feet (50&#160;m). In 2009 the hollow tree split into two parts.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> The Big Tree of Tule in Santa Maria del Tule, Oaxaca, Mexico (Taxodium mucronatum) has a girth of 119.8 feet (36.5&#160;m) and a height of 116.1 feet (35.4&#160;m), with a 144-foot (43.9&#160;m) wide crown as measured by Dr. Robert Van Pelt in 2005. The Tule tree therefore has a diameter of 38.1 feet (11.61&#160;m) as extrapolated from the tape wrap values. However, as the tree is heavily buttressed, and irregular in shape, a calculation of nominal diameter, defined as the cross-sectional wood area expressed as a circle, gives this tree a diameter at breast height of 30.8 feet (9.4&#160;m)—a much smaller number, but a more accurate representation of the tree's size.<sup id="cite_ref-gymno_10-0" class="reference"><a href="#cite_note-gymno-10">[10]</a></sup> Some have argued that the Tule tree is a multi-trunk tree consisting of three separate trunks emerging from the same root mass that have grown together to form the massive base of the tree and therefore its girth cannot be fairly compared to those trees with just a single trunk. Many of the large girth baobabs may be multi-trunk clusters as well. The General Grant Tree (Sequoiadendron giganteum) in King’s Canyon National park in California is clearly a single trunk tree. It was measured to have a girth of 91.2 feet (27.80&#160;m) measured at a height of 4.5 feet (1.37&#160;m).<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup> There are historical accounts of trees with extremely large girths. These should not be just accepted at face value. In these older accounts the girths were often taken at ground level and incorporated considerable basal flare at the base of the tree. In other cases, the trees measured were multiple trunk masses or coppices treated as single trees in the girth measurements.</p>
+<h2><span class="mw-headline" id="Single-trunk_versus_multi-trunk_trees">Single-trunk versus multi-trunk trees</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=edit&amp;section=3" title="Edit section: Single-trunk versus multi-trunk trees">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In many, but not all champion tree lists, and for data collected for scientific purposes, there is a need to distinguish between a single trunk tree and a multi-trunk tree. Two smaller trunks that grow together will achieve a large combined girth much faster than will a single trunk tree growing in the same conditions, so if the data will be biased if combined into a single dataset. A single trunk tree is defined as one that would only have a single <a href="/wiki/Pith" title="Pith">pith</a> if cut at ground level. A multi-trunk tree would have two or more piths at ground level. In this definition it does not matter if the trunks have grown together, nor if they are genetically the same and growing from a single root mass. If the tree has more than one pith at ground level, it is a multi-trunk tree.<sup id="cite_ref-Blozan2004_1-3" class="reference"><a href="#cite_note-Blozan2004-1">[1]</a></sup><sup id="cite_ref-Blozan2006_2-3" class="reference"><a href="#cite_note-Blozan2006-2">[2]</a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> Separating data from single trunk and multi-trunk trees is critical to maintain a valid database of measurements. Data from both forms are worth collecting, but they should be considered different forms and the number of trunks included in the girth measurement should be listed for those trees with more than one trunk.</p>
+<h2><span class="mw-headline" id="Direct_girth_measurement_procedures">Direct girth measurement procedures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=edit&amp;section=4" title="Edit section: Direct girth measurement procedures">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The girth measurement is commonly taken by wrapping a <a href="/wiki/Measuring_tape" class="mw-redirect" title="Measuring tape">Measuring tape</a> (tape) around, and in the plane perpendicular to the axis of, the trunk, at the correct height. In spite of the apparent simplicity of wrapping a tape around a tree trunk at breast height, errors in this measurement are common. The most common error is mixing measurements of single trunk trees with those of multi-trunk trees and not distinguishing between the two. Even with single trunk trees irregular bumps and hollows are common. Some trees have low branches that split below breast height. Other trees have <a href="/wiki/Epicormic_shoot" title="Epicormic shoot">epicormic sprouts</a>, suckers, or dead branches. Some tree trunks stand slanted at an angle rather than vertical. Girths of trees with these features may be measured by competing methods by different surveyors and result in differences. The basic guidelines for dealing with the above difficulties were developed by American Forests,<sup id="cite_ref-afmg_3-2" class="reference"><a href="#cite_note-afmg-3">[3]</a></sup> and most of the guideline used by other tree measuring groups around the world are based upon American Forests guidelines. The Native Tree Society measurement guidelines<sup id="cite_ref-Blozan2004_1-4" class="reference"><a href="#cite_note-Blozan2004-1">[1]</a></sup><sup id="cite_ref-Blozan2006_2-4" class="reference"><a href="#cite_note-Blozan2006-2">[2]</a></sup> also generally follow the American Forests prescription, with some additional elaborations. Many trees have burls bumps, and knots along their trunk. If these occur at the 4.5 feet girth measurement height, including them in the measurement would falsely inflate the girth measurement. The girth measurement should then be taken at the narrowest point below the odd growth and the height of the girth measurement noted. In some cases a girth taken just above the odd growth will be more representative of the actual girth of the tree. In these cases the measurement should be taken there and the height above the base of the tree noted.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Tree_girth_measurement_diagram.tif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tree_girth_measurement_diagram.tif/lossless-page1-220px-Tree_girth_measurement_diagram.tif.png" width="220" height="325" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tree_girth_measurement_diagram.tif/lossless-page1-330px-Tree_girth_measurement_diagram.tif.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tree_girth_measurement_diagram.tif/lossless-page1-440px-Tree_girth_measurement_diagram.tif.png 2x" data-file-width="801" data-file-height="1182" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Tree_girth_measurement_diagram.tif" class="internal" title="Enlarge"></a></div>
+Tree girth measurement diagram</div>
+</div>
+</div>
+<p>Some trees have branches at or lower than a height of 4.5 feet (1.37&#160;m). Since the purpose of a girth measurement is to get a full measure of the tree’s trunk, measurements should be taken at the narrowest point below any significant branching. When taking a girth measurement at a non-standard height the height of that measurement above the base of the tree should be noted. Epicormic sprouts, suckers, and dead branches can be ignored. Some guidelines have suggested that if a tree branches below breast height, that the girth of the largest branch should be measured at breast height ignoring the other branches. However, if a good portion of the trunk volume or cross-sectional area has been split from the total by measuring above a significant branching, then this is not giving a full and fair measure of the trunk's girth. If the pith of the branch does not intersect the pith of the main trunk above ground level, it is not a branch but a separate trunk and this tree should be considered a multi-trunk tree.</p>
+<p>If the tree is leaning, measure the circumference at <span class="frac nowrap">4<span class="visualhide">&#160;</span><sup>1</sup>⁄<sub>2</sub></span> feet (1.37&#160;m) along the axis of the trunk. The distance should be measured along the side of the trunk from the base point of the center of the tree. The measurement is taken at a right (90 degree) angle to the trunk. Some groups recommend measuring the girth at breast height on the upper side when the tree is on a slope rather than from midpoint on the slope. One example is the Tree Register in the UK.<sup id="cite_ref-uktr_8-1" class="reference"><a href="#cite_note-uktr-8">[8]</a></sup> There are advantages to either option. Measuring on the upslope side if often easier, it is also higher on the tree and likely will include less of the flare at the base of the trunk, and when measuring extremely large trunk on a slope the upslope side of the girth loop will always be above ground level. Measuring the girth from a reference point at midslope also has advantages. Consider, the tree started as a single sprout and grew upward and outward from that point. This is the point where the pith of the tree would intersect the ground surface supporting the tree. This is the logical base point from which to measure the height of the tree and by extension the girth should be measured with respect to the same base point. This point is fixed at the same location over time as the tree grows. In addition this is a reference point that is present and consistent in all trees no matter the height of the girth measurement. Even if the girth is measured at a non- standard height because of low branching, a large burl, or even on the upslope side of a large girth tree on sloping ground, all heights can still be consistently referenced to this single point present on all trees. Measuring midpoint on the slope is the recommended option.<sup id="cite_ref-Blozan2004_1-5" class="reference"><a href="#cite_note-Blozan2004-1">[1]</a></sup><sup id="cite_ref-Blozan2006_2-5" class="reference"><a href="#cite_note-Blozan2006-2">[2]</a></sup><sup id="cite_ref-afmg_3-3" class="reference"><a href="#cite_note-afmg-3">[3]</a></sup></p>
+<p>Trees with very large girths, such as some of the sequoias growing the western United States, can also pose girth measurement problems. If they are growing on even a gentle slope, if girth is measured at 4.5 feet about where the pith of the tree emerges from the ground, the upside of the tape could easily be below ground level. In this case a better option would be to measure the standard girth measurement at 4.5 feet above ground level on the high side of the tree and note this in the measurement description<sup id="cite_ref-Frank2007_13-0" class="reference"><a href="#cite_note-Frank2007-13">[13]</a></sup> [17] The height of this measurement point above the standard base point at midslope should also be noted. If measuring a mountaintop forest of stunted trees only six feet tall, a girth measurement made at 4.5 feet would be meaningless. In the case of these stunted trees a girth taken at 1-foot above the base might be more appropriate. The point is that the girth measurements should be taken at the standard heights whenever possible. Where this measurement is not meaningful, an additional girth measurement should be taken at a more appropriate position and that height noted.<sup id="cite_ref-Frank2007_13-1" class="reference"><a href="#cite_note-Frank2007-13">[13]</a></sup> Converting the girth measurement to a diameter will always overstate the cross-sectional area of the trunk, therefore it is best to record the raw girth numbers directly rather than convert them to diameters. The conversion of girth values to approximate diameters can always be done later if needed for other types of analysis.</p>
+<h2><span class="mw-headline" id="Remote_girth_measurements">Remote girth measurements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=edit&amp;section=5" title="Edit section: Remote girth measurements">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Girth measurements may be taken remotely using photographic means or through the use of a telescopic reticle. In these cases the diameter as seen from the surveyor’s position is actually measured and the girth is calculated by multiplying the diameter by π (<a href="/wiki/Pi" title="Pi">pi</a>).</p>
+<p>A <a href="/wiki/Reticle" title="Reticle">monocular w/reticle</a> is a telescope with a built in scale that can be used to accurately measure the width of objects such as the diameters of trees from a distance. When sighting through the monocular the width of an object can be read as so many units of the scale. The farther away the object is from the surveyor, the smaller it will appear in the telescope and the width will read as fewer units on the scale. This change is constant with distance. The distance to the target can be measured with a laser rangefinder. The distance from the measured section of trunk multiplied by the reticle reading and divided by an optical factor results in the diameter of the target. For best results the scaling factor should be tested and calculated for each individual device rather than just using the manufacturer’s default value. This process can be applied to volume measurements, as noted below, in addition to basic girth measurements. A variety of monocular w/reticles are available from different manufacturers. They can be used as hand held instruments but more accurate reading can be obtained when mounted on a tripod.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup> Some higher end electronic surveying devices, like the Criterion RD 1000 have an electronic version of the reticle scale built into the device and can be used to measure diameters. Photographs of trees can be used to determine girth or other measurements if there is a something of known size in the photo to provide a scale. The following information must be known to approximate the measurements: 1) distance of the camera from the tree, 2) distance from the camera to the scale, and 3) size of the object to be used as a scale. An Excel spreadsheet can be used to determine the rate the apparent size of the scale changes with distance, and that value can be used to calculate the diameter of the tree given that the tree is circular in cross section and the distance to the front side of the tree is known. Girth then is calculated by multiplying the diameter by pi. The method may be used to calculate the girth of trees in historical photographs where the true dimensions are unknown. Assumptions would need to be made about the distances involved and the size of the people in the photograph, but reasonable estimates are possible.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup> Preliminary tests are being conducted by the NTS to apply the photographic process to volume modeling of trees.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> A key consideration for many people is that only a minimal amount of equipment is needed to make these calculations: A laser rangefinder, a reference object (ruler), a digital camera, and Excel. A telescopic reticle is not needed. Photos from multiple angles are required to generate better data for the volume estimates. This process will be less accurate than measurements taken with a telescopic reticle, but will be able to generate meaningful close approximations of tree volume.<sup id="cite_ref-Blozan2004_1-6" class="reference"><a href="#cite_note-Blozan2004-1">[1]</a></sup><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup></p>
+<h2><span class="mw-headline" id="Multi-trunk_trees">Multi-trunk trees</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=edit&amp;section=6" title="Edit section: Multi-trunk trees">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Multi-trunk trees are the most common form after single trunk trees. Often these represent separate trunks growing from a single root mass. This occurs frequently in some species when the initial trunk has been damaged or broken and in its place two or more new shoots grow from the original root mass. These are genetically the same, but as their growth form is different they should be considered as a different measurement category than single trunk trees. These multiple trunks commonly will grow together to form a large combined mass at the base and split into individual trunk at greater heights. If they are individual trunks at breast height then the individual trunks can be measured separately and treated as individual single trunk trees. If they have grown together at breast height then a measurement of their combined girth should be made at that height the number of trunks incorporated into the girth measurement listed. If the tree splays outward dramatically at breast height, then the girth should be measured at the narrowest point between breast height and the ground and that height noted.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Double_trunked_Cherry_Tree.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Double_trunked_Cherry_Tree.jpg/220px-Double_trunked_Cherry_Tree.jpg" width="220" height="165" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Double_trunked_Cherry_Tree.jpg/330px-Double_trunked_Cherry_Tree.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Double_trunked_Cherry_Tree.jpg/440px-Double_trunked_Cherry_Tree.jpg 2x" data-file-width="800" data-file-height="600" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Double_trunked_Cherry_Tree.jpg" class="internal" title="Enlarge"></a></div>
+Double trunked Cherry Tree</div>
+</div>
+</div>
+<p>Other girth measurements guidelines outlined for single trunk trees, such as low branches and burls, apply to multi-trunk girths as well. The height of the tallest trunk in the multi-trunk specimen would then be the height of the multi-trunk specimen and the combined crown spread of all the individual trunks the multi-trunk specimen collectively would be the multi-trunk crown spread. If one of the individual trunks is significantly larger than all the others, it can be treated as if it were a single trunk tree. Its girth is measured where it emerges from the combined mass, and the height and crown spread of that particular trunk is measured individually.<sup id="cite_ref-Frank2007_13-2" class="reference"><a href="#cite_note-Frank2007-13">[13]</a></sup></p>
+<h2><span class="mw-headline" id="Trees_with_unusual_forms">Trees with unusual forms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=edit&amp;section=7" title="Edit section: Trees with unusual forms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Not all trees have a single trunk, and other single trunk trees pose additional measurement problems because of their size or configuration. The odd forms include those forms that grew because of unusual circumstances that affected the tree, or those trees that simply have an unusual growth form not seen in most other tree species. Frank<sup id="cite_ref-Frank2007_13-3" class="reference"><a href="#cite_note-Frank2007-13">[13]</a></sup> proposed a classification system for various tree forms: 1) Single Trunk Trees; 2) Multi-trunk Trees; 3) Clonal Coppices; 4) Clonal Colonies; 5) Conjoined and Hugging Trees; 6) Fallen Trees; 7) Tree complexes, and 8) Banyan-like trees; 9) Trees with Large Aerial Root Systems; and 10) Epiphytic Trees. This initial framework has continued to evolve in discussions within the NTS, but provides an initial beginning and suggestions on how to approach measuring these various tree growth forms. Since most of these trees are unique or unusual in their form and not amenable to easy measurement, the recommended approach is to write a detailed narrative description of the tree with what measurements that can be taken to amplify and better illuminate the descriptions. These trees should be documented even if the results are in the form of a written narrative rather than a collection of numerical measurements.<sup id="cite_ref-Frank2013_19-0" class="reference"><a href="#cite_note-Frank2013-19">[19]</a></sup> There are some parameters that should be consistently measured whenever possible, height is one example. The cross-sectional areas occupied by the trunks and the crown are also parameters that are generally measurable. Other measurements could be taken where they seem to add to the narrative description of that particular tree. GPS locations should be taken whenever possible. Absent a GPS instrument, the locations should be pulled from Google Maps, or topographic maps. Beyond these basics, values like number of trunks larger than a prescribed value, the maximum girth of the largest trunk, and whatever seems appropriate for that particular tree grouping should be recorded. Photographs of these unusual trees are important as they can immensely improve the understanding of what is being described, and help others to visualize the tree. A process or system is needed whereby the photos of a particular tree can be associated with the description of the tree in the researcher’s notes. The goal of the narrative and measurements is to document the tree or tree grouping.<sup id="cite_ref-Frank2013_19-1" class="reference"><a href="#cite_note-Frank2013-19">[19]</a></sup></p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Banyan_tree_Cleveland.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Banyan_tree_Cleveland.jpg/220px-Banyan_tree_Cleveland.jpg" width="220" height="147" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Banyan_tree_Cleveland.jpg/330px-Banyan_tree_Cleveland.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Banyan_tree_Cleveland.jpg/440px-Banyan_tree_Cleveland.jpg 2x" data-file-width="2592" data-file-height="1728" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Banyan_tree_Cleveland.jpg" class="internal" title="Enlarge"></a></div>
+Banyan tree Cleveland</div>
+</div>
+</div>
+<p>An approach needs to be developed that is appropriate for each of these unusual forms. For example, clonal colonies, such as the Pando aspen, may occupy many acres. The area occupied by the colony should be measured as well as the size of the largest individual trunk present. Banyan-like trees similarly consist of multiple trunks spread across a large area. In many of these specimens the interior trunks are not easily accessible, if accessible at all. An approach to their measurement would be to measure the area occupied by the many trunks, the area occupied by the crown of the tree, the height of the tree, and any other measurements the investigator deems appropriate. These measurements would then be supplemented by a narrative description and photographs. The goal in all of these cases of trees with unusual forms is to document their characteristics.<sup id="cite_ref-Frank2007_13-4" class="reference"><a href="#cite_note-Frank2007-13">[13]</a></sup> Girth can also be thought of as essentially a snapshot of the cross-section of a tree at one particular elevation. In some cases the base of the tree may be so complex that simply wrapping a tape around the base would misrepresent the true wood girth or character of the tree. An example of this would be Big Tree of Tule in Santa María del Tule, Oaxaca, Mexico<sup id="cite_ref-gymno_10-1" class="reference"><a href="#cite_note-gymno-10">[10]</a></sup> described above. The Tule tree has a diameter of 38&#160;feet 1.4&#160;inches (1,161.8&#160;cm) as measured by tape wrap, but because of its irregularity a cross-sectional wood area expressed as a circle gave an effective diameter of only 30&#160;feet 9&#160;inches (937&#160;cm). The base of the tree was mapped in three dimensions using a frame mapping technique. A rectangular frame was strung around the perimeter of the tree. A series of measurements from the reference lines to the edge of the trunk mapping the irregularities of the tree surface and converted to Cartesian x-y coordinates. The process was repeated at different heights to create a three-dimensional model of the tree.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup> This mapping process can be automated. Taylor<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup><sup id="cite_ref-22" class="reference"><a href="#cite_note-22">[22]</a></sup> has been developing a cloud mapping process using optical parallax scanning technology whereby thousands of measurements are made around the trunk of a tree. These can be used to recreate a three-dimensional model of the trunk and girth and diameter data are among the values that can be calculated.</p>
+<h2><span class="mw-headline" id="Changes_in_girth_values_with_age">Changes in girth values with age</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=edit&amp;section=8" title="Edit section: Changes in girth values with age">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For long term monitoring of girth, the exact point on the tree needs to be marked to assure the measurement is taken in the same place every session. Forestry data suggests that the slow down of diameter growth is correlated to a commensurate slow down in volume growth, but the association is not straightforward when whole tree mass is considered as opposed to the commercial part of the trunk. Diameter represents linear growth and volume is growth within a three-dimensional context. Slowdown in radial growth rates can occur without slowdown in corresponding cross-sectional area or volume growth. Research by Leverett<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup> has shown that even older white pine trees continue to add significant wood volumes with 11 monitored trees adding average annual volume increase of 11.9 cubic feet. The Ice Glen pine, in Stockbridge, Massachusetts, which is around 300 years old or possibly older based on dating of nearby pines, shows a decline in annual volume increase to approximately half of that for the trees in the 90- to 180-year age class, but still averaged a volume increase of 5.8 cu ft over the five-year monitoring period. Volume increase was a result of both an increase in height and in girth.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a href="/wiki/File:Tree_template.svg" class="image"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/Tree_template.svg/28px-Tree_template.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/Tree_template.svg/42px-Tree_template.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/98/Tree_template.svg/56px-Tree_template.svg.png 2x" data-file-width="48" data-file-height="48" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Trees" title="Portal:Trees">Trees portal</a></span></li>
+</ul>
+</div>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Blozan2004-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-Blozan2004_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Blozan2004_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Blozan2004_1-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Blozan2004_1-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-Blozan2004_1-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-Blozan2004_1-5"><sup><i><b>f</b></i></sup></a> <a href="#cite_ref-Blozan2004_1-6"><sup><i><b>g</b></i></sup></a></span> <span class="reference-text">Blozan, Will. 2004, 2008. The Tree Measuring Guidelines of the Eastern Native Tree Society. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/measure/Tree_Measuring_Guidelines-revised1.pdf">http://www.nativetreesociety.org/measure/Tree_Measuring_Guidelines-revised1.pdf</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-Blozan2006-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-Blozan2006_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Blozan2006_2-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Blozan2006_2-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Blozan2006_2-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-Blozan2006_2-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-Blozan2006_2-5"><sup><i><b>f</b></i></sup></a></span> <span class="reference-text">Blozan, Will. 2006. Tree Measuring Guidelines of the Eastern Native Tree Society. Bulletin of the Eastern Native Tree Society, Volume 1, Number 1, Summer 2006. pp. 3-10. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/bulletin/b1_1/bulletin1_1.htm">http://www.nativetreesociety.org/bulletin/b1_1/bulletin1_1.htm</a></span></li>
+<li id="cite_note-afmg-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-afmg_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-afmg_3-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-afmg_3-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-afmg_3-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text">American Forests Measuring Guidelines. <a rel="nofollow" class="external free" href="http://www.americanforests.org/bigtrees/big-tree-measuring-guidelines/">http://www.americanforests.org/bigtrees/big-tree-measuring-guidelines/</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Monumental Trees, How to Measure Tree Girth. ,&lt;<a rel="nofollow" class="external free" href="http://www.monumentaltrees.com/en/content/measuringgirth/">http://www.monumentaltrees.com/en/content/measuringgirth/</a> Accessed march 4, 2013.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">Vegetation: permanent 20 × 20 m forest plots <a rel="nofollow" class="external free" href="http://www.doc.govt.nz/Documents/science-and-technical/inventory-monitoring/im-toolbox-20-x-20-forest-plots.pdf">http://www.doc.govt.nz/Documents/science-and-technical/inventory-monitoring/im-toolbox-20-x-20-forest-plots.pdf</a> Accessed September 1, 2015.</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">National Register of Big Trees, Australia's Champion Trees. <a rel="nofollow" class="external free" href="http://www.nationalregisterofbigtrees.com.au/tree_measurement.php">http://www.nationalregisterofbigtrees.com.au/tree_measurement.php</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Notable Trees of New Zealand, Tree Girth. <a rel="nofollow" class="external free" href="http://www.notabletrees.org.nz/pages/14-10/Tree-Girth">http://www.notabletrees.org.nz/pages/14-10/Tree-Girth</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-uktr-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-uktr_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-uktr_8-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Tree Register: A unique record of Notable and Ancient Trees in Britain and Ireland - How to measure trees for inclusion in the Tree Register, Measuring Girth. <a rel="nofollow" class="external free" href="http://www.treeregister.org/measuringtrees.shtml#girth">http://www.treeregister.org/measuringtrees.shtml#girth</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Glencoe Baobab. <a rel="nofollow" class="external free" href="http://www.wondermondo.com/Countries/Af/SouthAfrica/Limpopo/Glencoe.htm">http://www.wondermondo.com/Countries/Af/SouthAfrica/Limpopo/Glencoe.htm</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-gymno-10"><span class="mw-cite-backlink">^ <a href="#cite_ref-gymno_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-gymno_10-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">The Gymnosperm Database - Taxodiium mucrobatum. <a rel="nofollow" class="external free" href="http://www.conifers.org/cu/Taxodium_mucronatum.php">http://www.conifers.org/cu/Taxodium_mucronatum.php</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text">Van Pelt, Robert. 2002. Forest Giants of the Pacific Coast. University of Washington Press; (January 2002). 200 pages.</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">Frank, Edward Forrest. January 12, 2010. The Really, Really Basics of Laser Rangefinder/Clinometer Tree Height Measurements. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/measure/really_basic_3a.pdf">http://www.nativetreesociety.org/measure/really_basic_3a.pdf</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-Frank2007-13"><span class="mw-cite-backlink">^ <a href="#cite_ref-Frank2007_13-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Frank2007_13-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Frank2007_13-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Frank2007_13-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-Frank2007_13-4"><sup><i><b>e</b></i></sup></a></span> <span class="reference-text">Frank, Edward Forrest. December 2007. Multitrunk Trees, Woody Vines, and Other Forms. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/multi/index_multi.htm">http://www.nativetreesociety.org/multi/index_multi.htm</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text">Blozan, Will. January 29, 2006. This Monocular Thing. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/measure/reticle/monocular_reticle.htm">http://www.nativetreesociety.org/measure/reticle/monocular_reticle.htm</a></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text">Leverett, Robert T. January 2013. Photo Measurements (multiple posts). <a rel="nofollow" class="external free" href="http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=4858">http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=4858</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text">Leverett, Robert T. February 2013. Re: Photo Measuring for Trunk Modeling (multiple posts). <a rel="nofollow" class="external free" href="http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=5032">http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=5032</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text">Leverett, Robert T. March 2013. Photo Measuring the Broad Brook Grandmother Pine (multiple posts). <a rel="nofollow" class="external free" href="http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=5110">http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=5110</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text">Blozan, Will and Riddle, Jess. September 2006. Tsuga Search Measurement Protocols. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/tsuga/tsuga_measurement_protocols.htm">http://www.nativetreesociety.org/tsuga/tsuga_measurement_protocols.htm</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-Frank2013-19"><span class="mw-cite-backlink">^ <a href="#cite_ref-Frank2013_19-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Frank2013_19-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Frank, Edward Forrest. January 02, 2013. Re: Measuring Odd Tree Forms. <a rel="nofollow" class="external free" href="http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=4773&amp;start=10#p20715">http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=4773&amp;start=10#p20715</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text">Blozan, Will and Riddle, Jess. 2006. Tsuga Search progress report, October 2006. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/tsuga/oct2006/tsuga_search_oct2006.htm">http://www.nativetreesociety.org/tsuga/oct2006/tsuga_search_oct2006.htm</a></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text">Taylor, Michael. December 29, 2011. 3D spacial modeling of a giant redwood trunk. eNTS: The Magazine of the Native Tree Society, Volume 1, Number 12, December 2011, p. 87. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/magazine/2011/NTS_December2011.pdf">http://www.nativetreesociety.org/magazine/2011/NTS_December2011.pdf</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text">Taylor, Michael. January 11, 2012. Re: 3D surface modeling of a giant redwood trunk. eNTS: The Magazine of the Native Tree Society, Volume 2, Number 01, January 2012, p. 57. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/magazine/2012/NTS_January2012.pdf">http://www.nativetreesociety.org/magazine/2012/NTS_January2012.pdf</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text">Leverett, Robert T. 2009. Eastern White Pine Profiles: A Survey of the Stature of Pinus Strobus in Massachusetts in Terms of Volumes, Heights, and Girths. Bulletin of the Eastern Native Tree Society, Volume 4, Issue 1, Winter 2009, pp. 3-8. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/bulletin/b4_1/B_ENTS_v04_01.pdf">http://www.nativetreesociety.org/bulletin/b4_1/B_ENTS_v04_01.pdf</a> Accessed March 6, 2013.</span></li>
+</ol>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Forestry" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Forestry" title="Template:Forestry"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Forestry" title="Template talk:Forestry"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Forestry&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Forestry" style="font-size:114%"><a href="/wiki/Forestry" title="Forestry">Forestry</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><i><a href="/wiki/Outline_of_forestry" title="Outline of forestry">Outline</a></i></li>
+<li><i><a href="/wiki/Index_of_forestry_articles" title="Index of forestry articles">Index</a></i></li>
+<li><i><a href="/wiki/List_of_countries_by_forest_area" title="List of countries by forest area">Forest areas</a></i></li>
+<li><i><a href="/wiki/List_of_forestry_ministries" title="List of forestry ministries">Ministries</a></i></li>
+<li><i><a href="/wiki/List_of_forest_research_institutes" title="List of forest research institutes">Research institutes</a></i></li>
+<li><i><a href="/wiki/List_of_forestry_universities_and_colleges" title="List of forestry universities and colleges">Colleges</a></i></li>
+<li><i><a href="/wiki/List_of_forestry_journals" title="List of forestry journals">Journals</a></i></li>
+<li><i><a href="/wiki/Arbor_Day" title="Arbor Day">Arbor Day</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Types</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Agroforestry" title="Agroforestry">Agroforestry</a>&#160;(<i><a href="/wiki/Dehesa" title="Dehesa">dehesa</a></i>)</li>
+<li><a href="/wiki/Analog_forestry" title="Analog forestry">Analog forestry</a></li>
+<li><a href="/wiki/Bamboo#Cultivation" title="Bamboo">Bamboo forestry</a></li>
+<li><a href="/wiki/Close_to_nature_forestry" title="Close to nature forestry">Close to nature forestry</a></li>
+<li><a href="/wiki/Community_forestry" title="Community forestry">Community forestry</a></li>
+<li><a href="/wiki/Ecoforestry" title="Ecoforestry">Ecoforestry</a></li>
+<li><a href="/wiki/Energy_forestry" title="Energy forestry">Energy forestry</a></li>
+<li><a href="/wiki/Mycoforestry" title="Mycoforestry">Mycoforestry</a></li>
+<li><a href="/wiki/Permaforestry" title="Permaforestry">Permaforestry</a></li>
+<li><a href="/wiki/Plantation#Forestry" title="Plantation">Plantation forestry</a></li>
+<li><a href="/wiki/Social_forestry_in_India" title="Social forestry in India">Social forestry</a></li>
+<li><a href="/wiki/Sustainable_forestry" class="mw-redirect" title="Sustainable forestry">Sustainable forestry</a></li>
+<li><a href="/wiki/Urban_forestry" title="Urban forestry">Urban forestry</a></li>
+<li><a href="/wiki/Category:World_forestry" title="Category:World forestry">World forestry</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Forest_ecology" title="Forest ecology">Ecology</a> and<br />
+<a href="/wiki/Forest_management" title="Forest management">management</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Afforestation" title="Afforestation">Afforestation</a></li>
+<li><a href="/wiki/Arboriculture" title="Arboriculture">Arboriculture</a></li>
+<li><a href="/wiki/Controlled_burn" title="Controlled burn">Controlled burn</a></li>
+<li><a href="/wiki/Dendrology" title="Dendrology">Dendrology</a></li>
+<li><a href="/wiki/Ecological_thinning" title="Ecological thinning">Ecological thinning</a></li>
+<li><a href="/wiki/Even_aged_timber_management" class="mw-redirect" title="Even aged timber management">Even-aged management</a></li>
+<li><a href="/wiki/Fire_ecology" title="Fire ecology">Fire ecology</a></li>
+<li><a href="/wiki/Forest" title="Forest">Forest</a>
+<ul>
+<li><a href="/wiki/Forest_informatics" title="Forest informatics">informatics</a></li>
+<li><a href="/wiki/Forest_integrated_pest_management" title="Forest integrated pest management">IPM</a></li>
+<li><a href="/wiki/Forest_inventory" title="Forest inventory">inventory</a></li>
+<li><a href="/wiki/Forest_governance" class="mw-redirect" title="Forest governance">governance</a></li>
+<li><a href="/wiki/Forest_law" class="mw-redirect" title="Forest law">law</a></li>
+<li><a href="/wiki/Old-growth_forest" title="Old-growth forest">old-growth</a></li>
+<li><a href="/wiki/Forest_pathology" title="Forest pathology">pathology</a></li>
+<li><a href="/wiki/Forest_protection" title="Forest protection">protection</a></li>
+<li><a href="/wiki/Forest_restoration" title="Forest restoration">restoration</a></li>
+<li><a href="/wiki/Secondary_forest" title="Secondary forest">secondary</a></li>
+<li><a href="/wiki/Forest_transition" title="Forest transition">transition</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Certified_wood" title="Certified wood">Forest certification</a>
+<ul>
+<li><a href="/wiki/Tree_farm#American_Tree_Farm_System" title="Tree farm">ATFS</a></li>
+<li><a href="/wiki/CarbonFix_Standard" title="CarbonFix Standard">CFS</a></li>
+<li><a href="/wiki/Forest_Stewardship_Council#FSC_standards.2C_certification_and_accreditation" title="Forest Stewardship Council">FSC</a></li>
+<li><a href="/wiki/Programme_for_the_Endorsement_of_Forest_Certification" title="Programme for the Endorsement of Forest Certification">PEFC</a></li>
+<li><a href="/wiki/Sustainable_Forestry_Initiative" title="Sustainable Forestry Initiative">SFI</a></li>
+<li><a href="/wiki/Rainforest_Alliance#Sustainable_forestry_certification" title="Rainforest Alliance">SmartWood</a></li>
+<li><a href="/wiki/Woodland_Carbon_Code" title="Woodland Carbon Code">Woodland Carbon Code</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Growth_and_yield_modelling" title="Growth and yield modelling">Growth and yield modelling</a></li>
+<li><a href="/wiki/Horticulture" title="Horticulture">Horticulture</a>&#160;(<a href="/wiki/Genetically_modified_tree" title="Genetically modified tree">GM trees</a>)</li>
+<li><a href="/wiki/I-Tree" title="I-Tree">i-Tree</a></li>
+<li><a href="/wiki/Reforestation" title="Reforestation">Reforestation</a>&#160;(<a href="/wiki/Urban_reforestation" title="Urban reforestation">urban</a>)</li>
+<li><a href="/wiki/Silviculture" title="Silviculture">Silviculture</a></li>
+<li><a href="/wiki/Sustainable_forest_management" title="Sustainable forest management">Sustainable management</a></li>
+<li><a href="/wiki/Tree" title="Tree">Tree</a>
+<ul>
+<li><a href="/wiki/Tree_allometry" title="Tree allometry">allometry</a></li>
+<li><a href="/wiki/Tree_breeding" title="Tree breeding">breeding</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Tree_measurement" title="Tree measurement">Tree measurement</a>
+<ul>
+<li><a href="/wiki/Tree_crown_measurement" title="Tree crown measurement">crown</a></li>
+<li><strong class="selflink">girth</strong></li>
+<li><a href="/wiki/Tree_height_measurement" title="Tree height measurement">height</a></li>
+<li><a href="/wiki/Tree_volume_measurement" title="Tree volume measurement">volume</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Category:Forestry_and_the_environment" title="Category:Forestry and the environment">Environmental<br />
+topics</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Acid_rain#Forests_and_other_vegetation" title="Acid rain">Acid rain</a></li>
+<li><a href="/wiki/Carbon_sequestration" title="Carbon sequestration">Carbon sequestration</a></li>
+<li><a href="/wiki/Clearcutting" title="Clearcutting">Clearcutting</a></li>
+<li><a href="/wiki/Deforestation" title="Deforestation">Deforestation</a></li>
+<li><a href="/wiki/Ecological_services" class="mw-redirect" title="Ecological services">Ecological services</a></li>
+<li><a href="/wiki/Forest_dieback" title="Forest dieback">Forest dieback</a></li>
+<li><a href="/wiki/Forest_fragmentation" class="mw-redirect" title="Forest fragmentation">Forest fragmentation</a></li>
+<li><a href="/wiki/High_grading" title="High grading">High grading</a></li>
+<li><a href="/wiki/Illegal_logging" title="Illegal logging">Illegal logging</a></li>
+<li><a href="/wiki/Invasive_species#Forestry" title="Invasive species">Invasive species</a></li>
+<li><a href="/wiki/Reducing_emissions_from_deforestation_and_forest_degradation" title="Reducing emissions from deforestation and forest degradation">REDD</a></li>
+<li><a href="/wiki/Shifting_cultivation" title="Shifting cultivation">Shifting cultivation</a>
+<ul>
+<li><i><a href="/wiki/Chitemene" title="Chitemene">chitemene</a></i></li>
+<li><a href="/wiki/Slash-and-burn" title="Slash-and-burn">slash-and-burn</a></li>
+<li><a href="/wiki/Slash-and-char" title="Slash-and-char">slash-and-char</a></li>
+<li><i><a href="/wiki/Svedjebruk" title="Svedjebruk">svedjebruk</a></i></li>
+</ul>
+</li>
+<li><a href="/wiki/Timber_recycling" title="Timber recycling">Timber recycling</a></li>
+<li><a href="/wiki/Wildfire" title="Wildfire">Wildfire</a></li>
+<li><a href="/wiki/Wilding_conifer" title="Wilding conifer">Wilding</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Category:Timber_industry" title="Category:Timber industry">Industries</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Coppicing" title="Coppicing">Coppicing</a></li>
+<li><a href="/wiki/Forest_farming" title="Forest farming">Forest farming</a></li>
+<li><a href="/wiki/Forest_gardening" title="Forest gardening">Forest gardening</a></li>
+<li><a href="/wiki/Logging" title="Logging">Logging</a></li>
+<li><a href="/wiki/Manufacturing" title="Manufacturing">Manufacturing</a>
+<ul>
+<li><a href="/wiki/Lumber" title="Lumber">lumber</a></li>
+<li><a href="/wiki/Plywood" title="Plywood">plywood</a></li>
+<li><a href="/wiki/Pulp_and_paper_industry" title="Pulp and paper industry">pulp and paper</a></li>
+<li><a href="/wiki/Sawmill" title="Sawmill">sawmilling</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Forest_product" title="Forest product">Products</a>
+<ul>
+<li><a href="/wiki/Biochar" title="Biochar">biochar</a></li>
+<li><a href="/wiki/Biomass" title="Biomass">biomass</a></li>
+<li><a href="/wiki/Charcoal" title="Charcoal">charcoal</a></li>
+<li><a href="/wiki/Non-timber_forest_product" title="Non-timber forest product">non-timber</a></li>
+<li><a href="/wiki/Palm_oil" title="Palm oil">palm oil</a></li>
+<li><a href="/wiki/Rayon" title="Rayon">rayon</a></li>
+<li><a href="/wiki/Natural_rubber" title="Natural rubber">rubber</a></li>
+<li><a href="/wiki/Tanbark" title="Tanbark">tanbark</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Forest_railway" title="Forest railway">Rail transport</a></li>
+<li><a href="/wiki/Tree_farm" title="Tree farm">Tree farms</a>&#160;(<a href="/wiki/Christmas_tree_cultivation" title="Christmas tree cultivation">Christmas trees</a>)</li>
+<li><a href="/wiki/Wood" title="Wood">Wood</a>
+<ul>
+<li><a href="/wiki/Engineered_wood" title="Engineered wood">engineered</a></li>
+<li><a href="/wiki/Wood_fuel" title="Wood fuel">fuel</a></li>
+<li><a href="/wiki/Mahogany" title="Mahogany">mahogany</a></li>
+<li><a href="/wiki/Teak" title="Teak">teak</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Woodworking" title="Woodworking">Woodworking</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Category:Forestry_occupations" title="Category:Forestry occupations">Occupations</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Forester" title="Forester">Forester</a></li>
+<li><a href="/wiki/Arborist" title="Arborist">Arborist</a></li>
+<li><a href="/wiki/Log_bucking" title="Log bucking">Bucker</a></li>
+<li><a href="/wiki/Choker_setter" title="Choker setter">Choker setter</a></li>
+<li><a href="/wiki/Forest_ecology" title="Forest ecology">Ecologist</a></li>
+<li><a href="/wiki/Felling" title="Felling">Feller</a></li>
+<li><a href="/wiki/Wildland_firefighter" class="mw-redirect" title="Wildland firefighter">Firefighter</a>
+<ul>
+<li><a href="/wiki/Handcrew" title="Handcrew">handcrew</a></li>
+<li><a href="/wiki/Interagency_hotshot_crew" title="Interagency hotshot crew">hotshot</a></li>
+<li><a href="/wiki/Fire_lookout" title="Fire lookout">lookout</a></li>
+<li><a href="/wiki/Smokejumper" title="Smokejumper">smokejumper</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Log_driving" title="Log driving">River driver</a></li>
+<li><a href="/wiki/Logging_truck" title="Logging truck">Truck driver</a></li>
+<li><a href="/wiki/Log_scaler" title="Log scaler">Log scaler</a></li>
+<li><a href="/wiki/Lumberjack" title="Lumberjack">Lumberjack</a></li>
+<li><a href="/wiki/Park_ranger" title="Park ranger">Ranger</a></li>
+<li><a href="/wiki/Resin_extraction" title="Resin extraction">Resin tapper</a></li>
+<li><a href="/wiki/Rubber_tapping" title="Rubber tapping">Rubber tapper</a></li>
+<li><a href="/wiki/Shingle_weaver" title="Shingle weaver">Shingle weaver</a></li>
+<li><a href="/wiki/Forest_inventory" title="Forest inventory">Timber cruiser</a></li>
+<li><a href="/wiki/Tree_planting" title="Tree planting">Tree planter</a></li>
+<li><a href="/wiki/Wood_processing" title="Wood processing">Wood process engineer</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/File:Pine_forest_in_Sweden.jpg" class="image"><img alt="Pine forest in Sweden.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pine_forest_in_Sweden.jpg/15px-Pine_forest_in_Sweden.jpg" width="15" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pine_forest_in_Sweden.jpg/23px-Pine_forest_in_Sweden.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pine_forest_in_Sweden.jpg/31px-Pine_forest_in_Sweden.jpg 2x" data-file-width="860" data-file-height="900" /></a> <a href="/wiki/Portal:Forestry" title="Portal:Forestry">Forestry portal</a></b></li>
+<li><img alt="WikiProject" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/16px-People_icon.svg.png" title="WikiProject" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/24px-People_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/32px-People_icon.svg.png 2x" data-file-width="100" data-file-height="100" /> <b><a href="/wiki/Wikipedia:WikiProject_Forestry" title="Wikipedia:WikiProject Forestry">WikiProject</a></b></li>
+<li><img alt="Commons page" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" title="Commons page" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /> <b><a href="https://commons.wikimedia.org/wiki/Category:Forestry" class="extiw" title="commons:Category:Forestry"><span style="color:mediumblue">Commons</span></a></b></li>
+</ul>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Forestry" title="Category:Forestry">Category</a></b>
+<ul>
+<li><a href="/wiki/Category:Forestry_by_continent" title="Category:Forestry by continent">by continent</a></li>
+<li><a href="/wiki/Category:Forestry_by_country" title="Category:Forestry by country">by country</a></li>
+<li><a href="/wiki/Category:Forestry_education" title="Category:Forestry education">education</a></li>
+<li><a href="/wiki/Category:Forestry_events" title="Category:Forestry events">events</a></li>
+<li><a href="/wiki/Category:History_of_forestry" title="Category:History of forestry">history</a></li>
+<li><a href="/wiki/Category:Forestry_initiatives" title="Category:Forestry initiatives">initiatives</a></li>
+<li><a href="/wiki/Category:Forestry-related_lists" title="Category:Forestry-related lists">lists</a></li>
+<li><a href="/wiki/Category:Forestry_organizations" title="Category:Forestry organizations">organizations</a></li>
+<li><a href="/wiki/Category:Forestry_tools" title="Category:Forestry tools">tools</a></li>
+<li><a href="/wiki/Category:Forestry_equipment" title="Category:Forestry equipment">equipment</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1265
+Cached time: 20161211005145
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.200 seconds
+Real time usage: 0.236 seconds
+Preprocessor visited node count: 776/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 26714/2097152 bytes
+Template argument size: 77/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Lua time usage: 0.061/10.000 seconds
+Lua memory usage: 3.04 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  162.501      1 - -total
+ 43.68%   70.974     19 - Template:Convert
+ 21.39%   34.763      1 - Template:Forestry
+ 19.80%   32.169      1 - Template:Navbox
+ 12.62%   20.500      1 - Template:Reflist
+  5.97%    9.702      3 - Template:Icon
+  5.41%    8.796      1 - Template:Portal
+  3.64%    5.918      1 - Template:Portal-inline
+  0.77%    1.247      1 - Template:Column-width
+  0.75%    1.215      1 - Template:Color
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:39004701-0!*!0!!en!4!* and timestamp 20161211005144 and revision id 738162067
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Tree_girth_measurement&amp;oldid=738162067">https://en.wikipedia.org/w/index.php?title=Tree_girth_measurement&amp;oldid=738162067</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Trees" title="Category:Trees">Trees</a></li><li><a href="/wiki/Category:Forest_modelling" title="Category:Forest modelling">Forest modelling</a></li><li><a href="/wiki/Category:Measurement" title="Category:Measurement">Measurement</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_created_via_the_Article_Wizard" title="Category:Articles created via the Article Wizard">Articles created via the Article Wizard</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Tree+girth+measurement" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Tree+girth+measurement" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Tree_girth_measurement"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Tree_girth_measurement"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Tree_girth_measurement" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Tree_girth_measurement&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Tree_girth_measurement" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Tree_girth_measurement" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Tree_girth_measurement&amp;oldid=738162067" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Tree_girth_measurement&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q17164799" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Tree_girth_measurement&amp;id=738162067" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Tree+girth+measurement">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Tree+girth+measurement&amp;returnto=Tree+girth+measurement&amp;oldid=738162067&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Tree_girth_measurement&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q17164799#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 7 September 2016, at 08:31.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Tree_girth_measurement&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":52,"wgHostname":"mw1272"});});</script>
+	</body>
+</html>

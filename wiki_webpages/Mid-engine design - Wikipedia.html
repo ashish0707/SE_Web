@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Mid-engine design - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Mid-engine_design","wgTitle":"Mid-engine design","wgCurRevisionId":750515011,"wgRevisionId":750515011,"wgArticleId":924253,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles with unsourced statements","Articles with unsourced statements from September 2011","Articles with unsourced statements from August 2012","Mid-engined vehicles","Automobile layouts"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Mid-engine_design","wgRelevantArticleId":924253,"wgRequestId":"WErOwApAIDEAABuu7ZIAAADK","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q762891","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.5"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Mid-engine_design"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Mid-engine_design&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Mid-engine_design&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Mid-engine_design"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Mid-engine_design rootpage-Mid-engine_design skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Mid-engine design</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><p>A <b>mid-engine layout</b> describes the placement of an <a href="/wiki/Automobile" class="mw-redirect" title="Automobile">automobile</a> <a href="/wiki/Internal-combustion_engine" class="mw-redirect" title="Internal-combustion engine">engine</a> between the rear and front axles.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Benefits"><span class="tocnumber">1</span> <span class="toctext">Benefits</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Drawbacks"><span class="tocnumber">2</span> <span class="toctext">Drawbacks</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Variations"><span class="tocnumber">3</span> <span class="toctext">Variations</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#FMR_layout_.E2.80.93_Front_Mid-engine_.2F_Rear-wheel_drive"><span class="tocnumber">4.1</span> <span class="toctext">FMR layout – <i>Front Mid-engine / Rear-wheel drive</i></span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#FM4_layout_.E2.80.93_Front_Mid-engine_.2F_Four-wheel_drive"><span class="tocnumber">4.2</span> <span class="toctext">FM4 layout – <i>Front Mid-engine / Four-wheel drive</i></span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#RMR_layout_.E2.80.93_Rear_Mid-engine_.2F_Rear-wheel_drive"><span class="tocnumber">4.3</span> <span class="toctext">RMR layout – <i>Rear Mid-engine / Rear-wheel drive</i></span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#M4_layout_.E2.80.93_Rear_Mid-engine_.2F_Four-wheel_drive"><span class="tocnumber">4.4</span> <span class="toctext">M4 layout – <i>Rear Mid-engine / Four-wheel drive</i></span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#MF_layout_.E2.80.93_Mid-engine_.2F_Front-wheel_drive"><span class="tocnumber">4.5</span> <span class="toctext">MF layout – <i>Mid-engine / Front-wheel drive</i></span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Benefits">Benefits</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit&amp;section=1" title="Edit section: Benefits">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Lotus_Europe_series_1_1967.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Lotus_Europe_series_1_1967.jpg/220px-Lotus_Europe_series_1_1967.jpg" width="220" height="152" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Lotus_Europe_series_1_1967.jpg/330px-Lotus_Europe_series_1_1967.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Lotus_Europe_series_1_1967.jpg/440px-Lotus_Europe_series_1_1967.jpg 2x" data-file-width="1220" data-file-height="841" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Lotus_Europe_series_1_1967.jpg" class="internal" title="Enlarge"></a></div>
+The Lotus Europa S1 was based on a prototype built to compete for Henry Ford II's contract to build a Le Mans race car in the early 1960s.</div>
+</div>
+</div>
+<p>Mounting the engine in the middle instead of the front of the vehicle puts more weight over the rear tires, so they have more traction and provide more assistance to the front tires in braking the vehicle, with less chance of rear-wheel lockup and less chance of a skid or spin out. If the mid-engine vehicle is also rear-drive the added weight on the rear tires can also improve acceleration on slippery surfaces, providing much of the benefit of all wheel drive without the added weight and expense of all wheel drive components. The mid-engine layout makes ABS brakes and traction control systems work better, by providing them more traction to control. The mid-engine layout may make a vehicle safer, since an accident can occur if a vehicle cannot stay in its own lane around a curve or is unable to stop quickly enough. Mid-engine design is also a way to provide additional empty crush space in the front of the automobile between the bumper and the windshield, which can then be used in a frontal collision to absorb more of the impact force to minimize penetration into the passenger compartment of the vehicle.</p>
+<p>In most automobiles, and in sports cars especially, ideal <a href="/wiki/Car_handling" class="mw-redirect" title="Car handling">car handling</a> requires balanced traction between the front and rear wheels when cornering, in order to maximize the possible speed around curves without sliding out. This balance is harder to achieve when the heavy weight of the engine is located far to the front or far to the rear of the vehicle. Some automobile designs strive to balance the fore and aft weight distribution by other means, such as putting the engine in the front and the transmission and battery in the rear of the vehicle.</p>
+<p>Another benefit comes when the heavy mass of the engine is located close to the back of the seats. It makes it easier for the suspension to absorb the force of bumps so the riders feel a smoother ride. But in sports cars the engine position is once again used to increase performance and the potentially smoother ride is usually more than offset by stiffer <a href="/wiki/Shock_absorber" title="Shock absorber">shock absorbers</a>.</p>
+<p>This layout also allows the transmission and motor to be directly bolted to each other—with independent suspension on the driven wheels; this removes the need for the chassis to transfer engine torque reaction.</p>
+<h2><span class="mw-headline" id="Drawbacks">Drawbacks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit&amp;section=2" title="Edit section: Drawbacks">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:227px;"><a href="/wiki/File:Unterflurmotor_Hanomag.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Unterflurmotor_Hanomag.jpg/225px-Unterflurmotor_Hanomag.jpg" width="225" height="169" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Unterflurmotor_Hanomag.jpg/338px-Unterflurmotor_Hanomag.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Unterflurmotor_Hanomag.jpg/450px-Unterflurmotor_Hanomag.jpg 2x" data-file-width="2560" data-file-height="1920" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Unterflurmotor_Hanomag.jpg" class="internal" title="Enlarge"></a></div>
+Underfloor mid-engine in a historical <a href="/wiki/Hanomag" title="Hanomag">Hanomag</a> truck chassis.</div>
+</div>
+</div>
+<p>The largest drawback of mid-engine cars is restricted rear passenger space; consequently most mid-engine vehicles are two-seat vehicles. The engine in effect pushes the passenger compartment forward towards the front <a href="/wiki/Axle" title="Axle">axle</a> (if engine is behind driver). Exceptions typically involve larger vehicles of unusual length or height in which the passengers can share space between the axles with the engine, which can be between them or below them, as in some Toyota vans, large trucks and buses. The mid-engine layout (with a horizontal engine) was common in single-decker buses in the 1950s and 1960s, e.g. the <a href="/wiki/AEC_Reliance" title="AEC Reliance">AEC Reliance</a>. The <a href="/wiki/Ferrari_Mondial" title="Ferrari Mondial">Ferrari Mondial</a> is to date the only successful example of a true mid-engined convertible with seating for 4 and sports car / supercar performance. A version of the <a href="/wiki/Lotus_Evora" title="Lotus Evora">Lotus Evora</a> with a removable roof panel is anticipated but no definite date is known.</p>
+<p>Like any layout where the engine is not front-mounted and facing the wind, the traditional "engine-behind-the-passengers" layout makes engine cooling more difficult. This has been a problem in some cars,<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (September 2011)">citation needed</span></a></i>]</sup> but this issue seems to have been largely solved in newer designs. For example, the <a href="/wiki/Saleen_S7" title="Saleen S7">Saleen S7</a> employs large engine-compartment vents on the sides and rear of the bodywork to help dissipate heat from its very high-output engine.</p>
+<p>Mid engined cars are more dangerous than front-engined cars if the driver loses control - although this may be initially harder to provoke due to the superior balance - and the car begins to spin. The moment of inertia about the center of gravity is low due to the concentration of mass between the axles (similar to standing in the middle of a playground roundabout, rather than at the edge) and the spin will occur suddenly, the car will rotate faster and it will be harder to recover from. Conversely, a front-engined car is more likely to break away in a progressive and controllable manner as the tires lose traction.</p>
+<h2><span class="mw-headline" id="Variations">Variations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit&amp;section=3" title="Edit section: Variations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The term "mid-engine" has usually been applied to cars having the engine located between the driver and the rear drive axles. This layout is referred to here as <a href="/wiki/RMR_layout" class="mw-redirect" title="RMR layout">RMR layout</a>. Sports and racing cars typically have this mid-engine layout, as these vehicles' <a href="/wiki/Car_handling" class="mw-redirect" title="Car handling">handling</a> characteristics are more important than other features, such as capacity. Additionally the mechanical layout and packaging of a RMR car is substantially different from that of a front engine or rear engine car.</p>
+<p>A subset of Front-Rear when the engine is in front of the driver, but fully behind the front axle line, the layout is sometimes called Front Mid engine Rear <a href="/wiki/FMR_layout" class="mw-redirect" title="FMR layout">FMR layout</a> instead of the less-specific term front-engine. In handling and vehicle layout FMR is substantially the same as FR.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (August 2012)">citation needed</span></a></i>]</sup> Some vehicles could be classified as FR or FMR depending on the factory installed engine (I4 vs I6). Historically most classical FR cars such as the Ford Models T and A would qualify as a FMR engine car. Additionally, the difference between FR and FMR may be as little as a few millimeters of engine protrusion in front of the front axle line as manufacturers mount engine as far back in the chassis as possible. Not all manufacturers use the Front-Mid designation.</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit&amp;section=4" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="FMR_layout_.E2.80.93_Front_Mid-engine_.2F_Rear-wheel_drive"><span id="FMR"></span>FMR layout – <i>Front Mid-engine / Rear-wheel drive</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit&amp;section=5" title="Edit section: FMR layout – Front Mid-engine / Rear-wheel drive">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:277px;"><a href="/wiki/File:Automotive_diagrams_03_En.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Automotive_diagrams_03_En.png/275px-Automotive_diagrams_03_En.png" width="275" height="167" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Automotive_diagrams_03_En.png/413px-Automotive_diagrams_03_En.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Automotive_diagrams_03_En.png/550px-Automotive_diagrams_03_En.png 2x" data-file-width="3067" data-file-height="1863" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Automotive_diagrams_03_En.png" class="internal" title="Enlarge"></a></div>
+Front mid-engine position / Rear-wheel drive</div>
+</div>
+</div>
+<p>These cars are RWD cars with engine placed between driver and front axle.</p>
+<ul>
+<li><a href="/wiki/Alfa_Romeo_8C_Competizione" title="Alfa Romeo 8C Competizione">Alfa Romeo 8C Competizione</a></li>
+<li><a href="/wiki/Lotus_Elan" title="Lotus Elan">Lotus Elan</a> (first generation)</li>
+<li><a href="/wiki/Chevrolet_Corvette" title="Chevrolet Corvette">Chevrolet Corvette</a> (<a href="/wiki/Chevrolet_Corvette_(C2)" title="Chevrolet Corvette (C2)">second</a> through <a href="/wiki/Chevrolet_Corvette_(C7)" title="Chevrolet Corvette (C7)">seventh generations</a>)</li>
+<li><a href="/wiki/Bill_Thomas_Cheetah" title="Bill Thomas Cheetah">Bill Thomas Cheetah</a> (used only one <a href="/wiki/Universal_joint" title="Universal joint">universal joint</a> between <a href="/wiki/Transmission_(mechanics)" title="Transmission (mechanics)">transmission</a> tailshaft housing and <a href="/wiki/Differential_(mechanical_device)" title="Differential (mechanical device)">differential</a> housing)</li>
+<li><a href="/wiki/SRT_Viper" class="mw-redirect" title="SRT Viper">Dodge/SRT Viper</a></li>
+<li><a href="/wiki/Ferrari_550_Maranello" class="mw-redirect" title="Ferrari 550 Maranello">Ferrari 550 Maranello</a>, <a href="/wiki/Ferrari_575M_Maranello" title="Ferrari 575M Maranello">575M Maranello</a>, <a href="/wiki/Ferrari_599_GTB_Fiorano" title="Ferrari 599 GTB Fiorano">599 GTB Fiorano</a>, <a href="/wiki/Ferrari_612_Scaglietti" title="Ferrari 612 Scaglietti">612 Scaglietti</a>, <a href="/wiki/Ferrari_F12_Berlinetta" class="mw-redirect" title="Ferrari F12 Berlinetta">F12 Berlinetta</a> and <a href="/wiki/Ferrari_GTC4Lusso#GTC4Lusso_T" title="Ferrari GTC4Lusso">GTC4Lusso T</a></li>
+<li><a href="/wiki/Honda_S2000" title="Honda S2000">Honda S2000</a></li>
+<li><a href="/wiki/Lexus_LFA" title="Lexus LFA">Lexus LFA</a></li>
+<li><a href="/wiki/Maserati_Quattroporte_V" class="mw-redirect" title="Maserati Quattroporte V">Maserati Quattroporte V</a>, <a href="/wiki/Maserati_GranTurismo" title="Maserati GranTurismo">GranTurismo</a>/<a href="/wiki/Maserati_GranTurismo#GranCabrio" title="Maserati GranTurismo">GranCabrio</a></li>
+<li><a href="/wiki/Mazda_RX-7" title="Mazda RX-7">Mazda RX-7</a>, <a href="/wiki/Mazda_MX-5" title="Mazda MX-5">MX-5</a> and <a href="/wiki/Mazda_RX-8" title="Mazda RX-8">RX-8</a></li>
+<li><a href="/wiki/Mercedes-Benz_SLR_McLaren" title="Mercedes-Benz SLR McLaren">Mercedes-Benz SLR McLaren</a> and <a href="/wiki/Mercedes-Benz_SLS_AMG" title="Mercedes-Benz SLS AMG">SLS AMG</a></li>
+<li><a href="/wiki/Opel_GT" title="Opel GT">Opel GT</a></li>
+<li><a href="/wiki/Toyota_Estima" class="mw-redirect" title="Toyota Estima">Toyota Previa</a> and <a href="/wiki/Toyota_2000GT" title="Toyota 2000GT">2000GT</a></li>
+<li><a href="/wiki/Nissan_350Z" title="Nissan 350Z">Nissan 350Z</a> and <a href="/wiki/Nissan_370Z" title="Nissan 370Z">Nissan 370Z</a></li>
+<li><a href="/wiki/Nissan_Skyline" title="Nissan Skyline">Nissan Skyline</a></li>
+<li><a href="/wiki/Porsche_928" title="Porsche 928">Porsche 928</a></li>
+<li>Most pre-World War II front engine rear wheel drive cars.</li>
+</ul>
+<h3><span class="mw-headline" id="FM4_layout_.E2.80.93_Front_Mid-engine_.2F_Four-wheel_drive"><span id="FM4"></span>FM4 layout – <i>Front Mid-engine / Four-wheel drive</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit&amp;section=6" title="Edit section: FM4 layout – Front Mid-engine / Four-wheel drive">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This layout, similar to above FMR layout, with engine between driver and behind front axle, adds front wheel drive to become a four-wheel drive.</p>
+<ul>
+<li><a href="/wiki/Ferrari_FF" title="Ferrari FF">Ferrari FF</a>/<a href="/wiki/Ferrari_GTC4Lusso" title="Ferrari GTC4Lusso">GTC4Lusso</a></li>
+<li><a href="/wiki/Hummer_H1" title="Hummer H1">Hummer H1</a></li>
+<li><a href="/wiki/Toyota_Previa" title="Toyota Previa">Toyota Previa</a> <a href="/wiki/All-Trac" title="All-Trac">All-Trac</a> variant</li>
+<li><a href="/wiki/Toyota_Van" class="mw-redirect" title="Toyota Van">Toyota Van</a> <a href="/wiki/4WD" class="mw-redirect" title="4WD">4WD</a> variant (first generation)</li>
+</ul>
+<h3><span class="mw-headline" id="RMR_layout_.E2.80.93_Rear_Mid-engine_.2F_Rear-wheel_drive"><span id="RMR"></span>RMR layout – <i>Rear Mid-engine / Rear-wheel drive</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit&amp;section=7" title="Edit section: RMR layout – Rear Mid-engine / Rear-wheel drive">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:277px;"><a href="/wiki/File:Automotive_diagrams_04_En.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Automotive_diagrams_04_En.png/275px-Automotive_diagrams_04_En.png" width="275" height="167" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Automotive_diagrams_04_En.png/413px-Automotive_diagrams_04_En.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Automotive_diagrams_04_En.png/550px-Automotive_diagrams_04_En.png 2x" data-file-width="3067" data-file-height="1863" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Automotive_diagrams_04_En.png" class="internal" title="Enlarge"></a></div>
+Rear mid-engine position / Rear-wheel drive</div>
+</div>
+</div>
+<p>These cars use traditional engine layout between driver and rear drive axle. Typically, they're simply called MR layout cars.</p>
+<div role="note" class="hatnote">Main category: <a href="/wiki/Category:Rear_mid-engine,_rear-wheel-drive_vehicles" title="Category:Rear mid-engine, rear-wheel-drive vehicles">Rear mid-engine, rear-wheel-drive vehicles</a></div>
+<ul>
+<li><a href="/wiki/Alfa_Romeo_4C" title="Alfa Romeo 4C">Alfa Romeo 4C</a></li>
+<li><a href="/wiki/BMW_M1" title="BMW M1">BMW M1</a> and <a href="/wiki/BMW_i8" title="BMW i8">i8</a></li>
+<li><a href="/wiki/Consulier_GTP" title="Consulier GTP">Consulier GTP</a></li>
+<li><a href="/wiki/DC_Avanti" title="DC Avanti">DC Avanti</a></li>
+<li><a href="/wiki/De_Tomaso_Vallelunga" title="De Tomaso Vallelunga">DeTomaso Vallelunga</a>, <a href="/wiki/DeTomaso_Pantera" class="mw-redirect" title="DeTomaso Pantera">Pantera</a>, <a href="/wiki/De_Tomaso_Guara" class="mw-redirect" title="De Tomaso Guara">Guara</a></li>
+<li><a href="/wiki/Ferrari_Dino_246" class="mw-redirect" title="Ferrari Dino 246">Ferrari Dino 246</a>, <a href="/wiki/Ferrari_308_GTB/GTS" title="Ferrari 308 GTB/GTS">308</a>, <a href="/wiki/Ferrari_328" title="Ferrari 328">328</a>, <a href="/wiki/Ferrari_348" title="Ferrari 348">348</a>, <a href="/wiki/Ferrari_Enzo" class="mw-redirect" title="Ferrari Enzo">Enzo</a>, <a href="/wiki/Ferrari_F355" title="Ferrari F355">F355</a>, <a href="/wiki/Ferrari_360_Modena" class="mw-redirect" title="Ferrari 360 Modena">360 Modena</a>, <a href="/wiki/Ferrari_F430" title="Ferrari F430">F430</a>, <a href="/wiki/Ferrari_FXX" title="Ferrari FXX">FXX</a>, <a href="/wiki/Ferrari_458_Italia" class="mw-redirect" title="Ferrari 458 Italia">458 Italia</a>, <a href="/wiki/Ferrari_488" title="Ferrari 488">488</a>, <a href="/wiki/Ferrari_Mondial" title="Ferrari Mondial">Mondial</a>, <a href="/wiki/Ferrari_Testarossa" title="Ferrari Testarossa">Testarossa</a>, <a href="/wiki/Ferrari_F40" title="Ferrari F40">F40</a>, <a href="/wiki/Ferrari_F50" title="Ferrari F50">F50</a>, <a href="/wiki/LaFerrari" title="LaFerrari">LaFerrari</a></li>
+<li><a href="/wiki/Fiat_X1/9" title="Fiat X1/9">Fiat X1/9</a></li>
+<li><a href="/wiki/Ford_GT" title="Ford GT">Ford GT</a> and <a href="/wiki/Ford_GT40" title="Ford GT40">GT40</a></li>
+<li><a href="/wiki/Honda_Beat" title="Honda Beat">Honda Beat</a> and <a href="/wiki/Honda_NSX" title="Honda NSX">NSX</a></li>
+<li><a href="/wiki/Jaguar_XJR-15" title="Jaguar XJR-15">Jaguar XJR-15</a> and <a href="/wiki/XJ220" class="mw-redirect" title="XJ220">XJ220</a></li>
+<li><a href="/wiki/Lamborghini_Countach" title="Lamborghini Countach">Lamborghini Countach</a>, <a href="/wiki/Lamborghini_Diablo_SV" class="mw-redirect" title="Lamborghini Diablo SV">Diablo SV</a>, <a href="/wiki/Lamborghini_Jalpa" title="Lamborghini Jalpa">Jalpa</a>, <a href="/wiki/Lamborghini_Silhouette" title="Lamborghini Silhouette">Silhouette</a>, Gallardo LP550-2</li>
+<li><a href="/wiki/Lancia_Stratos_HF" class="mw-redirect" title="Lancia Stratos HF">Lancia Stratos HF</a>, <a href="/wiki/Lancia_Montecarlo" title="Lancia Montecarlo">Lancia Montecarlo</a></li>
+<li><a href="/wiki/Lotus_Europa" title="Lotus Europa">Lotus Europa</a>, <a href="/wiki/Lotus_Esprit" title="Lotus Esprit">Esprit</a>, <a href="/wiki/Lotus_Elise" title="Lotus Elise">Elise</a>, <a href="/wiki/Lotus_Exige" title="Lotus Exige">Exige</a>, <a href="/wiki/Lotus_Evora" title="Lotus Evora">Evora</a></li>
+<li><a href="/wiki/Maserati_Merak" title="Maserati Merak">Maserati Merak</a>, <a href="/wiki/Maserati_Bora" title="Maserati Bora">Bora</a>, <a href="/wiki/Maserati_MC12" title="Maserati MC12">Maserati MC12</a></li>
+<li><a href="/wiki/Mastretta_MXT" title="Mastretta MXT">Mastretta MXT</a></li>
+<li><a href="/wiki/Matra_Djet" title="Matra Djet">Matra Djet</a>, <a href="/wiki/Matra_530" title="Matra 530">530</a>, <a href="/wiki/Matra_Bagheera" title="Matra Bagheera">Bagheera</a>, <a href="/wiki/Matra_Murena" title="Matra Murena">Murena</a></li>
+<li><a href="/wiki/McLaren_F1" title="McLaren F1">McLaren F1</a>, <a href="/wiki/McLaren_MP4-12C" class="mw-redirect" title="McLaren MP4-12C">MP4-12C</a>, <a href="/wiki/McLaren_650S" title="McLaren 650S">650S</a>, <a href="/wiki/McLaren_P1" title="McLaren P1">P1</a></li>
+<li><a href="/wiki/Mercedes-Benz_CLK_GTR" title="Mercedes-Benz CLK GTR">Mercedes-Benz CLK GTR</a></li>
+<li><a href="/wiki/MG_F" class="mw-redirect" title="MG F">MG F</a></li>
+<li><a href="/wiki/Mosler_MT900" title="Mosler MT900">Mosler MT900</a></li>
+<li><a href="/wiki/Nissan_R390_GT1" title="Nissan R390 GT1">Nissan R390 GT1</a></li>
+<li><a href="/wiki/Opel_Speedster" title="Opel Speedster">Opel Speedster</a></li>
+<li><a href="/wiki/Pagani_Huayra" title="Pagani Huayra">Pagani Huayra</a>, <a href="/wiki/Pagani_Zonda" title="Pagani Zonda">Pagani Zonda</a></li>
+<li><a href="/wiki/Pontiac_Fiero" title="Pontiac Fiero">Pontiac Fiero</a></li>
+<li><a href="/wiki/Porsche_550" title="Porsche 550">Porsche 550</a>, <a href="/wiki/Porsche_914" title="Porsche 914">914</a>, <a href="/wiki/Porsche_Boxster" class="mw-redirect" title="Porsche Boxster">Boxster</a>, <a href="/wiki/Porsche_Carrera_GT" title="Porsche Carrera GT">Carrera GT</a>, <a href="/wiki/Porsche_Cayman" class="mw-redirect" title="Porsche Cayman">Cayman</a>, <a href="/wiki/Porsche_911_GT1" title="Porsche 911 GT1">Porsche 911 GT1</a></li>
+<li><a href="/wiki/Prince_R380" title="Prince R380">Prince R380</a></li>
+<li><a href="/wiki/Renault_5_Turbo" title="Renault 5 Turbo">Renault 5 Turbo</a>, <a href="/wiki/Clio_V6_Renault_Sport" title="Clio V6 Renault Sport">Clio V6 Renault Sport</a></li>
+<li><a href="/wiki/Ruf_3400S" title="Ruf 3400S">Ruf 3400S, 3600S &amp; 3800S</a></li>
+<li><a href="/wiki/Ruf_CTR3" title="Ruf CTR3">Ruf CTR3</a></li>
+<li><a href="/wiki/Ruf_RK_Coupe" title="Ruf RK Coupe">Ruf RK Coupe/Spyder</a></li>
+<li><a href="/wiki/Rumpler_Tropfenwagen" title="Rumpler Tropfenwagen">Rumpler Tropfenwagen</a></li>
+<li><a href="/wiki/Saleen_S7" title="Saleen S7">Saleen S7</a></li>
+<li><a href="/wiki/SSC_Aero" title="SSC Aero">SSC Aero</a></li>
+<li><a href="/wiki/Toyota_MR2" title="Toyota MR2">Toyota MR2/MR-S</a></li>
+<li><a href="/wiki/Vauxhall_VX220" class="mw-redirect" title="Vauxhall VX220">Vauxhall VX220</a></li>
+<li><a href="/wiki/Vector_WX-8" title="Vector WX-8">Vector WX-8</a></li>
+</ul>
+<h3><span class="mw-headline" id="M4_layout_.E2.80.93_Rear_Mid-engine_.2F_Four-wheel_drive"><span id="M4"></span>M4 layout – <i>Rear Mid-engine / Four-wheel drive</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit&amp;section=8" title="Edit section: M4 layout – Rear Mid-engine / Four-wheel drive">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>These cars uses mid-ship, <a href="/wiki/Four-wheel_drive" title="Four-wheel drive">four-wheel drive</a>, with engine between axles.</p>
+<ul>
+<li><a href="/wiki/Audi_R8_(road_car)" class="mw-redirect" title="Audi R8 (road car)">Audi R8</a></li>
+<li><a href="/wiki/BMW_i8" title="BMW i8">BMW i8</a></li>
+<li><a href="/wiki/Bugatti_Veyron" title="Bugatti Veyron">Bugatti Veyron</a>, <a href="/wiki/Bugatti_EB110" class="mw-redirect" title="Bugatti EB110">EB110</a></li>
+<li><a href="/wiki/Ford_RS200" title="Ford RS200">Ford RS200</a></li>
+<li><a href="/wiki/Honda_Acty" title="Honda Acty">Honda Acty</a> (4WD versions only), <a href="/wiki/Honda_Z" title="Honda Z">Honda Z</a> (1998-2002)</li>
+<li><a href="/wiki/Jeep_Forward_Control" title="Jeep Forward Control">Jeep Forward Control</a></li>
+<li><a href="/wiki/Lancia_Delta_S4" title="Lancia Delta S4">Lancia Delta S4</a></li>
+<li><a href="/wiki/Lamborghini_Aventador" title="Lamborghini Aventador">Lamborghini Aventador</a>, <a href="/wiki/Lamborghini_Cheetah" title="Lamborghini Cheetah">Cheetah</a>, <a href="/wiki/Lamborghini_Diablo" title="Lamborghini Diablo">Diablo VT series</a>, <a href="/wiki/Lamborghini_Gallardo" title="Lamborghini Gallardo">Gallardo</a>, <a href="/wiki/Lamborghini_Murcielago" class="mw-redirect" title="Lamborghini Murcielago">Murcielago</a>, <a href="/wiki/Lamborghini_Reventon" class="mw-redirect" title="Lamborghini Reventon">Reventon</a>, <a href="/wiki/Lamborghini_Huracan" class="mw-redirect" title="Lamborghini Huracan">Huracan</a>, <a href="/wiki/Lamborghini_Sesto_Elemento" title="Lamborghini Sesto Elemento">Sesto Elemento</a></li>
+<li><a href="/wiki/MG_Metro_6R4" class="mw-redirect" title="MG Metro 6R4">MG Metro 6R4</a></li>
+<li><a href="/wiki/Panther_Solo#Solo_2" title="Panther Solo">Panther Solo 2</a></li>
+<li><a href="/wiki/Peugeot_205#205_Turbo_16_.28T16.29" title="Peugeot 205">Peugeot 205 Turbo 16</a></li>
+<li><a href="/wiki/Volvo_L3314" title="Volvo L3314">Volvo L3314</a>, <a href="/wiki/Volvo_C303" title="Volvo C303">C303</a></li>
+<li><a href="/wiki/Porsche_918_Spyder" title="Porsche 918 Spyder">Porsche 918 Spyder</a></li>
+<li><a href="/wiki/Unimog#2000s" title="Unimog">Unimog UGN/405</a></li>
+</ul>
+<h3><span class="mw-headline" id="MF_layout_.E2.80.93_Mid-engine_.2F_Front-wheel_drive"><span id="MF"></span>MF layout – <i>Mid-engine / Front-wheel drive</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit&amp;section=9" title="Edit section: MF layout – Mid-engine / Front-wheel drive">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:277px;"><a href="/wiki/File:Automotive_diagrams_07_En.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Automotive_diagrams_07_En.png/275px-Automotive_diagrams_07_En.png" width="275" height="167" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Automotive_diagrams_07_En.png/413px-Automotive_diagrams_07_En.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Automotive_diagrams_07_En.png/550px-Automotive_diagrams_07_En.png 2x" data-file-width="3067" data-file-height="1863" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Automotive_diagrams_07_En.png" class="internal" title="Enlarge"></a></div>
+Front mid-engine position / Front-wheel drive</div>
+</div>
+</div>
+<p>These cars are "mid-ship engined" vehicles, but they use <a href="/wiki/Front-wheel_drive" title="Front-wheel drive">front-wheel drive</a>, with the engine in front of the driver. It is still treated as an FF layout, though, due to the engine's placement still being in the front of the car, contrary to the popular belief that the engine is placed in front of the rear axle with power transferred to the front wheels (an RMF layout). In most examples, the engine is longitudinally mounted rather than the transversely as is common with FF cars.</p>
+<ul>
+<li><a href="/wiki/Citro%C3%ABn_Traction_Avant" title="Citroën Traction Avant">Citroën Traction Avant</a>, <a href="/wiki/Citro%C3%ABn_DS" title="Citroën DS">DS</a>, <a href="/wiki/Citro%C3%ABn_SM" title="Citroën SM">SM</a></li>
+<li><a href="/wiki/Cord_Automobile" class="mw-redirect" title="Cord Automobile">Cord 810</a></li>
+<li><a href="/wiki/Nissan_GT-R_LM_Nismo" title="Nissan GT-R LM Nismo">Nissan GT-R LM Nismo</a></li>
+<li><a href="/wiki/Renault_4" title="Renault 4">Renault 4</a>, <a href="/wiki/Renault_5" title="Renault 5">5</a>, <a href="/wiki/Renault_16" title="Renault 16">16</a></li>
+<li><a href="/wiki/Saab_Sonett" title="Saab Sonett">Saab Sonett</a> mk1</li>
+<li><a href="/wiki/Acura_Vigor" class="mw-redirect" title="Acura Vigor">Acura Vigor 3rd generation</a>, <a href="/wiki/Acura_TL" title="Acura TL">TL ( only the 2.5 TL )</a></li>
+<li><a href="/wiki/Maserati_Quattroporte_II" class="mw-redirect" title="Maserati Quattroporte II">Maserati Quattroporte II</a> 1974–1978</li>
+<li><a href="/wiki/Toyota_iQ" title="Toyota iQ">Toyota/Scion iQ</a>, <a href="/wiki/Aston_Martin_Cygnet" class="mw-redirect" title="Aston Martin Cygnet">Aston Martin Cygnet</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;"></div>
+<div role="navigation" class="navbox" aria-labelledby="Car_design" style="padding:3px">
+<table class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Automobile_configuration" title="Template:Automobile configuration"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Automobile_configuration" title="Template talk:Automobile configuration"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Automobile_configuration&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Car_design" style="font-size:114%"><a href="/wiki/Car" title="Car">Car</a> design</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Car_classification" title="Car classification">Car classification</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Antique_car" title="Antique car">Antique</a></li>
+<li><a href="/wiki/City_car" title="City car">City car</a></li>
+<li><a href="/wiki/Classic_car" title="Classic car">Classic</a></li>
+<li><a href="/wiki/Compact_car" title="Compact car">Compact</a></li>
+<li><a href="/wiki/Compact_executive_car" title="Compact executive car">Compact executive</a></li>
+<li><a href="/wiki/Compact_MPV" title="Compact MPV">Compact MPV</a></li>
+<li><a href="/wiki/Compact_sport_utility_vehicle" title="Compact sport utility vehicle">Compact SUV</a></li>
+<li><a href="/wiki/Crossover_(automobile)" title="Crossover (automobile)">Crossover SUV</a></li>
+<li><a href="/wiki/Custom_car" title="Custom car">Custom</a>
+<ul>
+<li><span style="font-size:90%;"><a href="/wiki/Hot_rod" title="Hot rod">Hot rod</a></span></li>
+<li><span style="font-size:90%;"><a href="/wiki/Lead_sled" title="Lead sled">Lead sled</a></span></li>
+<li><span style="font-size:90%;"><a href="/wiki/Lowrider" title="Lowrider">Lowrider</a></span></li>
+<li><span style="font-size:90%;"><a href="/wiki/Hot_rod#1960s_rise_of_the_street_rod" title="Hot rod">Street rod</a></span></li>
+<li><span style="font-size:90%;"><a href="/wiki/T-bucket" title="T-bucket">T-bucket</a></span></li>
+</ul>
+</li>
+<li><a href="/wiki/Economy_car" title="Economy car">Economy</a></li>
+<li><a href="/wiki/Executive_car" title="Executive car">Executive</a></li>
+<li><a href="/wiki/Family_car" title="Family car">Family car</a> (<a href="/wiki/Family_car#Large_family_cars" title="Family car">large</a>)</li>
+<li><a href="/wiki/Full-size_car" title="Full-size car">Full-size</a></li>
+<li><a href="/wiki/Grand_tourer" title="Grand tourer">Grand tourer</a></li>
+<li><a href="/wiki/Hot_hatch" title="Hot hatch">Hot hatch</a></li>
+<li><a href="/wiki/Kei_car" title="Kei car">Kei</a></li>
+<li><a href="/wiki/Mini_MPV" title="Mini MPV">Leisure activity vehicle</a></li>
+<li><a href="/wiki/Luxury_vehicle" title="Luxury vehicle">Luxury</a></li>
+<li><a href="/wiki/Microcar" title="Microcar">Microcar</a></li>
+<li><a href="/wiki/Mid-size_car" title="Mid-size car">Mid-size</a></li>
+<li><a href="/wiki/Mini_MPV" title="Mini MPV">Mini MPV</a></li>
+<li><a href="/wiki/Mini_sport_utility_vehicle" title="Mini sport utility vehicle">Mini SUV</a></li>
+<li><a href="/wiki/Minivan" title="Minivan">Minivan / Multi-purpose vehicle <span style="font-size:90%;">(MPV)</span></a></li>
+<li><a href="/wiki/Muscle_car" title="Muscle car">Muscle</a></li>
+<li><a href="/wiki/Personal_luxury_car" title="Personal luxury car">luxury</a></li>
+<li><a href="/wiki/Pony_car" title="Pony car">Pony</a></li>
+<li><a href="/wiki/Sport_compact" title="Sport compact">Sport compact</a></li>
+<li><a href="/wiki/Sport_utility_vehicle" title="Sport utility vehicle">Sport utility vehicle <span style="font-size:90%;">(SUV)</span></a></li>
+<li><a href="/wiki/Sports_car" title="Sports car">Sports car</a></li>
+<li><a href="/wiki/Subcompact_car" title="Subcompact car">Subcompact</a></li>
+<li><a href="/wiki/Supercar" title="Supercar">Supercar</a></li>
+<li><a href="/wiki/Supermini" title="Supermini">Supermini</a></li>
+<li><a href="/wiki/Truck" title="Truck">Truck</a></li>
+<li><a href="/wiki/Ute_(vehicle)" title="Ute (vehicle)">Ute</a></li>
+<li><a href="/wiki/Van" title="Van">Van</a></li>
+<li><a href="/wiki/Voiturette" title="Voiturette">Voiturette</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Body styles</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/2%2B2_(car_body_style)" title="2+2 (car body style)">2+2</a></li>
+<li><a href="/wiki/Baquet_(car_body_style)" title="Baquet (car body style)">Baquet</a></li>
+<li><a href="/wiki/Barchetta" title="Barchetta">Barchetta</a></li>
+<li><a href="/wiki/Berlinetta" title="Berlinetta">Berlinetta</a></li>
+<li><a href="/wiki/Brougham_(car_body)" title="Brougham (car body)">Brougham</a></li>
+<li><a href="/wiki/Cabrio_coach" title="Cabrio coach">Cabrio coach</a></li>
+<li><a href="/wiki/Convertible" title="Convertible">Cabriolet / Convertible</a></li>
+<li><a href="/wiki/Coup%C3%A9" title="Coupé">Coupé</a></li>
+<li><a href="/wiki/Coupe_de_Ville" title="Coupe de Ville">Coupé de Ville</a></li>
+<li><a href="/wiki/Coup%C3%A9_utility" title="Coupé utility">Coupé utility</a></li>
+<li><a href="/wiki/Convertible" title="Convertible">Drophead coupe (Convertible)</a></li>
+<li><a href="/wiki/Fastback" title="Fastback">Fastback</a></li>
+<li><a href="/wiki/Hardtop" title="Hardtop">Hardtop</a></li>
+<li><a href="/wiki/Hatchback" title="Hatchback">Hatchback</a></li>
+<li><a href="/wiki/Landaulet" title="Landaulet">Landaulet</a></li>
+<li><a href="/wiki/Liftback" class="mw-redirect" title="Liftback">Liftback</a></li>
+<li><a href="/wiki/Limousine" title="Limousine">Limousine</a></li>
+<li><a href="/wiki/Multi-stop_truck" title="Multi-stop truck">Multi-stop truck</a></li>
+<li><a href="/wiki/Notchback" title="Notchback">Notchback</a></li>
+<li><a href="/wiki/Panel_van" title="Panel van">Panel van</a></li>
+<li><a href="/wiki/Phaeton_body" title="Phaeton body">Phaeton</a></li>
+<li><a href="/wiki/Pickup_truck" title="Pickup truck">Pickup truck</a></li>
+<li><a href="/wiki/Quad_coup%C3%A9" title="Quad coupé">Quad coupé</a></li>
+<li><a href="/wiki/Convertible_(car)" class="mw-redirect" title="Convertible (car)">Retractable hardtop</a></li>
+<li><a href="/wiki/Roadster_(automobile)" title="Roadster (automobile)">Roadster</a></li>
+<li><a href="/wiki/Runabout_(car)" title="Runabout (car)">Runabout</a></li>
+<li><a href="/wiki/Sedan_(automobile)" title="Sedan (automobile)">Saloon / Sedan</a></li>
+<li><a href="/wiki/Sedan_delivery" title="Sedan delivery">Sedan delivery</a></li>
+<li><a href="/wiki/Coupe_de_Ville" title="Coupe de Ville">Sedanca de Ville (Coupé de Ville)</a></li>
+<li><a href="/wiki/Shooting-brake" title="Shooting-brake">Shooting-brake</a></li>
+<li><a href="/wiki/Roadster_(automobile)" title="Roadster (automobile)">Spider / Spyder (Roadster)</a></li>
+<li><a href="/wiki/Station_wagon" title="Station wagon">Station wagon</a></li>
+<li><a href="/wiki/Targa_top" title="Targa top">Targa top</a></li>
+<li><a href="/wiki/Torpedo_(car)" title="Torpedo (car)">Torpedo</a></li>
+<li><a href="/wiki/Touring_car" title="Touring car">Touring car</a></li>
+<li><a href="/wiki/Coupe_de_Ville" title="Coupe de Ville">Town car (Coupé de Ville)</a></li>
+<li><a href="/wiki/T-top" title="T-top">T-top</a></li>
+<li><a href="/wiki/Vis-%C3%A0-vis_(carriage)" title="Vis-à-vis (carriage)">Vis-à-vis</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Specialized vehicles</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Amphibious_vehicle" title="Amphibious vehicle">Amphibious</a></li>
+<li><a href="/wiki/Autonomous_car" title="Autonomous car">Driverless (autonomous)</a></li>
+<li><a href="/wiki/Hearse" title="Hearse">Hearse</a></li>
+<li><a href="/wiki/Gyrocar" title="Gyrocar">Gyrocar</a></li>
+<li><a href="/wiki/Roadable_aircraft" title="Roadable aircraft">Roadable aircraft</a></li>
+<li><a href="/wiki/Taxicab" title="Taxicab">Taxicab</a></li>
+<li><a href="/wiki/Tow_truck" title="Tow truck">Tow truck</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Ground_propulsion" title="Ground propulsion">Propulsion</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Alternative_fuel_vehicle" title="Alternative fuel vehicle">Alternative fuel</a></li>
+<li><a href="/wiki/Autogas" title="Autogas">Autogas</a></li>
+<li><a href="/wiki/Biodiesel" title="Biodiesel">Biodiesel</a></li>
+<li><a href="/wiki/Diesel_engine" title="Diesel engine">Diesel</a></li>
+<li><a href="/wiki/Electric_vehicle" title="Electric vehicle">Electric</a>&#160;(<a href="/wiki/Battery_electric_vehicle" title="Battery electric vehicle">battery</a></li>
+<li><a href="/wiki/Neighborhood_Electric_Vehicle" title="Neighborhood Electric Vehicle">NEV</a>)</li>
+<li><a href="/wiki/Common_ethanol_fuel_mixtures" title="Common ethanol fuel mixtures">Ethanol</a>&#160;(<a href="/wiki/E85" title="E85">E85</a>)</li>
+<li><a href="/wiki/Fuel_cell" title="Fuel cell">Fuel cell</a></li>
+<li><a href="/wiki/Petrol_engine" title="Petrol engine">Gasoline&#160;/ petrol</a>&#160;(<a href="/wiki/Gasoline_direct_injection" title="Gasoline direct injection">direct injection</a>)</li>
+<li><a href="/wiki/Homogeneous_charge_compression_ignition" title="Homogeneous charge compression ignition">Homogeneous charge compression ignition</a></li>
+<li><a href="/wiki/Hybrid_electric_vehicle" title="Hybrid electric vehicle">Hybrid</a>&#160;(<a href="/wiki/Plug-in_hybrid" title="Plug-in hybrid">plug-in</a>)</li>
+<li><a href="/wiki/Hydrogen_vehicle" title="Hydrogen vehicle">Hydrogen</a></li>
+<li><a href="/wiki/Internal_combustion_engine" title="Internal combustion engine">Internal combustion</a></li>
+<li><a href="/wiki/Liquid_nitrogen_vehicle" title="Liquid nitrogen vehicle">Liquid nitrogen</a></li>
+<li><a href="/wiki/Steam_car" title="Steam car">Steam</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Drive_wheel" title="Drive wheel">Drive wheels</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Front-wheel_drive" title="Front-wheel drive">Front-wheel</a></li>
+<li><a href="/wiki/Automobile_layout#Rear_wheel_drive_layouts" title="Automobile layout">Rear-wheel</a></li>
+<li><a href="/wiki/Two-wheel_drive" title="Two-wheel drive">Two-wheel</a></li>
+<li><a href="/wiki/Four-wheel_drive" title="Four-wheel drive">Four-wheel</a></li>
+<li><a href="/wiki/Six-wheel_drive" title="Six-wheel drive">Six-wheel</a></li>
+<li><a href="/wiki/Eight-wheel_drive" title="Eight-wheel drive">Eight-wheel</a></li>
+<li><a href="/wiki/Twelve-wheel_drive" title="Twelve-wheel drive">Twelve-wheel</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Automobile_layout" title="Automobile layout">Engine position</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Front-engine_design" class="mw-redirect" title="Front-engine design">Front</a></li>
+<li><strong class="selflink">Mid</strong></li>
+<li><a href="/wiki/Rear-engine_design" title="Rear-engine design">Rear</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Automobile_layout" title="Automobile layout">Layout</a> <span style="font-weight:normal;">(engine&#160;/ drive)</span></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Front-engine,_front-wheel-drive_layout" title="Front-engine, front-wheel-drive layout">Front&#160;/ front</a>&#160;</li>
+<li>&#160;<a href="/wiki/Front_mid-engine,_front-wheel-drive_layout" title="Front mid-engine, front-wheel-drive layout">Front mid&#160;/ front</a>&#160;</li>
+<li>&#160;<a href="/wiki/Rear-engine,_front-wheel-drive_layout" title="Rear-engine, front-wheel-drive layout">Rear&#160;/ front</a>&#160;</li>
+<li>&#160;<a href="/wiki/Front-engine,_rear-wheel-drive_layout" title="Front-engine, rear-wheel-drive layout">Front&#160;/ rear</a>&#160;</li>
+<li>&#160;<a href="/wiki/Rear_mid-engine,_rear-wheel-drive_layout" title="Rear mid-engine, rear-wheel-drive layout">Rear mid&#160;/ rear</a>&#160;</li>
+<li>&#160;<a href="/wiki/Rear-engine,_rear-wheel-drive_layout" title="Rear-engine, rear-wheel-drive layout">Rear&#160;/ rear</a>&#160;</li>
+<li>&#160;<a href="/wiki/Front-engine,_four-wheel-drive_layout" title="Front-engine, four-wheel-drive layout">Front&#160;/ four-wheel</a>&#160;</li>
+<li>&#160;<a href="/wiki/Mid-engine,_four-wheel-drive_layout" title="Mid-engine, four-wheel-drive layout">Mid&#160;/ four-wheel</a>&#160;</li>
+<li>&#160;<a href="/wiki/Rear-engine,_four-wheel-drive_layout" title="Rear-engine, four-wheel-drive layout">Rear&#160;/ four-wheel</a>&#160;</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Engine_configuration" title="Engine configuration">Engine configuration</a><br />
+<span style="font-weight:normal;">(<a href="/wiki/Internal_combustion_engine" title="Internal combustion engine">internal combustion</a>)</span></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Flat_engine" title="Flat engine">Boxer</a></li>
+<li><a href="/wiki/Flat_engine" title="Flat engine">Flat</a></li>
+<li><a href="/wiki/Four-stroke_engine" title="Four-stroke engine">Four-stroke</a></li>
+<li><a href="/wiki/H_engine" title="H engine">H-block</a></li>
+<li><a href="/wiki/Straight_engine" title="Straight engine">Inline</a></li>
+<li><a href="/wiki/Reciprocating_engine" title="Reciprocating engine">Reciprocating</a></li>
+<li><a href="/wiki/Single-cylinder_engine" title="Single-cylinder engine">Single-cylinder</a></li>
+<li><a href="/wiki/Straight_engine" title="Straight engine">Straight</a></li>
+<li><a href="/wiki/Two-stroke_engine" title="Two-stroke engine">Two-stroke</a></li>
+<li><a href="/wiki/V_engine" title="V engine">V (Vee)</a></li>
+<li><a href="/wiki/W_engine" title="W engine">W engine</a></li>
+<li><a href="/wiki/Wankel_engine" title="Wankel engine">Wankel</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2" style="font-weight:bold;">
+<div>
+<ul>
+<li><a href="/wiki/Portal:Cars" title="Portal:Cars">Portal</a></li>
+<li><a href="/wiki/Category:Automobiles" title="Category:Automobiles">Category</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1284
+Cached time: 20161120060959
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.112 seconds
+Real time usage: 0.166 seconds
+Preprocessor visited node count: 735/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 31065/2097152 bytes
+Template argument size: 1546/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 2/500
+Lua time usage: 0.037/10.000 seconds
+Lua memory usage: 1.63 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  100.967      1 - -total
+ 52.77%   53.280      2 - Template:Citation_needed
+ 40.70%   41.098      2 - Template:Fix
+ 23.90%   24.134      4 - Template:Category_handler
+ 22.00%   22.214      1 - Template:Automobile_configuration
+ 19.46%   19.652      1 - Template:Navbox
+ 14.10%   14.235      2 - Template:Delink
+ 10.26%   10.364      1 - Template:Maincat
+ 10.25%   10.349      5 - Template:Anchor
+  7.78%    7.852      1 - Template:Hatnote
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:924253-0!*!0!!en!4!* and timestamp 20161120060959 and revision id 750515011
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Mid-engine_design&amp;oldid=750515011">https://en.wikipedia.org/w/index.php?title=Mid-engine_design&amp;oldid=750515011</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Mid-engined_vehicles" title="Category:Mid-engined vehicles">Mid-engined vehicles</a></li><li><a href="/wiki/Category:Automobile_layouts" title="Category:Automobile layouts">Automobile layouts</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_September_2011" title="Category:Articles with unsourced statements from September 2011">Articles with unsourced statements from September 2011</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_August_2012" title="Category:Articles with unsourced statements from August 2012">Articles with unsourced statements from August 2012</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Mid-engine+design" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Mid-engine+design" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Mid-engine_design"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Mid-engine_design"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Mid-engine_design" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Mid-engine_design&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Mid-engine_design&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Mid-engine_design" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Mid-engine_design" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Mid-engine_design&amp;oldid=750515011" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Mid-engine_design&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q762891" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Mid-engine_design&amp;id=750515011" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Mid-engine+design">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Mid-engine+design&amp;returnto=Mid-engine+design&amp;oldid=750515011&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Mid-engine_design&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Automobil_s_motorem_uprost%C5%99ed" title="Automobil s motorem uprostřed – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Centermotor" title="Centermotor – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Mittelmotor" title="Mittelmotor – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%85%D9%88%D8%AA%D9%88%D8%B1_%D9%88%D8%B3%D8%B7" title="موتور وسط – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Mesin_tengah" title="Mesin tengah – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Motore_centrale" title="Motore centrale – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%83%E3%83%89%E3%82%B7%E3%83%83%E3%83%97" title="ミッドシップ – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/Mid-engine_design" title="Mid-engine design – Simple English" lang="simple" hreflang="simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Automobil_s_motorom_v_strede" title="Automobil s motorom v strede – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Mittmotor" title="Mittmotor – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q762891#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 20 November 2016, at 06:09.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Mid-engine_design&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":88,"wgHostname":"mw1179"});});</script>
+	</body>
+</html>

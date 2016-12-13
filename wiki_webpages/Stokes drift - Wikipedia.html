@@ -1,0 +1,2258 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Stokes drift - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Stokes_drift","wgTitle":"Stokes drift","wgCurRevisionId":735112962,"wgRevisionId":735112962,"wgArticleId":15344641,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Fluid dynamics","Water waves"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Stokes_drift","wgRelevantArticleId":15344641,"wgRequestId":"WErHWQpAAD0AANPQ17wAAABJ","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q961596","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","ext.math.scripts","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.5"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Stokes_drift"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Stokes_drift&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Stokes_drift&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Stokes_drift"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Stokes_drift rootpage-Stokes_drift skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Stokes drift</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="thumb tright">
+<div class="thumbinner" style="width:352px;"><a href="/wiki/File:Driftwood_Expanse,_Northern_Washington_Coast.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Driftwood_Expanse%2C_Northern_Washington_Coast.png/350px-Driftwood_Expanse%2C_Northern_Washington_Coast.png" width="350" height="263" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Driftwood_Expanse%2C_Northern_Washington_Coast.png/525px-Driftwood_Expanse%2C_Northern_Washington_Coast.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/99/Driftwood_Expanse%2C_Northern_Washington_Coast.png/700px-Driftwood_Expanse%2C_Northern_Washington_Coast.png 2x" data-file-width="800" data-file-height="600" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Driftwood_Expanse,_Northern_Washington_Coast.png" class="internal" title="Enlarge"></a></div>
+An expanse of <a href="/wiki/Driftwood" title="Driftwood">driftwood</a> along the northern <a href="/wiki/Coast" title="Coast">coast</a> of <a href="/wiki/Washington_state" class="mw-redirect" title="Washington state">Washington state</a>. Stokes drift – besides e.g. <a href="/wiki/Ekman_drift" class="mw-redirect" title="Ekman drift">Ekman drift</a> and <a href="/wiki/Geostrophic_current" title="Geostrophic current">geostrophic currents</a> – is one of the relevant processes in the transport of <a href="/wiki/Marine_debris" title="Marine debris">marine debris</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:352px;"><a href="/wiki/File:Deep_water_wave_after_three_periods.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Deep_water_wave_after_three_periods.png/350px-Deep_water_wave_after_three_periods.png" width="350" height="230" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/8/8b/Deep_water_wave_after_three_periods.png 1.5x" data-file-width="390" data-file-height="256" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Deep_water_wave_after_three_periods.png" class="internal" title="Enlarge"></a></div>
+Stokes drift in deep water waves, with a <a href="/wiki/Wave_length" class="mw-redirect" title="Wave length">wave length</a> of about twice the water depth. Click <a href="/wiki/File:Deep_water_wave.gif" title="File:Deep water wave.gif">here</a> for an animation (4.15 MB).<br />
+<i>Description (also of the animation)</i>:<br />
+The red circles are the present positions of massless particles, moving with the <a href="/wiki/Flow_velocity" title="Flow velocity">flow velocity</a>. The light-blue line gives the <a href="/wiki/Path_(topology)" title="Path (topology)">path</a> of these particles, and the light-blue circles the particle position after each <a href="/wiki/Wave_period" class="mw-redirect" title="Wave period">wave period</a>. The white dots are fluid particles, also followed in time. In the case shown here, the <a href="/wiki/Mean" title="Mean">mean</a> Eulerian horizontal velocity below the wave <a href="/wiki/Trough_(physics)" class="mw-redirect" title="Trough (physics)">trough</a> is zero.<br />
+Observe that the <a href="/wiki/Wave_period" class="mw-redirect" title="Wave period">wave period</a>, experienced by a fluid particle near the <a href="/wiki/Free_surface" title="Free surface">free surface</a>, is different from the <a href="/wiki/Wave_period" class="mw-redirect" title="Wave period">wave period</a> at a fixed horizontal position (as indicated by the light-blue circles). This is due to the <a href="/wiki/Doppler_shift" class="mw-redirect" title="Doppler shift">Doppler shift</a>.</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:352px;"><a href="/wiki/File:Shallow_water_wave_after_three_wave_periods.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Shallow_water_wave_after_three_wave_periods.gif/350px-Shallow_water_wave_after_three_wave_periods.gif" width="350" height="53" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/3/33/Shallow_water_wave_after_three_wave_periods.gif 1.5x" data-file-width="466" data-file-height="70" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Shallow_water_wave_after_three_wave_periods.gif" class="internal" title="Enlarge"></a></div>
+Stokes drift in shallow <a href="/wiki/Water_waves" class="mw-redirect" title="Water waves">water waves</a>, with a <a href="/wiki/Wave_length" class="mw-redirect" title="Wave length">wave length</a> much longer than the water depth. Click <a href="/wiki/File:Shallow_water_wave.gif" title="File:Shallow water wave.gif">here</a> for an animation (1.29 MB).<br />
+<i>Description (also of the animation)</i>:<br />
+The red circles are the present positions of massless particles, moving with the <a href="/wiki/Flow_velocity" title="Flow velocity">flow velocity</a>. The light-blue line gives the <a href="/wiki/Path_(topology)" title="Path (topology)">path</a> of these particles, and the light-blue circles the particle position after each <a href="/wiki/Wave_period" class="mw-redirect" title="Wave period">wave period</a>. The white dots are fluid particles, also followed in time. In the case shown here, the <a href="/wiki/Mean" title="Mean">mean</a> Eulerian horizontal velocity below the wave <a href="/wiki/Trough_(physics)" class="mw-redirect" title="Trough (physics)">trough</a> is zero.<br />
+Observe that the <a href="/wiki/Wave_period" class="mw-redirect" title="Wave period">wave period</a>, experienced by a fluid particle near the <a href="/wiki/Free_surface" title="Free surface">free surface</a>, is different from the <a href="/wiki/Wave_period" class="mw-redirect" title="Wave period">wave period</a> at a fixed horizontal position (as indicated by the light-blue circles). This is due to the <a href="/wiki/Doppler_shift" class="mw-redirect" title="Doppler shift">Doppler shift</a>.</div>
+</div>
+</div>
+<p>For a pure <a href="/wiki/Wave" title="Wave">wave</a> <a href="/wiki/Motion_(physics)" title="Motion (physics)">motion</a> in <a href="/wiki/Fluid_dynamics" title="Fluid dynamics">fluid dynamics</a>, the <b>Stokes drift velocity</b> is the <a href="/wiki/Average" title="Average">average</a> <a href="/wiki/Velocity" title="Velocity">velocity</a> when following a specific <a href="/wiki/Fluid" title="Fluid">fluid</a> parcel as it travels with the <a href="/wiki/Fluid_flow" class="mw-redirect" title="Fluid flow">fluid flow</a>. For instance, a particle floating at the <a href="/wiki/Free_surface" title="Free surface">free surface</a> of <a href="/wiki/Water_waves" class="mw-redirect" title="Water waves">water waves</a>, experiences a net Stokes drift velocity in the direction of <a href="/wiki/Wave_propagation" title="Wave propagation">wave propagation</a>.</p>
+<p>More generally, the Stokes drift velocity is the difference between the <a href="/wiki/Average" title="Average">average</a> <a href="/wiki/Lagrangian_and_Eulerian_coordinates" class="mw-redirect" title="Lagrangian and Eulerian coordinates">Lagrangian</a> <a href="/wiki/Flow_velocity" title="Flow velocity">flow velocity</a> of a fluid parcel, and the average <a href="/wiki/Lagrangian_and_Eulerian_coordinates" class="mw-redirect" title="Lagrangian and Eulerian coordinates">Eulerian</a> <a href="/wiki/Flow_velocity" title="Flow velocity">flow velocity</a> of the <a href="/wiki/Fluid" title="Fluid">fluid</a> at a fixed position. This <a href="/wiki/Nonlinear" class="mw-redirect" title="Nonlinear">nonlinear</a> phenomenon is named after <a href="/wiki/George_Gabriel_Stokes" class="mw-redirect" title="George Gabriel Stokes">George Gabriel Stokes</a>, who derived expressions for this drift in <a href="#Stokes1847">his 1847 study</a> of <a href="/wiki/Water_waves" class="mw-redirect" title="Water waves">water waves</a>.</p>
+<p>The <b>Stokes drift</b> is the difference in end positions, after a predefined amount of time (usually one <a href="/wiki/Wave_period" class="mw-redirect" title="Wave period">wave period</a>), as derived from a description in the <a href="/wiki/Lagrangian_and_Eulerian_coordinates" class="mw-redirect" title="Lagrangian and Eulerian coordinates">Lagrangian and Eulerian coordinates</a>. The end position in the <a href="/wiki/Lagrangian_and_Eulerian_coordinates" class="mw-redirect" title="Lagrangian and Eulerian coordinates">Lagrangian description</a> is obtained by following a specific fluid parcel during the time interval. The corresponding end position in the <a href="/wiki/Lagrangian_and_Eulerian_coordinates" class="mw-redirect" title="Lagrangian and Eulerian coordinates">Eulerian description</a> is obtained by integrating the <a href="/wiki/Flow_velocity" title="Flow velocity">flow velocity</a> at a fixed position—equal to the initial position in the Lagrangian description—during the same time interval.</p>
+<p>The Stokes drift velocity equals the Stokes drift divided by the considered time interval. Often, the Stokes drift velocity is loosely referred to as Stokes drift. Stokes drift may occur in all instances of oscillatory flow which are <a href="/wiki/Inhomogeneous" class="mw-redirect" title="Inhomogeneous">inhomogeneous</a> in space. For instance in <a href="/wiki/Water_waves" class="mw-redirect" title="Water waves">water waves</a>, <a href="/wiki/Tide" title="Tide">tides</a> and <a href="/wiki/Atmospheric_waves" class="mw-redirect" title="Atmospheric waves">atmospheric waves</a>.</p>
+<p>In the <a href="/wiki/Lagrangian_and_Eulerian_coordinates" class="mw-redirect" title="Lagrangian and Eulerian coordinates">Lagrangian description</a>, fluid parcels may drift far from their initial positions. As a result, the unambiguous definition of an <a href="/wiki/Average" title="Average">average</a> Lagrangian velocity and Stokes drift velocity, which can be attributed to a certain fixed position, is by no means a trivial task. However, such an unambiguous description is provided by the <i><a href="/wiki/Generalized_Lagrangian_Mean" class="mw-redirect" title="Generalized Lagrangian Mean">Generalized Lagrangian Mean</a></i> (GLM) theory of <a href="#Andrews-McIntyre1978">Andrews and McIntyre in 1978</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<p>The Stokes drift is important for the <a href="/wiki/Mass_transfer" title="Mass transfer">mass transfer</a> of all kind of materials and organisms by oscillatory flows. Further the Stokes drift is important for the generation of <a href="/wiki/Langmuir_circulation" title="Langmuir circulation">Langmuir circulations</a>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> For <a href="/wiki/Nonlinear" class="mw-redirect" title="Nonlinear">nonlinear</a> and <a href="/wiki/Periodic_function" title="Periodic function">periodic</a> water waves, accurate results on the Stokes drift have been computed and tabulated.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Mathematical_description"><span class="tocnumber">1</span> <span class="toctext">Mathematical description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Example:_A_one-dimensional_compressible_flow"><span class="tocnumber">2</span> <span class="toctext">Example: A one-dimensional compressible flow</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Example:_Deep_water_waves"><span class="tocnumber">3</span> <span class="toctext">Example: Deep water waves</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Derivation"><span class="tocnumber">3.1</span> <span class="toctext">Derivation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Historical"><span class="tocnumber">5.1</span> <span class="toctext">Historical</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Other"><span class="tocnumber">5.2</span> <span class="toctext">Other</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Notes"><span class="tocnumber">6</span> <span class="toctext">Notes</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Mathematical_description">Mathematical description</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stokes_drift&amp;action=edit&amp;section=1" title="Edit section: Mathematical description">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/Lagrangian_and_Eulerian_coordinates" class="mw-redirect" title="Lagrangian and Eulerian coordinates">Lagrangian motion</a> of a fluid parcel with <a href="/wiki/Position_vector" class="mw-redirect" title="Position vector">position vector</a> <i>x = <b>ξ</b>(<b>α</b>,t)</i> in the Eulerian coordinates is given by:<sup id="cite_ref-Phil1977p43_5-0" class="reference"><a href="#cite_note-Phil1977p43-5">[5]</a></sup></p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi mathvariant="bold-italic">&#x03BE;<!-- ξ --></mi>
+              <mo>&#x02D9;<!-- ˙ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold-italic">&#x03BE;<!-- ξ --></mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold-italic">u</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold-italic">&#x03BE;<!-- ξ --></mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\dot {\boldsymbol {\xi }}}\,=\,{\frac {\partial {\boldsymbol {\xi }}}{\partial t}}\,=\,{\boldsymbol {u}}({\boldsymbol {\xi }},t),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ee28e9ca161844035b16a6b7e3e2bb044c7642ab" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:19.769ex; height:5.676ex;" alt="{\dot  {{\boldsymbol  {\xi }}}}\,=\,{\frac  {\partial {\boldsymbol  {\xi }}}{\partial t}}\,=\,{\boldsymbol  {u}}({\boldsymbol  {\xi }},t)," /></span></dd>
+</dl>
+<p>where <i>∂<b>ξ</b> / ∂t</i> is the <a href="/wiki/Partial_derivative" title="Partial derivative">partial derivative</a> of <i><b>ξ</b>(<b>α</b>,t)</i> with respect to <i>t</i>, and</p>
+<dl>
+<dd><i><b>ξ</b>(<b>α</b>,t)</i> is the Lagrangian <a href="/wiki/Position_vector" class="mw-redirect" title="Position vector">position vector</a> of a fluid parcel, in meters,</dd>
+<dd><i><b>u</b>(<b>x</b>,t)</i> is the Eulerian <a href="/wiki/Velocity" title="Velocity">velocity</a>, in meters per <a href="/wiki/Second" title="Second">second</a>,</dd>
+<dd><i><b>x</b></i> is the <a href="/wiki/Position_vector" class="mw-redirect" title="Position vector">position vector</a> in the <a href="/wiki/Lagrangian_and_Eulerian_coordinates" class="mw-redirect" title="Lagrangian and Eulerian coordinates">Eulerian coordinate system</a>, in meters,</dd>
+<dd><i><b>α</b></i> is the <a href="/wiki/Position_vector" class="mw-redirect" title="Position vector">position vector</a> in the <a href="/wiki/Lagrangian_and_Eulerian_coordinates" class="mw-redirect" title="Lagrangian and Eulerian coordinates">Lagrangian coordinate system</a>, in meters,</dd>
+<dd><i>t</i> is the <a href="/wiki/Time" title="Time">time</a>, in <a href="/wiki/Second" title="Second">seconds</a>.</dd>
+</dl>
+<p>Often, the Lagrangian coordinates <i><b>α</b></i> are chosen to coincide with the Eulerian coordinates <i><b>x</b></i> at the initial time <i>t = t<sub>0</sub></i>&#160;:<sup id="cite_ref-Phil1977p43_5-1" class="reference"><a href="#cite_note-Phil1977p43-5">[5]</a></sup></p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold-italic">&#x03BE;<!-- ξ --></mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold-italic">&#x03B1;<!-- α --></mi>
+        </mrow>
+        <mo>,</mo>
+        <msub>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mspace width="thinmathspace" />
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold-italic">&#x03B1;<!-- α --></mi>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\boldsymbol {\xi }}({\boldsymbol {\alpha }},t_{0})\,=\,{\boldsymbol {\alpha }}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d7badb922ad2141eca31d2b9ebfad93691d8d1f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:14.076ex; height:2.843ex;" alt="{\boldsymbol  {\xi }}({\boldsymbol  {\alpha }},t_{0})\,=\,{\boldsymbol  {\alpha }}." /></span></dd>
+</dl>
+<p>But also other ways of <a href="/wiki/Label" title="Label">labeling</a> the fluid parcels are possible.</p>
+<p>If the <a href="/wiki/Average" title="Average">average</a> value of a quantity is denoted by an overbar, then the average Eulerian velocity vector <i><b>ū</b><sub>E</sub></i> and average Lagrangian velocity vector <i><b>ū</b><sub>L</sub></i> are:</p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <mi mathvariant="bold-italic">u</mi>
+                      <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                    </mover>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>E</mi>
+                  </mrow>
+                </msub>
+                <mspace width="thinmathspace" />
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold-italic">u</mi>
+                      </mrow>
+                      <mo stretchy="false">(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold-italic">x</mi>
+                      </mrow>
+                      <mo>,</mo>
+                      <mi>t</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <mi mathvariant="bold-italic">u</mi>
+                      <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                    </mover>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>L</mi>
+                  </mrow>
+                </msub>
+                <mspace width="thinmathspace" />
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mover>
+                            <mi mathvariant="bold-italic">&#x03BE;<!-- ξ --></mi>
+                            <mo>&#x02D9;<!-- ˙ --></mo>
+                          </mover>
+                        </mrow>
+                      </mrow>
+                      <mo stretchy="false">(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold-italic">&#x03B1;<!-- α --></mi>
+                      </mrow>
+                      <mo>,</mo>
+                      <mi>t</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mspace width="thinmathspace" />
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi mathvariant="bold-italic">&#x03BE;<!-- ξ --></mi>
+                            </mrow>
+                            <mo stretchy="false">(</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi mathvariant="bold-italic">&#x03B1;<!-- α --></mi>
+                            </mrow>
+                            <mo>,</mo>
+                            <mi>t</mi>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>t</mi>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mspace width="thinmathspace" />
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold-italic">u</mi>
+                      </mrow>
+                      <mo stretchy="false">(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold-italic">&#x03BE;<!-- ξ --></mi>
+                      </mrow>
+                      <mo stretchy="false">(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold-italic">&#x03B1;<!-- α --></mi>
+                      </mrow>
+                      <mo>,</mo>
+                      <mi>t</mi>
+                      <mo stretchy="false">)</mo>
+                      <mo>,</mo>
+                      <mi>t</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\overline {\boldsymbol {u}}}_{E}\,&amp;=\,{\overline {{\boldsymbol {u}}({\boldsymbol {x}},t)}},\\{\overline {\boldsymbol {u}}}_{L}\,&amp;=\,{\overline {{\dot {\boldsymbol {\xi }}}({\boldsymbol {\alpha }},t)}}\,=\,{\overline {\left({\frac {\partial {\boldsymbol {\xi }}({\boldsymbol {\alpha }},t)}{\partial t}}\right)}}\,=\,{\overline {{\boldsymbol {u}}({\boldsymbol {\xi }}({\boldsymbol {\alpha }},t),t)}}.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a75c900e295ec96628547a876d7dcc7709af5fb9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.659ex; margin-bottom: -0.179ex; width:47.905ex; height:10.843ex;" alt="{\begin{aligned}\overline {{\boldsymbol  {u}}}_{E}\,&amp;=\,\overline {{\boldsymbol  {u}}({\boldsymbol  {x}},t)},\\\overline {{\boldsymbol  {u}}}_{L}\,&amp;=\,\overline {{\dot  {{\boldsymbol  {\xi }}}}({\boldsymbol  {\alpha }},t)}\,=\,\overline {\left({\frac  {\partial {\boldsymbol  {\xi }}({\boldsymbol  {\alpha }},t)}{\partial t}}\right)}\,=\,\overline {{\boldsymbol  {u}}({\boldsymbol  {\xi }}({\boldsymbol  {\alpha }},t),t)}.\end{aligned}}" /></span></dd>
+</dl>
+<p>Different definitions of the <a href="/wiki/Average" title="Average">average</a> may be used, depending on the subject of study, see <a href="/wiki/Ergodic_theory#Ergodic_theorems" title="Ergodic theory">ergodic theory</a>:</p>
+<ul>
+<li><a href="/wiki/Time" title="Time">time</a> average,</li>
+<li><a href="/wiki/Space" title="Space">space</a> average,</li>
+<li><a href="/wiki/Ensemble_average" class="mw-redirect" title="Ensemble average">ensemble average</a> and</li>
+<li><a href="/wiki/Phase_(waves)" title="Phase (waves)">phase</a> average.</li>
+</ul>
+<p>Now, the Stokes drift velocity <i><b>ū</b><sub>S</sub></i> equals<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi mathvariant="bold-italic">u</mi>
+              <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi mathvariant="bold-italic">u</mi>
+              <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>L</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mo>&#x2212;<!-- − --></mo>
+        <mspace width="thinmathspace" />
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi mathvariant="bold-italic">u</mi>
+              <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>E</mi>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {\boldsymbol {u}}}_{S}\,=\,{\overline {\boldsymbol {u}}}_{L}\,-\,{\overline {\boldsymbol {u}}}_{E}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9d00ecbf41b454e1c5d61bd1bf87915bf20fb30" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:17.444ex; height:2.843ex;" alt="\overline {{\boldsymbol  {u}}}_{S}\,=\,\overline {{\boldsymbol  {u}}}_{L}\,-\,\overline {{\boldsymbol  {u}}}_{E}." /></span></dd>
+</dl>
+<p>In many situations, the <a href="/wiki/Map_(mathematics)" title="Map (mathematics)">mapping</a> of average quantities from some Eulerian position <i><b>x</b></i> to a corresponding Lagrangian position <i><b>α</b></i> forms a problem. Since a fluid parcel with label <i><b>α</b></i> traverses along a <a href="/wiki/Path_(topology)" title="Path (topology)">path</a> of many different Eulerian positions <i><b>x</b></i>, it is not possible to assign <i><b>α</b></i> to a unique <i><b>x</b></i>. A mathematically sound basis for an unambiguous mapping between average Lagrangian and Eulerian quantities is provided by the theory of the <i>Generalized Lagrangian Mean</i> (GLM) by <a href="#Andrews-McIntyre1978">Andrews and McIntyre (1978)</a>.</p>
+<h2><span class="mw-headline" id="Example:_A_one-dimensional_compressible_flow">Example: A one-dimensional compressible flow</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stokes_drift&amp;action=edit&amp;section=2" title="Edit section: Example: A one-dimensional compressible flow">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For the Eulerian velocity as a monochromatic wave of any nature in a continuous medium: <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>u</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>u</mi>
+              <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow>
+          <mo>(</mo>
+          <mi>k</mi>
+          <mi>x</mi>
+          <mo>&#x2212;<!-- − --></mo>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mi>t</mi>
+          <mo>)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u={\hat {u}}\sin \left(kx-\omega t\right),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6da41f2022833009c59a0ceb68609f14150cbe26" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.27ex; height:2.843ex;" alt="u={\hat  {u}}\sin \left(kx-\omega t\right)," /></span> one readily obtains by the <a href="/wiki/Perturbation_theory" title="Perturbation theory">perturbation theory</a> – with <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>u</mi>
+              <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>&#x03C9;<!-- ω --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k{\hat {u}}/\omega }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/98d12ecacc477011e65a892da6a2e4b477306e18" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:5.191ex; height:2.843ex;" alt="k{\hat  {u}}/\omega " /></span> as a small parameter – for the particle position <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>=</mo>
+        <mi>&#x03BE;<!-- ξ --></mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>&#x03BE;<!-- ξ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>:</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x=\xi (\xi _{0},t):}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74bb0ebfbff0b55559d5a41c4a75cc79781188a4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.607ex; height:2.843ex;" alt="x=\xi (\xi _{0},t):" /></span></p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>&#x03BE;<!-- ξ --></mi>
+              <mo>&#x02D9;<!-- ˙ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>u</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>&#x03BE;<!-- ξ --></mi>
+        </mrow>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>u</mi>
+              <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mi>sin</mi>
+        <mspace width="thinmathspace" />
+        <mrow>
+          <mo>(</mo>
+          <mi>k</mi>
+          <mi>&#x03BE;<!-- ξ --></mi>
+          <mo>&#x2212;<!-- − --></mo>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mi>t</mi>
+          <mo>)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\dot {\xi }}=\,{u}({\xi },t)={\hat {u}}\sin \,\left(k\xi -\omega t\right),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7d243c6f8a743c58cdc24b00f2794fd92915eac3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:29.831ex; height:3.343ex;" alt="{\dot  {{\xi }}}=\,{u}({\xi },t)={\hat  {u}}\sin \,\left(k\xi -\omega t\right)," /></span></dd>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BE;<!-- ξ --></mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>&#x03BE;<!-- ξ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2248;<!-- ≈ --></mo>
+        <msub>
+          <mi>&#x03BE;<!-- ξ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <mi>u</mi>
+                <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+              </mover>
+            </mrow>
+            <mi>&#x03C9;<!-- ω --></mi>
+          </mfrac>
+        </mrow>
+        <mi>cos</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <msub>
+          <mi>&#x03BE;<!-- ξ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>&#x03C9;<!-- ω --></mi>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>k</mi>
+              <msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <mi>u</mi>
+                      <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+                    </mover>
+                  </mrow>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <msup>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mn>2</mn>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <msub>
+          <mi>&#x03BE;<!-- ξ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>&#x03C9;<!-- ω --></mi>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>k</mi>
+              <msup>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <mi>u</mi>
+                      <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+                    </mover>
+                  </mrow>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mi>&#x03C9;<!-- ω --></mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mi>t</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \xi (\xi _{0},t)\approx \xi _{0}+{\frac {\hat {u}}{\omega }}\cos(k\xi _{0}-\omega t)+{\frac {k{\hat {u}}^{2}}{2\omega ^{2}}}\sin 2(k\xi _{0}-\omega t)+{\frac {k{\hat {u}}^{2}}{2\omega }}t.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8f274689031d3cea778e2d761e5df0c7cadbdeb0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:62.357ex; height:6.176ex;" alt="\xi (\xi _{0},t)\approx \xi _{0}+{\frac  {{\hat  {u}}}{\omega }}\cos(k\xi _{0}-\omega t)+{\frac  {k{\hat  {u}}^{2}}{2\omega ^{2}}}\sin 2(k\xi _{0}-\omega t)+{\frac  {k{\hat  {u}}^{2}}{2\omega }}t." /></span></dd>
+</dl>
+<p>Here the last term describes the Stokes drift <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="0">
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+          </mstyle>
+        </mrow>
+        <mi>k</mi>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <mi>u</mi>
+                <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+              </mover>
+            </mrow>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>&#x03C9;<!-- ω --></mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\tfrac {1}{2}}k{\hat {u}}^{2}/\omega .}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/817e780c5dc724494417a92cbffa64331f3d297e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.171ex; width:8.575ex; height:3.676ex;" alt="{\tfrac  12}k{\hat  {u}}^{2}/\omega ." /></span><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<h2><span class="mw-headline" id="Example:_Deep_water_waves">Example: Deep water waves</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stokes_drift&amp;action=edit&amp;section=3" title="Edit section: Example: Deep water waves">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:402px;"><a href="/wiki/File:Vitesses_derive.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Vitesses_derive.png/400px-Vitesses_derive.png" width="400" height="213" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Vitesses_derive.png/600px-Vitesses_derive.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/67/Vitesses_derive.png/800px-Vitesses_derive.png 2x" data-file-width="891" data-file-height="474" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Vitesses_derive.png" class="internal" title="Enlarge"></a></div>
+Stokes drift under periodic waves in deep water, for a <a href="/wiki/Period_(physics)" class="mw-redirect" title="Period (physics)">period</a> <i>T</i>&#160;=&#160;5&#160;s and a mean water depth of 25&#160;m. <i>Left</i>: instantaneous horizontal <a href="/wiki/Flow_velocity" title="Flow velocity">flow velocities</a>. <i>Right</i>: <a href="/wiki/Average" title="Average">average</a> flow velocities. Black solid line: average Eulerian velocity; red dashed line: average Lagrangian velocity, as derived from the <i><a href="/wiki/Generalized_Lagrangian_Mean" class="mw-redirect" title="Generalized Lagrangian Mean">Generalized Lagrangian Mean</a></i> (GLM).</div>
+</div>
+</div>
+<div role="note" class="hatnote">See also: <a href="/wiki/Airy_wave_theory" title="Airy wave theory">Airy wave theory</a> and <a href="/wiki/Stokes_wave" title="Stokes wave">Stokes wave</a></div>
+<p>The Stokes drift was formulated for <a href="/wiki/Water_waves" class="mw-redirect" title="Water waves">water waves</a> by <a href="/wiki/George_Gabriel_Stokes" class="mw-redirect" title="George Gabriel Stokes">George Gabriel Stokes</a> in 1847. For simplicity, the case of <a href="/wiki/Infinity" title="Infinity">infinite</a>-deep water is considered, with <a href="/wiki/Linear" class="mw-redirect" title="Linear">linear</a> <a href="/wiki/Wave_propagation" title="Wave propagation">wave propagation</a> of a <a href="/wiki/Sinusoidal" class="mw-redirect" title="Sinusoidal">sinusoidal</a> wave on the <a href="/wiki/Free_surface" title="Free surface">free surface</a> of a fluid layer:<sup id="cite_ref-Phil1977p37_8-0" class="reference"><a href="#cite_note-Phil1977p37-8">[8]</a></sup></p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B7;<!-- η --></mi>
+        <mspace width="thinmathspace" />
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+        <mi>a</mi>
+        <mspace width="thinmathspace" />
+        <mi>cos</mi>
+        <mspace width="thinmathspace" />
+        <mrow>
+          <mo>(</mo>
+          <mi>k</mi>
+          <mi>x</mi>
+          <mo>&#x2212;<!-- − --></mo>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mi>t</mi>
+          <mo>)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \eta \,=\,a\,\cos \,\left(kx-\omega t\right),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/332601b943b5274e31c59d4ddcc19d1fd86265cf" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.588ex; height:2.843ex;" alt="\eta \,=\,a\,\cos \,\left(kx-\omega t\right)," /></span></dd>
+</dl>
+<p>where</p>
+<dl>
+<dd><i>η</i> is the <a href="/wiki/Elevation" title="Elevation">elevation</a> of the <a href="/wiki/Free_surface" title="Free surface">free surface</a> in the <i>z</i>-direction (meters),</dd>
+<dd><i>a</i> is the wave <a href="/wiki/Amplitude" title="Amplitude">amplitude</a> (meters),</dd>
+<dd><i>k</i> is the <a href="/wiki/Wave_number" class="mw-redirect" title="Wave number">wave number</a>: <i>k = 2π / λ</i> (<a href="/wiki/Radian" title="Radian">radians</a> per meter),</dd>
+<dd><i>ω</i> is the <a href="/wiki/Angular_frequency" title="Angular frequency">angular frequency</a>: <i>ω = 2π / T</i> (<a href="/wiki/Radian" title="Radian">radians</a> per <a href="/wiki/Second" title="Second">second</a>),</dd>
+<dd><i>x</i> is the horizontal <a href="/wiki/Coordinate" class="mw-redirect" title="Coordinate">coordinate</a> and the wave propagation direction (meters),</dd>
+<dd><i>z</i> is the vertical <a href="/wiki/Coordinate" class="mw-redirect" title="Coordinate">coordinate</a>, with the positive <i>z</i> direction pointing out of the fluid layer (meters),</dd>
+<dd><i>λ</i> is the <a href="/wiki/Wave_length" class="mw-redirect" title="Wave length">wave length</a> (meters), and</dd>
+<dd><i>T</i> is the <a href="/wiki/Wave_period" class="mw-redirect" title="Wave period">wave period</a> (<a href="/wiki/Second" title="Second">seconds</a>).</dd>
+</dl>
+<p>As derived below, the horizontal component <i>ū<sub>S</sub></i>(<i>z</i>) of the Stokes drift velocity for deep-water waves is approximately:<sup id="cite_ref-Phil1977p44_9-0" class="reference"><a href="#cite_note-Phil1977p44-9">[9]</a></sup></p>
+<dl>
+<dd>
+<table cellpadding="5" style="border:2px solid #50C878;background: #ECFCF4; text-align: center;">
+<tr>
+<td>
+<p><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>u</mi>
+              <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>S</mi>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mo>&#x2248;<!-- ≈ --></mo>
+        <mspace width="thinmathspace" />
+        <mi>&#x03C9;<!-- ω --></mi>
+        <mspace width="thinmathspace" />
+        <mi>k</mi>
+        <mspace width="thinmathspace" />
+        <msup>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace" />
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+            <mi>k</mi>
+            <mi>z</mi>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace" />
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mn>4</mn>
+              <msup>
+                <mi>&#x03C0;<!-- π --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+              <mspace width="thinmathspace" />
+              <msup>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+            <mrow>
+              <mi>&#x03BB;<!-- λ --></mi>
+              <mspace width="thinmathspace" />
+              <mi>T</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+            <mi>&#x03C0;<!-- π --></mi>
+            <mspace width="thinmathspace" />
+            <mi>z</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mi>&#x03BB;<!-- λ --></mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\overline {u}}_{S}\,\approx \,\omega \,k\,a^{2}\,{\text{e}}^{2kz}\,=\,{\frac {4\pi ^{2}\,a^{2}}{\lambda \,T}}\,{\text{e}}^{4\pi \,z/\lambda }.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d3411ef7f2bc2413a2300446fe0f7cf6fc915a38" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:34.569ex; height:5.843ex;" alt="\overline {u}_{S}\,\approx \,\omega \,k\,a^{2}\,{\text{e}}^{{2kz}}\,=\,{\frac  {4\pi ^{2}\,a^{2}}{\lambda \,T}}\,{\text{e}}^{{4\pi \,z/\lambda }}." /></span></p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<p>As can be seen, the Stokes drift velocity <i>ū<sub>S</sub></i> is a <a href="/wiki/Nonlinear" class="mw-redirect" title="Nonlinear">nonlinear</a> quantity in terms of the wave <a href="/wiki/Amplitude" title="Amplitude">amplitude</a> <i>a</i>. Further, the Stokes drift velocity decays exponentially with depth: at a depth of a quart wavelength, <i>z = -¼ λ</i>, it is about 4% of its value at the mean <a href="/wiki/Free_surface" title="Free surface">free surface</a>, <i>z = 0</i>.</p>
+<h3><span class="mw-headline" id="Derivation">Derivation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stokes_drift&amp;action=edit&amp;section=4" title="Edit section: Derivation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>It is assumed that the waves are of <a href="/wiki/Infinitesimal" title="Infinitesimal">infinitesimal</a> <a href="/wiki/Amplitude" title="Amplitude">amplitude</a> and the <a href="/wiki/Free_surface" title="Free surface">free surface</a> oscillates around the <a href="/wiki/Mean" title="Mean">mean</a> level <i>z = 0</i>. The waves propagate under the action of gravity, with a <a href="https://en.wiktionary.org/wiki/constant" class="extiw" title="wikt:constant">constant</a> <a href="/wiki/Acceleration" title="Acceleration">acceleration</a> <a href="/wiki/Vector_(geometric)" class="mw-redirect" title="Vector (geometric)">vector</a> by <a href="/wiki/Gravity" title="Gravity">gravity</a> (pointing downward in the negative <i>z</i>-direction). Further the fluid is assumed to be <a href="/wiki/Inviscid" class="mw-redirect" title="Inviscid">inviscid</a><sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> and <a href="/wiki/Incompressible" class="mw-redirect" title="Incompressible">incompressible</a>, with a <a href="https://en.wiktionary.org/wiki/constant" class="extiw" title="wikt:constant">constant</a> <a href="/wiki/Mass_density" class="mw-redirect" title="Mass density">mass density</a>. The fluid <a href="/wiki/Flow_(mathematics)" title="Flow (mathematics)">flow</a> is <a href="/wiki/Irrotational" class="mw-redirect" title="Irrotational">irrotational</a>. At infinite depth, the fluid is taken to be at <a href="/wiki/Rest_(physics)" title="Rest (physics)">rest</a>.</p>
+<p>Now the <a href="/wiki/Flow_(mathematics)" title="Flow (mathematics)">flow</a> may be represented by a <a href="/wiki/Velocity_potential" title="Velocity potential">velocity potential</a> <i>φ</i>, satisfying the <a href="/wiki/Laplace_equation" class="mw-redirect" title="Laplace equation">Laplace equation</a> and<sup id="cite_ref-Phil1977p37_8-1" class="reference"><a href="#cite_note-Phil1977p37-8">[8]</a></sup></p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C6;<!-- φ --></mi>
+        <mspace width="thinmathspace" />
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>&#x03C9;<!-- ω --></mi>
+            <mi>k</mi>
+          </mfrac>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>a</mi>
+        <mspace width="thickmathspace" />
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mi>z</mi>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace" />
+        <mi>sin</mi>
+        <mspace width="thinmathspace" />
+        <mrow>
+          <mo>(</mo>
+          <mi>k</mi>
+          <mi>x</mi>
+          <mo>&#x2212;<!-- − --></mo>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mi>t</mi>
+          <mo>)</mo>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \varphi \,=\,{\frac {\omega }{k}}\,a\;{\text{e}}^{kz}\,\sin \,\left(kx-\omega t\right).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/31912e5a8238b559154b69856f37dbca80560606" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:27.923ex; height:4.843ex;" alt="\varphi \,=\,{\frac  {\omega }{k}}\,a\;{\text{e}}^{{kz}}\,\sin \,\left(kx-\omega t\right)." /></span></dd>
+</dl>
+<p>In order to have <a href="/wiki/Non-trivial" class="mw-redirect" title="Non-trivial">non-trivial</a> solutions for this <a href="/wiki/Eigenvalue" class="mw-redirect" title="Eigenvalue">eigenvalue</a> problem, the <a href="/wiki/Wave_length" class="mw-redirect" title="Wave length">wave length</a> and <a href="/wiki/Wave_period" class="mw-redirect" title="Wave period">wave period</a> may not be chosen arbitrarily, but must satisfy the deep-water <a href="/wiki/Dispersion_(water_waves)" title="Dispersion (water waves)">dispersion</a> relation:<sup id="cite_ref-Phil1977p38_11-0" class="reference"><a href="#cite_note-Phil1977p38-11">[11]</a></sup></p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mspace width="thinmathspace" />
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+        <mi>g</mi>
+        <mspace width="thinmathspace" />
+        <mi>k</mi>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega ^{2}\,=\,g\,k.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/55cb2c54f6ff22d2fe0bef562ebfb7c86a2bcc3c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.794ex; height:3.009ex;" alt="\omega ^{2}\,=\,g\,k." /></span></dd>
+</dl>
+<p>with <i>g</i> the <a href="/wiki/Acceleration" title="Acceleration">acceleration</a> by <a href="/wiki/Gravity" title="Gravity">gravity</a> in (<i>m / s<sup>2</sup></i>). Within the framework of <a href="/wiki/Linear" class="mw-redirect" title="Linear">linear</a> theory, the horizontal and vertical components, <i>ξ<sub>x</sub></i> and <i>ξ<sub>z</sub></i> respectively, of the Lagrangian position <i><b>ξ</b></i> are:<sup id="cite_ref-Phil1977p44_9-1" class="reference"><a href="#cite_note-Phil1977p44-9">[9]</a></sup></p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>&#x03BE;<!-- ξ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>x</mi>
+                  </mrow>
+                </msub>
+                <mspace width="thinmathspace" />
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mi>x</mi>
+                <mspace width="thinmathspace" />
+                <mo>+</mo>
+                <mspace width="thinmathspace" />
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>&#x03C6;<!-- φ --></mi>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>x</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mspace width="thickmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>d</mtext>
+                </mrow>
+                <mi>t</mi>
+                <mspace width="thinmathspace" />
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mi>x</mi>
+                <mspace width="thinmathspace" />
+                <mo>&#x2212;<!-- − --></mo>
+                <mspace width="thinmathspace" />
+                <mi>a</mi>
+                <mspace width="thinmathspace" />
+                <msup>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>e</mtext>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mi>z</mi>
+                  </mrow>
+                </msup>
+                <mspace width="thinmathspace" />
+                <mi>sin</mi>
+                <mspace width="thinmathspace" />
+                <mrow>
+                  <mo>(</mo>
+                  <mi>k</mi>
+                  <mi>x</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mi>t</mi>
+                  <mo>)</mo>
+                </mrow>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <msub>
+                  <mi>&#x03BE;<!-- ξ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>z</mi>
+                  </mrow>
+                </msub>
+                <mspace width="thinmathspace" />
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mi>z</mi>
+                <mspace width="thinmathspace" />
+                <mo>+</mo>
+                <mspace width="thinmathspace" />
+                <mo>&#x222B;<!-- ∫ --></mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>&#x03C6;<!-- φ --></mi>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>z</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mspace width="thickmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>d</mtext>
+                </mrow>
+                <mi>t</mi>
+                <mspace width="thinmathspace" />
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mi>z</mi>
+                <mspace width="thinmathspace" />
+                <mo>+</mo>
+                <mspace width="thinmathspace" />
+                <mi>a</mi>
+                <mspace width="thinmathspace" />
+                <msup>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>e</mtext>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>k</mi>
+                    <mi>z</mi>
+                  </mrow>
+                </msup>
+                <mspace width="thinmathspace" />
+                <mi>cos</mi>
+                <mspace width="thinmathspace" />
+                <mrow>
+                  <mo>(</mo>
+                  <mi>k</mi>
+                  <mi>x</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mi>t</mi>
+                  <mo>)</mo>
+                </mrow>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}\xi _{x}\,&amp;=\,x\,+\,\int \,{\frac {\partial \varphi }{\partial x}}\;{\text{d}}t\,=\,x\,-\,a\,{\text{e}}^{kz}\,\sin \,\left(kx-\omega t\right),\\\xi _{z}\,&amp;=\,z\,+\,\int \,{\frac {\partial \varphi }{\partial z}}\;{\text{d}}t\,=\,z\,+\,a\,{\text{e}}^{kz}\,\cos \,\left(kx-\omega t\right).\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8a39fc9157cface5f07ecee77a651372e783063d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.505ex; width:49.701ex; height:12.176ex;" alt="{\begin{aligned}\xi _{x}\,&amp;=\,x\,+\,\int \,{\frac  {\partial \varphi }{\partial x}}\;{\text{d}}t\,=\,x\,-\,a\,{\text{e}}^{{kz}}\,\sin \,\left(kx-\omega t\right),\\\xi _{z}\,&amp;=\,z\,+\,\int \,{\frac  {\partial \varphi }{\partial z}}\;{\text{d}}t\,=\,z\,+\,a\,{\text{e}}^{{kz}}\,\cos \,\left(kx-\omega t\right).\end{aligned}}" /></span></dd>
+</dl>
+<p>The horizontal component <i>ū<sub>S</sub></i> of the Stokes drift velocity is estimated by using a <a href="/wiki/Taylor_expansion" class="mw-redirect" title="Taylor expansion">Taylor expansion</a> around <i><b>x</b></i> of the Eulerian horizontal-velocity component <i>u<sub>x</sub> = ∂ξ<sub>x</sub> / ∂t</i> at the position <i><b>ξ</b></i>&#160;:<sup id="cite_ref-Phil1977p43_5-2" class="reference"><a href="#cite_note-Phil1977p43-5">[5]</a></sup></p>
+<dl>
+<dd><span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <mi>u</mi>
+                      <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                    </mover>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>S</mi>
+                  </mrow>
+                </msub>
+                <mspace width="thinmathspace" />
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <msub>
+                        <mi>u</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>x</mi>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold-italic">&#x03BE;<!-- ξ --></mi>
+                      </mrow>
+                      <mo>,</mo>
+                      <mi>t</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mspace width="thinmathspace" />
+                <mo>&#x2212;<!-- − --></mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <msub>
+                        <mi>u</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>x</mi>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold-italic">x</mi>
+                      </mrow>
+                      <mo>,</mo>
+                      <mi>t</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mspace width="thinmathspace" />
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mo>[</mo>
+                      <msub>
+                        <mi>u</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>x</mi>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold-italic">x</mi>
+                      </mrow>
+                      <mo>,</mo>
+                      <mi>t</mi>
+                      <mo stretchy="false">)</mo>
+                      <mspace width="thinmathspace" />
+                      <mo>+</mo>
+                      <mspace width="thinmathspace" />
+                      <mrow>
+                        <mo>(</mo>
+                        <msub>
+                          <mi>&#x03BE;<!-- ξ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>x</mi>
+                          </mrow>
+                        </msub>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>x</mi>
+                        <mo>)</mo>
+                      </mrow>
+                      <mspace width="thinmathspace" />
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <msub>
+                              <mi>u</mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mi>x</mi>
+                              </mrow>
+                            </msub>
+                            <mo stretchy="false">(</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi mathvariant="bold-italic">x</mi>
+                            </mrow>
+                            <mo>,</mo>
+                            <mi>t</mi>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>x</mi>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <mspace width="thinmathspace" />
+                      <mo>+</mo>
+                      <mspace width="thinmathspace" />
+                      <mrow>
+                        <mo>(</mo>
+                        <msub>
+                          <mi>&#x03BE;<!-- ξ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>z</mi>
+                          </mrow>
+                        </msub>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>z</mi>
+                        <mo>)</mo>
+                      </mrow>
+                      <mspace width="thinmathspace" />
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <msub>
+                              <mi>u</mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mi>x</mi>
+                              </mrow>
+                            </msub>
+                            <mo stretchy="false">(</mo>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi mathvariant="bold-italic">x</mi>
+                            </mrow>
+                            <mo>,</mo>
+                            <mi>t</mi>
+                            <mo stretchy="false">)</mo>
+                          </mrow>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>z</mi>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <mspace width="thinmathspace" />
+                      <mo>+</mo>
+                      <mspace width="thinmathspace" />
+                      <mo>&#x22EF;<!-- ⋯ --></mo>
+                      <mo>]</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mo>&#x2212;<!-- − --></mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <msub>
+                        <mi>u</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>x</mi>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi mathvariant="bold-italic">x</mi>
+                      </mrow>
+                      <mo>,</mo>
+                      <mi>t</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>&#x2248;<!-- ≈ --></mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mrow>
+                        <mo>(</mo>
+                        <msub>
+                          <mi>&#x03BE;<!-- ξ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>x</mi>
+                          </mrow>
+                        </msub>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>x</mi>
+                        <mo>)</mo>
+                      </mrow>
+                      <mspace width="thinmathspace" />
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mrow>
+                            <msup>
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mn>2</mn>
+                              </mrow>
+                            </msup>
+                            <msub>
+                              <mi>&#x03BE;<!-- ξ --></mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mi>x</mi>
+                              </mrow>
+                            </msub>
+                          </mrow>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>x</mi>
+                            <mspace width="thinmathspace" />
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>t</mi>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mspace width="thinmathspace" />
+                <mo>+</mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mrow>
+                        <mo>(</mo>
+                        <msub>
+                          <mi>&#x03BE;<!-- ξ --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>z</mi>
+                          </mrow>
+                        </msub>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>z</mi>
+                        <mo>)</mo>
+                      </mrow>
+                      <mspace width="thinmathspace" />
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mfrac>
+                          <mrow>
+                            <msup>
+                              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mn>2</mn>
+                              </mrow>
+                            </msup>
+                            <msub>
+                              <mi>&#x03BE;<!-- ξ --></mi>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mi>x</mi>
+                              </mrow>
+                            </msub>
+                          </mrow>
+                          <mrow>
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>z</mi>
+                            <mspace width="thinmathspace" />
+                            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                            <mi>t</mi>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo maxsize="2.047em" minsize="2.047em">[</mo>
+                        </mrow>
+                      </mrow>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>a</mi>
+                      <mspace width="thinmathspace" />
+                      <msup>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mtext>e</mtext>
+                        </mrow>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>k</mi>
+                          <mi>z</mi>
+                        </mrow>
+                      </msup>
+                      <mspace width="thinmathspace" />
+                      <mi>sin</mi>
+                      <mspace width="thinmathspace" />
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>k</mi>
+                        <mi>x</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>&#x03C9;<!-- ω --></mi>
+                        <mi>t</mi>
+                        <mo>)</mo>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo maxsize="2.047em" minsize="2.047em">]</mo>
+                        </mrow>
+                      </mrow>
+                      <mspace width="thinmathspace" />
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo maxsize="2.047em" minsize="2.047em">[</mo>
+                        </mrow>
+                      </mrow>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>&#x03C9;<!-- ω --></mi>
+                      <mspace width="thinmathspace" />
+                      <mi>k</mi>
+                      <mspace width="thinmathspace" />
+                      <mi>a</mi>
+                      <mspace width="thinmathspace" />
+                      <msup>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mtext>e</mtext>
+                        </mrow>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>k</mi>
+                          <mi>z</mi>
+                        </mrow>
+                      </msup>
+                      <mspace width="thinmathspace" />
+                      <mi>sin</mi>
+                      <mspace width="thinmathspace" />
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>k</mi>
+                        <mi>x</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>&#x03C9;<!-- ω --></mi>
+                        <mi>t</mi>
+                        <mo>)</mo>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo maxsize="2.047em" minsize="2.047em">]</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mspace width="thinmathspace" />
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>+</mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo maxsize="2.047em" minsize="2.047em">[</mo>
+                        </mrow>
+                      </mrow>
+                      <mi>a</mi>
+                      <mspace width="thinmathspace" />
+                      <msup>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mtext>e</mtext>
+                        </mrow>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>k</mi>
+                          <mi>z</mi>
+                        </mrow>
+                      </msup>
+                      <mspace width="thinmathspace" />
+                      <mi>cos</mi>
+                      <mspace width="thinmathspace" />
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>k</mi>
+                        <mi>x</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>&#x03C9;<!-- ω --></mi>
+                        <mi>t</mi>
+                        <mo>)</mo>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo maxsize="2.047em" minsize="2.047em">]</mo>
+                        </mrow>
+                      </mrow>
+                      <mspace width="thinmathspace" />
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo maxsize="2.047em" minsize="2.047em">[</mo>
+                        </mrow>
+                      </mrow>
+                      <mi>&#x03C9;<!-- ω --></mi>
+                      <mspace width="thinmathspace" />
+                      <mi>k</mi>
+                      <mspace width="thinmathspace" />
+                      <mi>a</mi>
+                      <mspace width="thinmathspace" />
+                      <msup>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mtext>e</mtext>
+                        </mrow>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>k</mi>
+                          <mi>z</mi>
+                        </mrow>
+                      </msup>
+                      <mspace width="thinmathspace" />
+                      <mi>cos</mi>
+                      <mspace width="thinmathspace" />
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>k</mi>
+                        <mi>x</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>&#x03C9;<!-- ω --></mi>
+                        <mi>t</mi>
+                        <mo>)</mo>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo maxsize="2.047em" minsize="2.047em">]</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mspace width="thinmathspace" />
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mrow>
+                      <mi>&#x03C9;<!-- ω --></mi>
+                      <mspace width="thinmathspace" />
+                      <mi>k</mi>
+                      <mspace width="thinmathspace" />
+                      <msup>
+                        <mi>a</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <mspace width="thinmathspace" />
+                      <msup>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mtext>e</mtext>
+                        </mrow>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                          <mi>k</mi>
+                          <mi>z</mi>
+                        </mrow>
+                      </msup>
+                      <mspace width="thinmathspace" />
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo maxsize="2.047em" minsize="2.047em">[</mo>
+                        </mrow>
+                      </mrow>
+                      <msup>
+                        <mi>sin</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <mspace width="thinmathspace" />
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>k</mi>
+                        <mi>x</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>&#x03C9;<!-- ω --></mi>
+                        <mi>t</mi>
+                        <mo>)</mo>
+                      </mrow>
+                      <mo>+</mo>
+                      <msup>
+                        <mi>cos</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                      <mspace width="thinmathspace" />
+                      <mrow>
+                        <mo>(</mo>
+                        <mi>k</mi>
+                        <mi>x</mi>
+                        <mo>&#x2212;<!-- − --></mo>
+                        <mi>&#x03C9;<!-- ω --></mi>
+                        <mi>t</mi>
+                        <mo>)</mo>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mo maxsize="2.047em" minsize="2.047em">]</mo>
+                        </mrow>
+                      </mrow>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd />
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mspace width="thinmathspace" />
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mspace width="thinmathspace" />
+                <mi>k</mi>
+                <mspace width="thinmathspace" />
+                <msup>
+                  <mi>a</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+                <mspace width="thinmathspace" />
+                <msup>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>e</mtext>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                    <mi>k</mi>
+                    <mi>z</mi>
+                  </mrow>
+                </msup>
+                <mo>.</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\overline {u}}_{S}\,&amp;=\,{\overline {u_{x}({\boldsymbol {\xi }},t)}}\,-\,{\overline {u_{x}({\boldsymbol {x}},t)}}\,\\&amp;=\,{\overline {\left[u_{x}({\boldsymbol {x}},t)\,+\,\left(\xi _{x}-x\right)\,{\frac {\partial u_{x}({\boldsymbol {x}},t)}{\partial x}}\,+\,\left(\xi _{z}-z\right)\,{\frac {\partial u_{x}({\boldsymbol {x}},t)}{\partial z}}\,+\,\cdots \right]}}-\,{\overline {u_{x}({\boldsymbol {x}},t)}}\\&amp;\approx \,{\overline {\left(\xi _{x}-x\right)\,{\frac {\partial ^{2}\xi _{x}}{\partial x\,\partial t}}}}\,+\,{\overline {\left(\xi _{z}-z\right)\,{\frac {\partial ^{2}\xi _{x}}{\partial z\,\partial t}}}}\\&amp;=\,{\overline {{\bigg [}-a\,{\text{e}}^{kz}\,\sin \,\left(kx-\omega t\right){\bigg ]}\,{\bigg [}-\omega \,k\,a\,{\text{e}}^{kz}\,\sin \,\left(kx-\omega t\right){\bigg ]}}}\,\\&amp;+\,{\overline {{\bigg [}a\,{\text{e}}^{kz}\,\cos \,\left(kx-\omega t\right){\bigg ]}\,{\bigg [}\omega \,k\,a\,{\text{e}}^{kz}\,\cos \,\left(kx-\omega t\right){\bigg ]}}}\,\\&amp;=\,{\overline {\omega \,k\,a^{2}\,{\text{e}}^{2kz}\,{\bigg [}\sin ^{2}\,\left(kx-\omega t\right)+\cos ^{2}\,\left(kx-\omega t\right){\bigg ]}}}\\&amp;=\,\omega \,k\,a^{2}\,{\text{e}}^{2kz}.\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41d95d05bf9087bc3f0080005c5553f61c662ebe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -20.671ex; width:80.015ex; height:42.509ex;" alt="{\begin{aligned}\overline {u}_{S}\,&amp;=\,\overline {u_{x}({\boldsymbol  {\xi }},t)}\,-\,\overline {u_{x}({\boldsymbol  {x}},t)}\,\\&amp;=\,\overline {\left[u_{x}({\boldsymbol  {x}},t)\,+\,\left(\xi _{x}-x\right)\,{\frac  {\partial u_{x}({\boldsymbol  {x}},t)}{\partial x}}\,+\,\left(\xi _{z}-z\right)\,{\frac  {\partial u_{x}({\boldsymbol  {x}},t)}{\partial z}}\,+\,\cdots \right]}-\,\overline {u_{x}({\boldsymbol  {x}},t)}\\&amp;\approx \,\overline {\left(\xi _{x}-x\right)\,{\frac  {\partial ^{2}\xi _{x}}{\partial x\,\partial t}}}\,+\,\overline {\left(\xi _{z}-z\right)\,{\frac  {\partial ^{2}\xi _{x}}{\partial z\,\partial t}}}\\&amp;=\,\overline {{\bigg [}-a\,{\text{e}}^{{kz}}\,\sin \,\left(kx-\omega t\right){\bigg ]}\,{\bigg [}-\omega \,k\,a\,{\text{e}}^{{kz}}\,\sin \,\left(kx-\omega t\right){\bigg ]}}\,\\&amp;+\,\overline {{\bigg [}a\,{\text{e}}^{{kz}}\,\cos \,\left(kx-\omega t\right){\bigg ]}\,{\bigg [}\omega \,k\,a\,{\text{e}}^{{kz}}\,\cos \,\left(kx-\omega t\right){\bigg ]}}\,\\&amp;=\,\overline {\omega \,k\,a^{2}\,{\text{e}}^{{2kz}}\,{\bigg [}\sin ^{2}\,\left(kx-\omega t\right)+\cos ^{2}\,\left(kx-\omega t\right){\bigg ]}}\\&amp;=\,\omega \,k\,a^{2}\,{\text{e}}^{{2kz}}.\end{aligned}}" /></span></dd>
+</dl>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stokes_drift&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Coriolis-Stokes_force" class="mw-redirect" title="Coriolis-Stokes force">Coriolis-Stokes force</a></li>
+<li><a href="/wiki/Darwin_drift" title="Darwin drift">Darwin drift</a></li>
+<li><a href="/wiki/Lagrangian_and_Eulerian_coordinates" class="mw-redirect" title="Lagrangian and Eulerian coordinates">Lagrangian and Eulerian coordinates</a></li>
+<li><a href="/wiki/Material_derivative" title="Material derivative">Material derivative</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stokes_drift&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Historical">Historical</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stokes_drift&amp;action=edit&amp;section=7" title="Edit section: Historical">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><cite class="citation journal">A.D.D. Craik (2005). "George Gabriel Stokes on water wave theory". <i>Annual Review of Fluid Mechanics</i>. <b>37</b>: 23–42. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2005AnRFM..37...23C">2005AnRFM..37...23C</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1146%2Fannurev.fluid.37.061903.175836">10.1146/annurev.fluid.37.061903.175836</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.atitle=George+Gabriel+Stokes+on+water+wave+theory&amp;rft.au=A.D.D.+Craik&amp;rft.date=2005&amp;rft.genre=article&amp;rft_id=info%3Abibcode%2F2005AnRFM..37...23C&amp;rft_id=info%3Adoi%2F10.1146%2Fannurev.fluid.37.061903.175836&amp;rft.jtitle=Annual+Review+of+Fluid+Mechanics&amp;rft.pages=23-42&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=37" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="Stokes1847" class="citation journal">G.G. Stokes (1847). "On the theory of oscillatory waves". <i>Transactions of the Cambridge Philosophical Society</i>. <b>8</b>: 441–455.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.atitle=On+the+theory+of+oscillatory+waves&amp;rft.au=G.G.+Stokes&amp;rft.date=1847&amp;rft.genre=article&amp;rft.jtitle=Transactions+of+the+Cambridge+Philosophical+Society&amp;rft.pages=441-455&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=8" class="Z3988"><span style="display:none;">&#160;</span></span><br />
+Reprinted in: <cite class="citation book">G.G. Stokes (1880). <a rel="nofollow" class="external text" href="https://archive.org/details/mathphyspapers01stokrich"><i>Mathematical and Physical Papers, Volume I</i></a>. Cambridge University Press. pp.&#160;197–229.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.au=G.G.+Stokes&amp;rft.btitle=Mathematical+and+Physical+Papers%2C+Volume+I&amp;rft.date=1880&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fmathphyspapers01stokrich&amp;rft.pages=197-229&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h3><span class="mw-headline" id="Other">Other</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stokes_drift&amp;action=edit&amp;section=8" title="Edit section: Other">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><cite id="Andrews-McIntyre1978" class="citation journal">D.G. Andrews and M.E. McIntyre (1978). "An exact theory of nonlinear waves on a Lagrangian mean flow". <i>Journal of Fluid Mechanics</i>. <b>89</b> (4): 609–646. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/1978JFM....89..609A">1978JFM....89..609A</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1017%2FS0022112078002773">10.1017/S0022112078002773</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.atitle=An+exact+theory+of+nonlinear+waves+on+a+Lagrangian+mean+flow&amp;rft.au=D.G.+Andrews+and+M.E.+McIntyre&amp;rft.date=1978&amp;rft.genre=article&amp;rft_id=info%3Abibcode%2F1978JFM....89..609A&amp;rft_id=info%3Adoi%2F10.1017%2FS0022112078002773&amp;rft.issue=4&amp;rft.jtitle=Journal+of+Fluid+Mechanics&amp;rft.pages=609-646&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=89" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="Craik1985" class="citation book">A.D.D. Craik (1985). <i>Wave interactions and fluid flows</i>. Cambridge University Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-36829-4" title="Special:BookSources/0-521-36829-4">0-521-36829-4</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.au=A.D.D.+Craik&amp;rft.btitle=Wave+interactions+and+fluid+flows&amp;rft.date=1985&amp;rft.genre=book&amp;rft.isbn=0-521-36829-4&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="Longuet-Higgins1953" class="citation journal"><a href="/wiki/Michael_S._Longuet-Higgins" title="Michael S. Longuet-Higgins">M.S. Longuet-Higgins</a> (1953). <a rel="nofollow" class="external text" href="http://rsta.royalsocietypublishing.org/content/245/903/535">"Mass transport in water waves"</a>. <i>Philosophical Transactions of the Royal Society A</i>. <b>245</b> (903): 535–581. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/1953RSPTA.245..535L">1953RSPTA.245..535L</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1098%2Frsta.1953.0006">10.1098/rsta.1953.0006</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.atitle=Mass+transport+in+water+waves&amp;rft.au=M.S.+Longuet-Higgins&amp;rft.date=1953&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Frsta.royalsocietypublishing.org%2Fcontent%2F245%2F903%2F535&amp;rft_id=info%3Abibcode%2F1953RSPTA.245..535L&amp;rft_id=info%3Adoi%2F10.1098%2Frsta.1953.0006&amp;rft.issue=903&amp;rft.jtitle=Philosophical+Transactions+of+the+Royal+Society+A&amp;rft.pages=535-581&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=245" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="Phillips1977" class="citation book">Phillips, O.M. (1977). <i>The dynamics of the upper ocean</i> (2nd ed.). Cambridge University Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-29801-6" title="Special:BookSources/0-521-29801-6">0-521-29801-6</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.aufirst=O.M.&amp;rft.aulast=Phillips&amp;rft.btitle=The+dynamics+of+the+upper+ocean&amp;rft.date=1977&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=0-521-29801-6&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="Falkovich" class="citation book">G. Falkovich (2011). <i>Fluid Mechanics (A short course for physicists)</i>. Cambridge University Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-107-00575-4" title="Special:BookSources/978-1-107-00575-4">978-1-107-00575-4</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.au=G.+Falkovich&amp;rft.btitle=Fluid+Mechanics+%28A+short+course+for+physicists%29&amp;rft.date=2011&amp;rft.genre=book&amp;rft.isbn=978-1-107-00575-4&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="Kubota1994" class="citation journal">Kubota, M. (1994). "A mechanism for the accumulation of floating marine debris north of Hawaii". <i>Journal of Physical Oceanography</i>. <b>24</b> (5): 1059–1064. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/1994JPO....24.1059K">1994JPO....24.1059K</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1175%2F1520-0485%281994%29024%3C1059%3AAMFTAO%3E2.0.CO%3B2">10.1175/1520-0485(1994)024&lt;1059:AMFTAO&gt;2.0.CO;2</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.atitle=A+mechanism+for+the+accumulation+of+floating+marine+debris+north+of+Hawaii&amp;rft.aufirst=M.&amp;rft.aulast=Kubota&amp;rft.date=1994&amp;rft.genre=article&amp;rft_id=info%3Abibcode%2F1994JPO....24.1059K&amp;rft_id=info%3Adoi%2F10.1175%2F1520-0485%281994%29024%3C1059%3AAMFTAO%3E2.0.CO%3B2&amp;rft.issue=5&amp;rft.jtitle=Journal+of+Physical+Oceanography&amp;rft.pages=1059-1064&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=24" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Stokes_drift&amp;action=edit&amp;section=9" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">See <a href="#Kubota1994">Kubota (1994)</a>.</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">See <a href="#Craik1985">Craik (1985)</a>, page 105–113.</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">See <i>e.g.</i> <a href="#Craik1985">Craik (1985)</a>, page 120.</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Solutions of the particle trajectories in fully nonlinear periodic waves and the Lagrangian wave period they experience can for instance be found in:<br />
+<cite class="citation journal">J.M. Williams (1981). "Limiting gravity waves in water of ﬁnite depth". <i>Philosophical Transactions of the Royal Society A</i>. <b>302</b> (1466): 139–188. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/1981RSPTA.302..139W">1981RSPTA.302..139W</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1098%2Frsta.1981.0159">10.1098/rsta.1981.0159</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.atitle=Limiting+gravity+waves+in+water+of+%EF%AC%81nite+depth&amp;rft.au=J.M.+Williams&amp;rft.date=1981&amp;rft.genre=article&amp;rft_id=info%3Abibcode%2F1981RSPTA.302..139W&amp;rft_id=info%3Adoi%2F10.1098%2Frsta.1981.0159&amp;rft.issue=1466&amp;rft.jtitle=Philosophical+Transactions+of+the+Royal+Society+A&amp;rft.pages=139-188&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=302" class="Z3988"><span style="display:none;">&#160;</span></span><br />
+<cite class="citation book">J.M. Williams (1985). <i>Tables of progressive gravity waves</i>. Pitman. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-273-08733-5" title="Special:BookSources/978-0-273-08733-5">978-0-273-08733-5</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AStokes+drift&amp;rft.au=J.M.+Williams&amp;rft.btitle=Tables+of+progressive+gravity+waves&amp;rft.date=1985&amp;rft.genre=book&amp;rft.isbn=978-0-273-08733-5&amp;rft.pub=Pitman&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Phil1977p43-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-Phil1977p43_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Phil1977p43_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Phil1977p43_5-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">See <a href="#Phillips1977">Phillips (1977)</a>, page 43.</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">See <i>e.g.</i> <a href="#Craik1985">Craik (1985)</a>, page 84.</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">See <a href="#Falkovich">Falkovich (2011)</a>, pages 71–72.</span></li>
+<li id="cite_note-Phil1977p37-8"><span class="mw-cite-backlink">^ <a href="#cite_ref-Phil1977p37_8-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Phil1977p37_8-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">See <i>e.g.</i> <a href="#Phillips1977">Phillips (1977)</a>, page 37.</span></li>
+<li id="cite_note-Phil1977p44-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-Phil1977p44_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Phil1977p44_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">See <a href="#Phillips1977">Phillips (1977)</a>, page 44. Or <a href="#Craik1985">Craik (1985)</a>, page 110.</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">Viscosity has a pronounced effect on the mean Eulerian velocity and mean Lagrangian (or mass transport) velocity, but much less on their difference: the Stokes drift outside the <a href="/wiki/Stokes_boundary_layer" title="Stokes boundary layer">boundary layers</a> near bed and free surface, see for instance <a href="#Longuet-Higgins1953">Longuet-Higgins (1953)</a>. Or <a href="#Phillips1977">Phillips (1977)</a>, pages 53–58.</span></li>
+<li id="cite_note-Phil1977p38-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-Phil1977p38_11-0">^</a></b></span> <span class="reference-text">See <i>e.g.</i> <a href="#Phillips1977">Phillips (1977)</a>, page 38.</span></li>
+</ol>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Physical_oceanography" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Physical_oceanography" title="Template:Physical oceanography"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Physical_oceanography" title="Template talk:Physical oceanography"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Physical_oceanography&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Physical_oceanography" style="font-size:114%"><a href="/wiki/Physical_oceanography" title="Physical oceanography">Physical oceanography</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Wind_wave" title="Wind wave">Waves</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Airy_wave_theory" title="Airy wave theory">Airy wave theory</a></li>
+<li><a href="/wiki/Ballantine_scale" title="Ballantine scale">Ballantine scale</a></li>
+<li><a href="/wiki/Modulational_instability" title="Modulational instability">Benjamin–Feir instability</a></li>
+<li><a href="/wiki/Boussinesq_approximation_(water_waves)" title="Boussinesq approximation (water waves)">Boussinesq approximation</a></li>
+<li><a href="/wiki/Breaking_wave" title="Breaking wave">Breaking wave</a></li>
+<li><a href="/wiki/Clapotis" title="Clapotis">Clapotis</a></li>
+<li><a href="/wiki/Cnoidal_wave" title="Cnoidal wave">Cnoidal wave</a></li>
+<li><a href="/wiki/Cross_sea" title="Cross sea">Cross sea</a></li>
+<li><a href="/wiki/Dispersion_(water_waves)" title="Dispersion (water waves)">Dispersion</a></li>
+<li><a href="/wiki/Edge_wave" title="Edge wave">Edge wave</a></li>
+<li><a href="/wiki/Equatorial_waves" class="mw-redirect" title="Equatorial waves">Equatorial waves</a></li>
+<li><a href="/wiki/Fetch_(geography)" title="Fetch (geography)">Fetch</a></li>
+<li><a href="/wiki/Gravity_wave" title="Gravity wave">Gravity wave</a></li>
+<li><a href="/wiki/Green%27s_law" title="Green's law">Green's law</a></li>
+<li><a href="/wiki/Infragravity_wave" title="Infragravity wave">Infragravity wave</a></li>
+<li><a href="/wiki/Internal_wave" title="Internal wave">Internal wave</a></li>
+<li><a href="/wiki/Kelvin_wave" title="Kelvin wave">Kelvin wave</a></li>
+<li><a href="/wiki/Kinematic_wave" title="Kinematic wave">Kinematic wave</a></li>
+<li><a href="/wiki/Longshore_drift" title="Longshore drift">Longshore drift</a></li>
+<li><a href="/wiki/Luke%27s_variational_principle" title="Luke's variational principle">Luke's variational principle</a></li>
+<li><a href="/wiki/Mild-slope_equation" title="Mild-slope equation">Mild-slope equation</a></li>
+<li><a href="/wiki/Radiation_stress" title="Radiation stress">Radiation stress</a></li>
+<li><a href="/wiki/Rogue_wave" title="Rogue wave">Rogue wave</a></li>
+<li><a href="/wiki/Rossby_wave" title="Rossby wave">Rossby wave</a></li>
+<li><a href="/wiki/Rossby-gravity_waves" title="Rossby-gravity waves">Rossby-gravity waves</a></li>
+<li><a href="/wiki/Sea_state" title="Sea state">Sea state</a></li>
+<li><a href="/wiki/Seiche" title="Seiche">Seiche</a></li>
+<li><a href="/wiki/Significant_wave_height" title="Significant wave height">Significant wave height</a></li>
+<li><a href="/wiki/Sneaker_wave" title="Sneaker wave">Sneaker wave</a></li>
+<li><a href="/wiki/Soliton" title="Soliton">Soliton</a></li>
+<li><a href="/wiki/Stokes_boundary_layer" title="Stokes boundary layer">Stokes boundary layer</a></li>
+<li><strong class="selflink">Stokes drift</strong></li>
+<li><a href="/wiki/Stokes_wave" title="Stokes wave">Stokes wave</a></li>
+<li><a href="/wiki/Swell_(ocean)" title="Swell (ocean)">Swell</a></li>
+<li><a href="/wiki/Trochoidal_wave" title="Trochoidal wave">Trochoidal wave</a></li>
+<li><a href="/wiki/Tsunami" title="Tsunami">Tsunami</a>
+<ul>
+<li><a href="/wiki/Megatsunami" title="Megatsunami">megatsunami</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Undertow_(water_waves)" title="Undertow (water waves)">Undertow</a></li>
+<li><a href="/wiki/Ursell_number" title="Ursell number">Ursell number</a></li>
+<li><a href="/wiki/Wave_action_(continuum_mechanics)" title="Wave action (continuum mechanics)">Wave action</a></li>
+<li><a href="/wiki/Wave_base" title="Wave base">Wave base</a></li>
+<li><a href="/wiki/Wave_height" title="Wave height">Wave height</a></li>
+<li><a href="/wiki/Wave_power" title="Wave power">Wave power</a></li>
+<li><a href="/wiki/Wave_radar" title="Wave radar">Wave radar</a></li>
+<li><a href="/wiki/Wave_setup" title="Wave setup">Wave setup</a></li>
+<li><a href="/wiki/Wave_shoaling" title="Wave shoaling">Wave shoaling</a></li>
+<li><a href="/wiki/Wave_turbulence" title="Wave turbulence">Wave turbulence</a></li>
+<li><a href="/wiki/Wave%E2%80%93current_interaction" title="Wave–current interaction">Wave–current interaction</a></li>
+<li><a href="/wiki/Waves_and_shallow_water" title="Waves and shallow water">Waves and shallow water</a>
+<ul>
+<li><a href="/wiki/One-dimensional_Saint-Venant_equations" class="mw-redirect" title="One-dimensional Saint-Venant equations">one-dimensional Saint-Venant equations</a></li>
+<li><a href="/wiki/Shallow_water_equations" title="Shallow water equations">shallow water equations</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Wind_wave" title="Wind wave">Wind wave</a>
+<ul>
+<li><a href="/wiki/Wind_wave_model" title="Wind wave model">model</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="19" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Upwelling.svg" class="image" title="Upwelling"><img alt="Upwelling" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Upwelling.svg/140px-Upwelling.svg.png" width="140" height="93" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Upwelling.svg/210px-Upwelling.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Upwelling.svg/280px-Upwelling.svg.png 2x" data-file-width="365" data-file-height="242" /></a><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a href="/wiki/File:Antarctic_bottom_water.svg" class="image" title="Antarctic bottom water"><img alt="Antarctic bottom water" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Antarctic_bottom_water.svg/140px-Antarctic_bottom_water.svg.png" width="140" height="88" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Antarctic_bottom_water.svg/210px-Antarctic_bottom_water.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Antarctic_bottom_water.svg/280px-Antarctic_bottom_water.svg.png 2x" data-file-width="745" data-file-height="470" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Ocean_current" title="Ocean current">Circulation</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Atmospheric_circulation" title="Atmospheric circulation">Atmospheric circulation</a></li>
+<li><a href="/wiki/Baroclinity" title="Baroclinity">Baroclinity</a></li>
+<li><a href="/wiki/Boundary_current" title="Boundary current">Boundary current</a></li>
+<li><a href="/wiki/Coriolis_effect" class="mw-redirect" title="Coriolis effect">Coriolis effect</a></li>
+<li><a href="/wiki/Downwelling" title="Downwelling">Downwelling</a></li>
+<li><a href="/wiki/Eddy_(fluid_dynamics)" title="Eddy (fluid dynamics)">Eddy</a></li>
+<li><a href="/wiki/Ekman_layer" title="Ekman layer">Ekman layer</a></li>
+<li><a href="/wiki/Ekman_spiral" title="Ekman spiral">Ekman spiral</a></li>
+<li><a href="/wiki/Ekman_transport" title="Ekman transport">Ekman transport</a></li>
+<li><a href="/wiki/El_Ni%C3%B1o_Southern_Oscillation" class="mw-redirect" title="El Niño Southern Oscillation">El Niño Southern Oscillation</a></li>
+<li><a href="/wiki/General_Circulation_Model" class="mw-redirect" title="General Circulation Model">General Circulation Model</a></li>
+<li><a href="/wiki/Geostrophic_current" title="Geostrophic current">Geostrophic current</a></li>
+<li><a href="/wiki/Global_Ocean_Data_Analysis_Project" title="Global Ocean Data Analysis Project">Global Ocean Data Analysis Project</a></li>
+<li><a href="/wiki/Gulf_Stream" title="Gulf Stream">Gulf Stream</a></li>
+<li><a href="/wiki/Halothermal_circulation" title="Halothermal circulation">Halothermal circulation</a></li>
+<li><a href="/wiki/Humboldt_Current" title="Humboldt Current">Humboldt Current</a></li>
+<li><a href="/wiki/Hydrothermal_circulation" title="Hydrothermal circulation">Hydrothermal circulation</a></li>
+<li><a href="/wiki/Langmuir_circulation" title="Langmuir circulation">Langmuir circulation</a></li>
+<li><a href="/wiki/Longshore_drift" title="Longshore drift">Longshore drift</a></li>
+<li><a href="/wiki/Loop_Current" title="Loop Current">Loop Current</a></li>
+<li><a href="/wiki/Maelstrom" class="mw-redirect" title="Maelstrom">Maelstrom</a></li>
+<li><a href="/wiki/Modular_ocean_model" class="mw-redirect" title="Modular ocean model">Modular ocean model</a></li>
+<li><a href="/wiki/Ocean_dynamics" title="Ocean dynamics">Ocean dynamics</a></li>
+<li><a href="/wiki/Ocean_gyre" title="Ocean gyre">Ocean gyre</a></li>
+<li><a href="/wiki/Princeton_ocean_model" class="mw-redirect" title="Princeton ocean model">Princeton ocean model</a></li>
+<li><a href="/wiki/Rip_current" title="Rip current">Rip current</a></li>
+<li><a href="/wiki/Subsurface_currents" title="Subsurface currents">Subsurface currents</a></li>
+<li><a href="/wiki/Sverdrup_balance" title="Sverdrup balance">Sverdrup balance</a></li>
+<li><a href="/wiki/Thermohaline_circulation" title="Thermohaline circulation">Thermohaline circulation</a>
+<ul>
+<li><a href="/wiki/Shutdown_of_thermohaline_circulation" title="Shutdown of thermohaline circulation">shutdown</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Upwelling" title="Upwelling">Upwelling</a></li>
+<li><a href="/wiki/Whirlpool" title="Whirlpool">Whirlpool</a></li>
+<li><a href="/wiki/World_Ocean_Circulation_Experiment" title="World Ocean Circulation Experiment">World Ocean Circulation Experiment</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Tide" title="Tide">Tides</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Amphidromic_point" title="Amphidromic point">Amphidromic point</a></li>
+<li><a href="/wiki/Earth_tide" title="Earth tide">Earth tide</a></li>
+<li><a href="/wiki/Head_of_tide" title="Head of tide">Head of tide</a></li>
+<li><a href="/wiki/Internal_tide" title="Internal tide">Internal tide</a></li>
+<li><a href="/wiki/Lunitidal_interval" title="Lunitidal interval">Lunitidal interval</a></li>
+<li><a href="/wiki/Perigean_spring_tide" title="Perigean spring tide">Perigean spring tide</a></li>
+<li><a href="/wiki/Rip_tide" title="Rip tide">Rip tide</a></li>
+<li><a href="/wiki/Rule_of_twelfths" title="Rule of twelfths">Rule of twelfths</a></li>
+<li><a href="/wiki/Slack_water" title="Slack water">Slack water</a></li>
+<li><a href="/wiki/Tidal_bore" title="Tidal bore">Tidal bore</a></li>
+<li><a href="/wiki/Tidal_force" title="Tidal force">Tidal force</a></li>
+<li><a href="/wiki/Tidal_power" title="Tidal power">Tidal power</a></li>
+<li><a href="/wiki/Tidal_race" title="Tidal race">Tidal race</a></li>
+<li><a href="/wiki/Tidal_range" title="Tidal range">Tidal range</a></li>
+<li><a href="/wiki/Tidal_resonance" title="Tidal resonance">Tidal resonance</a></li>
+<li><a href="/wiki/Tide_gauge" title="Tide gauge">Tide gauge</a></li>
+<li><a href="/wiki/Tideline" title="Tideline">Tideline</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Landform" title="Landform">Landforms</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Abyssal_fan" title="Abyssal fan">Abyssal fan</a></li>
+<li><a href="/wiki/Abyssal_plain" title="Abyssal plain">Abyssal plain</a></li>
+<li><a href="/wiki/Atoll" title="Atoll">Atoll</a></li>
+<li><a href="/wiki/Bathymetric_chart" title="Bathymetric chart">Bathymetric chart</a></li>
+<li><a href="/wiki/Coastal_geography" title="Coastal geography">Coastal geography</a></li>
+<li><a href="/wiki/Cold_seep" title="Cold seep">Cold seep</a></li>
+<li><a href="/wiki/Continental_margin" title="Continental margin">Continental margin</a></li>
+<li><a href="/wiki/Continental_rise" title="Continental rise">Continental rise</a></li>
+<li><a href="/wiki/Continental_shelf" title="Continental shelf">Continental shelf</a></li>
+<li><a href="/wiki/Contourite" title="Contourite">Contourite</a></li>
+<li><a href="/wiki/Guyot" title="Guyot">Guyot</a></li>
+<li><a href="/wiki/Hydrography" title="Hydrography">Hydrography</a></li>
+<li><a href="/wiki/Oceanic_basin" title="Oceanic basin">Oceanic basin</a></li>
+<li><a href="/wiki/Oceanic_plateau" title="Oceanic plateau">Oceanic plateau</a></li>
+<li><a href="/wiki/Oceanic_trench" title="Oceanic trench">Oceanic trench</a></li>
+<li><a href="/wiki/Passive_margin" title="Passive margin">Passive margin</a></li>
+<li><a href="/wiki/Seabed" title="Seabed">Seabed</a></li>
+<li><a href="/wiki/Seamount" title="Seamount">Seamount</a></li>
+<li><a href="/wiki/Submarine_canyon" title="Submarine canyon">Submarine canyon</a></li>
+<li><a href="/wiki/Submarine_volcano" title="Submarine volcano">Submarine volcano</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Plate_tectonics" title="Plate tectonics">Plate tectonics</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Convergent_boundary" title="Convergent boundary">Convergent boundary</a></li>
+<li><a href="/wiki/Divergent_boundary" title="Divergent boundary">Divergent boundary</a></li>
+<li><a href="/wiki/Fracture_zone" title="Fracture zone">Fracture zone</a></li>
+<li><a href="/wiki/Hydrothermal_vent" title="Hydrothermal vent">Hydrothermal vent</a></li>
+<li><a href="/wiki/Marine_geology" title="Marine geology">Marine geology</a></li>
+<li><a href="/wiki/Mid-ocean_ridge" title="Mid-ocean ridge">Mid-ocean ridge</a></li>
+<li><a href="/wiki/Mohorovi%C4%8Di%C4%87_discontinuity" title="Mohorovičić discontinuity">Mohorovičić discontinuity</a></li>
+<li><a href="/wiki/Vine%E2%80%93Matthews%E2%80%93Morley_hypothesis" title="Vine–Matthews–Morley hypothesis">Vine–Matthews–Morley hypothesis</a></li>
+<li><a href="/wiki/Oceanic_crust" title="Oceanic crust">Oceanic crust</a></li>
+<li><a href="/wiki/Outer_trench_swell" title="Outer trench swell">Outer trench swell</a></li>
+<li><a href="/wiki/Ridge_push" title="Ridge push">Ridge push</a></li>
+<li><a href="/wiki/Seafloor_spreading" title="Seafloor spreading">Seafloor spreading</a></li>
+<li><a href="/wiki/Slab_pull" title="Slab pull">Slab pull</a></li>
+<li><a href="/wiki/Slab_suction" title="Slab suction">Slab suction</a></li>
+<li><a href="/wiki/Slab_window" title="Slab window">Slab window</a></li>
+<li><a href="/wiki/Subduction" title="Subduction">Subduction</a></li>
+<li><a href="/wiki/Transform_fault" title="Transform fault">Transform fault</a></li>
+<li><a href="/wiki/Volcanic_arc" title="Volcanic arc">Volcanic arc</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Ocean zones</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Benthic_zone" title="Benthic zone">Benthic</a></li>
+<li><a href="/wiki/Deep_ocean_water" title="Deep ocean water">Deep ocean water</a></li>
+<li><a href="/wiki/Deep_sea" title="Deep sea">Deep sea</a></li>
+<li><a href="/wiki/Littoral_zone" title="Littoral zone">Littoral</a></li>
+<li><a href="/wiki/Mesopelagic_zone" title="Mesopelagic zone">Mesopelagic</a></li>
+<li><a href="/wiki/Oceanic_zone" title="Oceanic zone">Oceanic</a></li>
+<li><a href="/wiki/Pelagic_zone" title="Pelagic zone">Pelagic</a></li>
+<li><a href="/wiki/Photic_zone" title="Photic zone">Photic</a></li>
+<li><a href="/wiki/Surf_zone" title="Surf zone">Surf</a></li>
+<li><a href="/wiki/Swash" title="Swash">Swash</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Sea_level" title="Sea level">Sea level</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Deep-ocean_Assessment_and_Reporting_of_Tsunamis" title="Deep-ocean Assessment and Reporting of Tsunamis">Deep-ocean Assessment and Reporting of Tsunamis</a></li>
+<li><a href="/wiki/Future_sea_level" title="Future sea level">Future sea level</a></li>
+<li><a href="/wiki/Global_Sea_Level_Observing_System" title="Global Sea Level Observing System">Global Sea Level Observing System</a></li>
+<li><a href="/wiki/North_West_Shelf_Operational_Oceanographic_System" title="North West Shelf Operational Oceanographic System">North West Shelf Operational Oceanographic System</a></li>
+<li><a href="/wiki/Sea-level_curve" title="Sea-level curve">Sea-level curve</a></li>
+<li><a href="/wiki/Sea_level_rise" title="Sea level rise">Sea level rise</a></li>
+<li><a href="/wiki/World_Geodetic_System" title="World Geodetic System">World Geodetic System</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Acoustical_oceanography" title="Acoustical oceanography">Acoustics</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Deep_scattering_layer" title="Deep scattering layer">Deep scattering layer</a></li>
+<li><a href="/wiki/Hydroacoustics" title="Hydroacoustics">Hydroacoustics</a></li>
+<li><a href="/wiki/Ocean_acoustic_tomography" title="Ocean acoustic tomography">Ocean acoustic tomography</a></li>
+<li><a href="/wiki/Sofar_bomb" title="Sofar bomb">Sofar bomb</a></li>
+<li><a href="/wiki/SOFAR_channel" title="SOFAR channel">SOFAR channel</a></li>
+<li><a href="/wiki/Underwater_acoustics" title="Underwater acoustics">Underwater acoustics</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Satellites</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Jason-1" title="Jason-1">Jason-1</a></li>
+<li><a href="/wiki/Ocean_Surface_Topography_Mission" title="Ocean Surface Topography Mission">Jason-2 (Ocean Surface Topography Mission)</a></li>
+<li><a href="/wiki/Jason-3" title="Jason-3">Jason-3</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Argo_(oceanography)" title="Argo (oceanography)">Argo</a></li>
+<li><a href="/wiki/Benthic_lander" title="Benthic lander">Benthic lander</a></li>
+<li><a href="/wiki/Color_of_water" title="Color of water">Color of water</a></li>
+<li><a href="/wiki/DSV_Alvin" title="DSV Alvin">DSV <i>Alvin</i></a></li>
+<li><a href="/wiki/Marginal_sea" title="Marginal sea">Marginal sea</a></li>
+<li><a href="/wiki/Marine_energy" title="Marine energy">Marine energy</a></li>
+<li><a href="/wiki/Marine_pollution" title="Marine pollution">Marine pollution</a></li>
+<li><a href="/wiki/Mooring_(oceanography)" title="Mooring (oceanography)">Mooring</a></li>
+<li><a href="/wiki/National_Oceanographic_Data_Center" title="National Oceanographic Data Center">National Oceanographic Data Center</a></li>
+<li><a href="/wiki/Ocean" title="Ocean">Ocean</a></li>
+<li><a href="/wiki/Ocean_exploration" title="Ocean exploration">Ocean exploration</a></li>
+<li><a href="/wiki/Ocean_observations" title="Ocean observations">Ocean observations</a></li>
+<li><a href="/wiki/Ocean_reanalysis" title="Ocean reanalysis">Ocean reanalysis</a></li>
+<li><a href="/wiki/Ocean_surface_topography" title="Ocean surface topography">Ocean surface topography</a></li>
+<li><a href="/wiki/Ocean_thermal_energy_conversion" title="Ocean thermal energy conversion">Ocean thermal energy conversion</a></li>
+<li><a href="/wiki/Oceanography" title="Oceanography">Oceanography</a></li>
+<li><a href="/wiki/Pelagic_sediment" title="Pelagic sediment">Pelagic sediment</a></li>
+<li><a href="/wiki/Sea_surface_microlayer" title="Sea surface microlayer">Sea surface microlayer</a></li>
+<li><a href="/wiki/Sea_surface_temperature" title="Sea surface temperature">Sea surface temperature</a></li>
+<li><a href="/wiki/Seawater" title="Seawater">Seawater</a></li>
+<li><a href="/wiki/Science_On_a_Sphere" title="Science On a Sphere">Science On a Sphere</a></li>
+<li><a href="/wiki/Thermocline" title="Thermocline">Thermocline</a></li>
+<li><a href="/wiki/Underwater_glider" title="Underwater glider">Underwater glider</a></li>
+<li><a href="/wiki/Water_column" title="Water column">Water column</a></li>
+<li><a href="/wiki/World_Ocean_Atlas" title="World Ocean Atlas">World Ocean Atlas</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="3" style="font-weight:bold;">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <a href="/wiki/Category:Physical_oceanography" title="Category:Physical oceanography">Category</a></li>
+<li><img alt="Commons page" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" title="Commons page" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /> <a href="https://commons.wikimedia.org/wiki/Category:Physical_oceanography" class="extiw" title="commons:Category:Physical oceanography">Commons</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1263
+Cached time: 20161206181227
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.156 seconds
+Real time usage: 0.445 seconds
+Preprocessor visited node count: 860/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 45315/2097152 bytes
+Template argument size: 64/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Lua time usage: 0.049/10.000 seconds
+Lua memory usage: 2.98 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   99.846      1 - -total
+ 38.41%   38.354      6 - Template:Cite_journal
+ 16.12%   16.098      1 - Template:See_also
+ 15.25%   15.222      1 - Template:Physical_oceanography
+ 15.23%   15.205      1 - Template:Reflist
+ 14.24%   14.220      5 - Template:Cite_book
+ 13.41%   13.394      1 - Template:Navbox
+  5.50%    5.492      2 - Template:Icon
+  1.66%    1.655      1 - Template:Equation_box_1
+  0.94%    0.935      1 - Template:Column-width
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:15344641-0!*!0!!en!4!*!math=5 and timestamp 20161206181227 and revision id 735112962
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Stokes_drift&amp;oldid=735112962">https://en.wikipedia.org/w/index.php?title=Stokes_drift&amp;oldid=735112962</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Fluid_dynamics" title="Category:Fluid dynamics">Fluid dynamics</a></li><li><a href="/wiki/Category:Water_waves" title="Category:Water waves">Water waves</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Stokes+drift" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Stokes+drift" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Stokes_drift"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Stokes_drift"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Stokes_drift" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Stokes_drift&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Stokes_drift&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Stokes_drift" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Stokes_drift" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Stokes_drift&amp;oldid=735112962" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Stokes_drift&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q961596" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Stokes_drift&amp;id=735112962" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Stokes+drift">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Stokes+drift&amp;returnto=Stokes+drift&amp;oldid=735112962&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Stokes_drift&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/D%C3%A9rive_de_Stokes" title="Dérive de Stokes – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Dryft_Stokesa" title="Dryft Stokesa – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q961596#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 18 August 2016, at 17:53.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Stokes_drift&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":50,"wgHostname":"mw1266"});});</script>
+	</body>
+</html>

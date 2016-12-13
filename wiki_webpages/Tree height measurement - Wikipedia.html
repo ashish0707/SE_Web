@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tree height measurement - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tree_height_measurement","wgTitle":"Tree height measurement","wgCurRevisionId":739902060,"wgRevisionId":739902060,"wgArticleId":39003927,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Forest modelling"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tree_height_measurement","wgRelevantArticleId":39003927,"wgRequestId":"WEye6QpAADoAATyCgIsAAAAH","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q17165847","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.legacy.wikibits","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.5"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Tree_height_measurement"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Tree_height_measurement&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Tree_height_measurement&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Tree_height_measurement"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Tree_height_measurement rootpage-Tree_height_measurement skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Tree height measurement</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><dl>
+<dd><i>This article outlines the basic procedures for <a href="/wiki/Tree_measurement" title="Tree measurement">measuring trees</a> for scientific and champion tree purposes. It does not cover timber assessment for production purposes, which is focused on marketable wood volumes rather than overall tree size.</i></dd>
+</dl>
+<p><b>Tree height</b> is the vertical distance between the base of the tree and the tip of the highest branch on the tree, and is difficult to measure accurately. It is not the same as the length of the trunk. If a tree is leaning, the trunk length may be greater than the height of the tree. The base of the tree is where the projection of the <a href="/wiki/Pith" title="Pith">pith</a> (center) of the tree intersects the existing supporting surface upon which the tree is growing or where the acorn sprouted.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup><sup id="cite_ref-Frank2010_2-0" class="reference"><a href="#cite_note-Frank2010-2">[2]</a></sup> If the tree is growing on the side of a cliff, the base of the tree is at the point where the pith would intersect the cliff side. Roots extending down from that point would not add to the height of the tree. On a slope this base point is considered as halfway between the ground level at the upper and lower sides of the tree. Tree height can be measured in a number of ways with varying degrees of accuracy.</p>
+<p>Tree height is one of the parameters commonly measured as part of various champion tree programs and documentation efforts. Other commonly used parameters, outlined in <a href="/wiki/Tree_measurement" title="Tree measurement">Tree measurement</a> include height, girth, crown spread, and volume. Additional details on the methodology of <a href="/wiki/Tree_girth_measurement" title="Tree girth measurement">tree girth measurement</a>, <a href="/wiki/Tree_crown_measurement" title="Tree crown measurement">tree crown measurement</a>, and <a href="/wiki/Tree_volume_measurement" title="Tree volume measurement">tree volume measurement</a> are presented in the links herein. American Forests, for example, uses a formula to calculate Big Tree Points as part of their Big Tree Program<sup id="cite_ref-afmg_3-0" class="reference"><a href="#cite_note-afmg-3">[3]</a></sup> that awards a tree 1 point for each foot of height, 1 point for each inch of girth, and ¼ point for each foot of crown spread. The tree whose point total is the highest for that species is crowned as the champion in their registry. The other parameter commonly measured, in addition to the species and location information, is wood volume. A general outline of tree measurements is provided in the article <a href="/wiki/Tree_Measurement" class="mw-redirect" title="Tree Measurement">Tree Measurement</a> with more detailed instructions in taking these basic measurements is provided in "The Tree Measuring Guidelines of the Eastern Native Tree Society" by Will Blozan.<sup id="cite_ref-Blozan2004_4-0" class="reference"><a href="#cite_note-Blozan2004-4">[4]</a></sup><sup id="cite_ref-Blozan2006_5-0" class="reference"><a href="#cite_note-Blozan2006-5">[5]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Maximum_heights"><span class="tocnumber">1</span> <span class="toctext">Maximum heights</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Approximate_tree_heights"><span class="tocnumber">2</span> <span class="toctext">Approximate tree heights</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Stick_method"><span class="tocnumber">2.1</span> <span class="toctext">Stick method</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Clinometer_and_tape_method"><span class="tocnumber">2.2</span> <span class="toctext">Clinometer and tape method</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Sine_height_or_ENTS_method"><span class="tocnumber">3</span> <span class="toctext">Sine height or ENTS method</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Direct_height_measurement"><span class="tocnumber">4</span> <span class="toctext">Direct height measurement</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Additional_height_measurement_techniques"><span class="tocnumber">5</span> <span class="toctext">Additional height measurement techniques</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#LiDAR"><span class="tocnumber">6</span> <span class="toctext">LiDAR</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Google_Earth"><span class="tocnumber">7</span> <span class="toctext">Google Earth</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Maximum_heights">Maximum heights</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit&amp;section=1" title="Edit section: Maximum heights">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/List_of_superlative_trees" title="List of superlative trees">tallest tree in the world</a> is a coast redwood (<i><a href="/wiki/Sequoia_sempervirens" title="Sequoia sempervirens">Sequoia sempervirens</a></i>) growing in Northern California that has been named Hyperion. In September 2012, it was measured at 379.65&#160;ft (115.72m) tall.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> There are 7 other coastal redwoods known to be over 370 feet (112 meters) in height, and 222 specimens over 350 feet.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> There are only five species known to grow over 300 feet in height worldwide.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<p>There are historical accounts of extremely tall and large trees. In the northeastern United States, for example, there are frequent stories published in newspapers and magazines dating from the 1800s telling of extremely tall white pines (<i><a href="/wiki/Pinus_strobus" title="Pinus strobus">Pinus strobus</a></i>).<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> One extraordinary account in the Weekly Transcript, North Adams, Mass., Thursday, July 12, 1849 reads: "A Large Tree. --- Mr. D. E. Hawks, of Charlemont, cut a Pine tree a short time since, of the following dimensions. It was 7 feet through 10 feet from the stump, and 5 feet through 50 feet from the stump. Twenty-two logs were taken from the tree, the average length of which were 12 feet. Fourteen feet of the tree were spoiled in falling. The extreme length of the tree from the stump to the top twigs was 300 feet! ---- Greenfield Gazette." In 1995 Robert Leverett and Will Blozan measured the Boogerman Pine, a white pine in Great Smokey Mountains National Park, at a height of 207 feet in 1995 using ground based cross triangulation methods.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> This the highest accurate measurement obtained for any tree in the eastern United States within modern times. The top of the tree was lost in Hurricane Opal in 1995 and it currently stands at just under 190 feet in height.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup> It is possible that some white pines in the past reached heights of well over 200 feet given the much larger area of primary forest prior to the timber boom in the 1800s, however, based on what grows today, it is highly unlikely they ever reached the heights in some of these historical accounts. These reported heights are likely just a mixture of personal and commercial bravado by the lumbermen of the time.</p>
+<h2><span class="mw-headline" id="Approximate_tree_heights">Approximate tree heights</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit&amp;section=2" title="Edit section: Approximate tree heights">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Of the various methods of approximating tree heights, the best options, requiring only a minimal amount of equipment, are the stick method and the tape and clinometer (tangent) method. To get accurate measurements with either method, care must be taken. First try to view the tree from several different angles to see where the actual top of the tree is located. Use that point for the measurements. This will eliminate the greatest potential for error.</p>
+<h3><span class="mw-headline" id="Stick_method">Stick method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit&amp;section=3" title="Edit section: Stick method">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The stick method requires a measuring tape and a stick or ruler and uses the principle of similar triangles to estimate tree heights. There are three primary variations of the stick method.</p>
+<p>A) Stick-rotation method or pencil method for trees on level ground and with top vertically over the base: 1) grasp the end of a stick and hold it at arm’s length with the free end pointed straight up; 2) move back and forth toward or away from the tree to be measured until the base of the tree aligns visually with the top of the hand at the base of the stick and the top of the tree is aligned with the top of the stick; 3) without moving the arm up or down rotate the stick until it is parallel to the ground. The base of the stick should still be aligned with the base of the tree. 4) If you have an assistant, have them walk away from the base of the tree at a right angle to your position until they reach the spot on the ground that aligns with the top of the stick. If alone pick a distinctive point on the ground to mark this point. The distance from the base of the tree to this point is equal to the height of the tree.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup> Again, this method assumes that the top of the tree is vertically over the base.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Stick_measurement.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/Stick_measurement.png/220px-Stick_measurement.png" width="220" height="152" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/61/Stick_measurement.png/330px-Stick_measurement.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/61/Stick_measurement.png/440px-Stick_measurement.png 2x" data-file-width="562" data-file-height="389" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Stick_measurement.png" class="internal" title="Enlarge"></a></div>
+Stick measurement</div>
+</div>
+</div>
+<p>B) Standard stick method: 1) Find a straight stick or ruler; 2) Hold the stick vertically at arm’s length, making sure that the length of the stick above your hand equals the distance from your hand to your eye. 3) Walk backward away from the tree. Stop when the stick above your hand exactly masks the tree. 4) Measure the straight-line distance from your eye to the base of the tree. Record that measurement as the tree’s height to the closest foot.<sup id="cite_ref-afmg_3-1" class="reference"><a href="#cite_note-afmg-3">[3]</a></sup> As with A, if the top is not vertically over the base, this method will generate an error.</p>
+<p>C) Advanced stick method uses the same procedure outlined above with the addition of a few measurements and some basic multiplication. This method does not require that the length of the measuring stick be the same as the distance from your bottom hand to your eye, so it can be used in more varied settings to get a height measurement: 1) holding the stick as outlined above, align both the base of the tree with the top of your hand holding the stick and the top of the tree with the top of the stick. You can do this by moving toward or away from the tree, adjusting the stick length, and by moving your arm up and down; 2) once aligned, measure the distance from the top of your hand grasping the base of the stick to your eye; 3) measure the distance from the top of your hand to the top of the stick; 4) measure the distance from your eye to the base of the tree. So long as the yardstick is held straight up and down and the top of the tree is vertically over the base, the various measurements are still proportional and then you can calculate the height of the tree using a simple formula:</p>
+<p>(length of stick x distance to the tree) / (distance to eye) = tree height</p>
+<p>Using this formula the height of the tree can be calculated no matter what angle you are holding your arm, and no matter what the length of the yardstick that extends above your hand. This has a big advantage if you are measuring a tree on uneven ground or if you can only measure the tree from a single angle. One problem that also often occurs is in order to see the top of the tree; the surveyor must be farther away from the tree than possible using a yardstick length of 23-25 inches (average arm to eye length). Using the simple formula above a smaller length of stick can be used allowing the surveyor to actually see the top of the tree.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup> As with A. and B. above, this method assumes that the top of the tree is vertically over the base. If this assumption is violated, the triangles will not be similar and the ratio and proportion relationship of the sides of similar triangles will not apply.</p>
+<h3><span class="mw-headline" id="Clinometer_and_tape_method">Clinometer and tape method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit&amp;section=4" title="Edit section: Clinometer and tape method">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <a href="/wiki/Clinometer" class="mw-redirect" title="Clinometer">clinometer</a> and tape method or the tangent method, is commonly used in the forestry industry to measure log length.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup> Some clinometers are hand held devices used do measure angles of slopes. The user can sight to the top of a tree using such a clinometer and read the angle to the top using a scale in the instrument. <a href="/wiki/Topographic_Abney_level" title="Topographic Abney level">Topographic Abney levels</a> are calibrated so when read at a distance of 66 feet from the tree, the height to the tree above eye level can be directly read on the scale. Many clinometers and Abney levels have a <a href="/wiki/Percent_grade" class="mw-redirect" title="Percent grade">percent-grade</a> scale that gives 100 times the <a href="/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent" title="Trigonometric functions">tangent</a> of the angle. This scale gives the tree height in feet directly when measured at a distance of 100 feet from the tree.</p>
+<p>In general, the clinometer is used to measure the angle Θ from the eye to the top of the tree, and then the horizontal distance to the tree at eye level is measured using a tape. The height above eye level is then calculated by using the <a href="/wiki/Trigonometric_functions#Sine.2C_cosine_and_tangent" title="Trigonometric functions">tangent</a> function:</p>
+<p>horizontal distance at eye level to the tree x tangent Θ = height above eye level</p>
+<p>The same process is used to measure the height of the base of the tree above or below eye level. If the base of the tree is below eye level, then the height of the tree below eye level is added to the height above eye level. If the base of the tree is above eye level, then the height of the base of the tree above eye level is subtracted from the height of the treetop above eye level. It may be difficult to directly measure the horizontal distance at eye level if that distance is high off the ground or if the base of the tree is above eye level. In these cases the distance to the base of the tree can be measured using the tape along the slope from eye level to the base of the tree and noting the slope angle Θ. In this case the height of the base of the tree above or below eye level is equal to the (sin Θ x slope distance) and the horizontal distance to the tree is (cos Θ x slope distance).</p>
+<p>Errors associated with the stick method and the clinometer and tape method: Aside from the obvious errors associated with bad measurements of distances or misreading the angles with the clinometer, there are several less apparent sources of error that can compromise the accuracy of the tree height calculations. With the stick method if the stick is not held vertically, the similar triangle will be malformed. This potential error can be offset by fastening a string with a small, suspended weight to the top of the stick so that the stick can be aligned with the weighted string to assure it is being held vertically. A more pernicious error occurs in both methods where 1) the treetop is offset from the base of the tree, or 2) where the top of the tree has been misidentified. Except for young, plantation-grown conifers, the top of the tree is rarely directly over the base; therefore a right triangle used as the basis for the height calculation isn’t truly being formed. An analysis of data collected by the Native Tree Society (NTS), of over 1800 mature trees found, on average, the top of the tree was offset from the perspective of the surveyor by a distance of 8.3 feet, and therefore was offset from the base of the tree by around 13 feet.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">[15]</a></sup> Conifers tended to have offsets less than that average and large, broad canopied hardwoods tended to have higher offsets. The top of the tree therefore has a different baseline length than the bottom of the tree resulting in height errors:</p>
+<p>(top to bottom offset distance x tan Θ) = height error</p>
+<p>The error almost always incorrectly adds to the height of the tree. For example, if measuring a tree at an angle of 64 degrees, given an average offset of 8.3 feet in the direction of the measurer, the height of the tree would be overestimated by 17 feet. This type of error will be present in all of the readings using the tangent method, except in the cases where the highest point of the tree actually is located directly above the base of the tree, and except in this unusual case, the result is not repeatable as a different height reading would be obtained depending on the direction and position from which the measurement was taken.</p>
+<p>When the top of the tree is misidentified and a forward leaning branch is mistaken for the treetop, the height measurement errors are even larger because of the bigger error in the measurement baseline. It is extremely difficult to identify the actual top branch from the ground. Even experienced people will often choose the wrong sprig among the several that might be the actual treetop. Walking around the tree and viewing it from different angles will often help the observer to distinguish the actual top from other branches, but this is not always practical or possible to do. Major height errors have made it onto big tree lists even after some degree of vetting, and are often wrongly repeated as valid heights for many tree species. A listing compiled by the NTS<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">[16]</a></sup> shows the magnitude of some of these errors: <a href="/wiki/Carya_aquatica" title="Carya aquatica">water hickory</a> listed as 148 feet, actually 128 feet; <a href="/wiki/Carya_glabra" title="Carya glabra">pignut hickory</a> listed at 190 feet, actually 123 feet; red oak listed as 175 feet, actually 136 feet; red maple listed at 179 feet, actually 119 feet, and these are only a few of the examples listed. These errors are not amenable to correction through statistical analysis as they are unidirectional and random in magnitude. A review of historical accounts of large trees and comparisons with measurements of examples still living<sup id="cite_ref-17" class="reference"><a href="#cite_note-17">[17]</a></sup> found many additional examples of large tree height errors in published accounts.</p>
+<h2><span class="mw-headline" id="Sine_height_or_ENTS_method">Sine height or ENTS method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit&amp;section=5" title="Edit section: Sine height or ENTS method">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Many of the limitations and errors associated with the stick method and the tangent method can be overcome by using a laser rangefinder in conjunction with a clinometer, or a hypsometer, which incorporates both devices into a single unit.<sup id="cite_ref-Blozan2004_4-1" class="reference"><a href="#cite_note-Blozan2004-4">[4]</a></sup><sup id="cite_ref-Blozan2006_5-1" class="reference"><a href="#cite_note-Blozan2006-5">[5]</a></sup> A laser rangefinder is a device which uses a laser beam to determine the distance to an object. The laser rangefinder sends a laser pulse in a narrow beam toward the object and measures the time taken by the pulse to be reflected off the target and returned to the sender. Different instruments have different degrees of accuracy and precision.<sup id="cite_ref-Frank2010_2-1" class="reference"><a href="#cite_note-Frank2010-2">[2]</a></sup></p>
+<p>The development of laser rangefinders was a significant breakthrough in a person’s ability to quickly and accurately measure tree heights. Soon after the introduction of laser rangefinders, their utility in measuring trees and use of the sine based height calculations was recognized and adopted independently by a number of big tree hunters.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">[18]</a></sup> Robert Van Pelt<sup id="cite_ref-19" class="reference"><a href="#cite_note-19">[19]</a></sup> began using a Criterion 400 laser circa 1994 in the Pacific northwest of North America. The instrument had a preprogrammed tree height routine based upon the tangent method, but he used the alternate Vertical Distance (VD) mode, essentially the sine method with no frills to measure tree heights. began using an optical rangefinder and Suunto clinometer circa 1993-94 using the sine method. About a year later he purchased a Bushnell Lytespeed 400 laser rangefinder and began using it in tree measurements. Robert T. Leverett<sup id="cite_ref-20" class="reference"><a href="#cite_note-20">[20]</a></sup> began using laser rangefinders in the eastern United States in 1996. He and Will Blozan<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">[21]</a></sup> had previously been using cross-triangulation methods to measure tree heights prior to adopting the laser rangefinder techniques. The first publication describing the process was in the book "Stalking the Forest Monarchs - A Guide to Measuring Champion Trees," published by Will Blozan, Jack Sobon, and Robert Leverett in early 1997<sup id="cite_ref-blozanleverett_22-0" class="reference"><a href="#cite_note-blozanleverett-22">[22]</a></sup><sup id="cite_ref-23" class="reference"><a href="#cite_note-23">[23]</a></sup> The technique was soon adopted by other big tree surveyors in other areas of the world. Brett Mifsud (2002) writes: "New techniques for measuring tall trees were used in this study. Initially, a Bushnell ‘500 Yardage Pro’ laser rangefinder was used in conjunction with a Suunto clinometer to estimate tree heights in all regions. The previously-used ‘simple tan’ method of measuring tall trees was discarded in favor of the ‘sine’ method."<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">[24]</a></sup> Currently this method is being used by tree researchers and surveys in Asia, Africa, Europe, and South America.</p>
+<p>Using the rangefinder and clinometer, only four numbers are needed to complete the tree height calculation, and no tape is necessary, nor is direct contact with the tree.<sup id="cite_ref-Frank2010_2-2" class="reference"><a href="#cite_note-Frank2010-2">[2]</a></sup><sup id="cite_ref-Blozan2004_4-2" class="reference"><a href="#cite_note-Blozan2004-4">[4]</a></sup><sup id="cite_ref-Blozan2006_5-2" class="reference"><a href="#cite_note-Blozan2006-5">[5]</a></sup> The readings are 1) the distance to the top of the tree measured using the laser rangefinder, 2) the angle to the top of the tree measured with the clinometer, 3) the distance to the base of the tree measured with the laser rangefinder, and 4) the angle to the base of the tree measured with the clinometer. The calculations involve some basic trigonometry but these calculations can easily be done on any inexpensive scientific calculator.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Sine_height_measurement.tif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sine_height_measurement.tif/lossless-page1-220px-Sine_height_measurement.tif.png" width="220" height="99" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sine_height_measurement.tif/lossless-page1-330px-Sine_height_measurement.tif.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Sine_height_measurement.tif/lossless-page1-440px-Sine_height_measurement.tif.png 2x" data-file-width="1270" data-file-height="571" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Sine_height_measurement.tif" class="internal" title="Enlarge"></a></div>
+Sine height measurement</div>
+</div>
+</div>
+<p>Situations where the top of the tree being measured is above eye level and the base of the tree being measured is below eye level is the most common situation encountered in the field. The other two cases are those where both the top of the tree and the base of the tree are above eye level, and where both the top of the tree and base of the tree are located below eye level. In the first situation, if D1 is the distance to the top of the tree as measured with a laser rangefinder, and (a) is the angle to the top of the tree measured with a clinometer, then this forms the hypotenuse of a right triangle with the base of the triangle at eye level. The height of the tree above eye level is [h1 = sin(a) x D1]. The same process is used to measure the height or extension of the base of the tree above or below eye level where D1 is the distance to the base of the tree and (b) is the angle to the base of the tree. Therefore, the vertical distance to the base of the tree above or below eye level is [h2 = sin(b) x D2]. Common sense should prevail when adding h1 and h2. If the base of the tree is below eye level the distance it extends below eye level is added to the height of the tree above eye level to calculate the total height of the tree. If the base of the tree is above level then this height is subtracted from the height to the top of the tree. Mathematically since the sine of a negative angle is negative, we always get the following formula:</p>
+<p>height = sin(a) x (D1) – sin(b) x (D2)</p>
+<p>There are some errors associated with the sine top/sine bottom method. First the resolution of the laser rangefinder may range from an inch or less to half a yard or more dependent on the model being used. By checking the characteristics of the laser through a calibration procedure and taking measurements at only the click-over points where the numbers change from one value to the next highest much greater precision can be obtained from the instrument.<sup id="cite_ref-Frank2010_2-3" class="reference"><a href="#cite_note-Frank2010-2">[2]</a></sup> A hand held clinometer can only be read to an accuracy of about ¼ of a degree, leading to another source of error. However, by taking multiple shots to the top from different positions and by shooting at the click-over points, accurate heights can be obtained from the ground to within less than a foot of the tree’s actual height. In addition, multiple measurements allow erroneous values where the clinometer was misread to be identified and eliminated from the measurement set. Problems may also occur where the base of the tree is obscured by brush, in these situations a combination of the tangent method and sine methods may be used. If the base of the tree is not far below eye level, the horizontal distance to the tree trunk can be measured with the laser rangefinder, and the angle to the base measured with the clinometer. The vertical offset from the base of the tree to horizontal can be determined using the tangent method for the lower triangle, where [H2 = tan(A2) x D2]. In these cases where the tree is fairly vertical and the vertical distance from the base of the tree to eye level is small, any errors from using the tangent method for the base are minimal.</p>
+<p>There are considerable advantages to using this method over the basic clinometer and tape tangent method. Using this methodology, it no longer matters if the top of the tree is offset from the base of the tree, eliminating one major source of error present in the tangent method. A second benefit of the laser rangefinder technology is that the laser can be used to scan the upper portions of the tree to find which top is actually the true top of the tree. As a general rule, if there are several readings from different tops of the tree at or near the same inclination, the one that is the farthest in distance represents the tallest top of the group. This ability to scan for the highest point helps eliminate the second major source of error caused by misidentifying a forward leaning branch or the wrong top. Additionally, aside from gross errors resulting from misreading the instrument, the results will not overstate the height of the tree. The height can still be under-measured if the true top of the tree is not correctly identified. The sine top/sine bottom method allows the height of trees to be measured that are entirely above or below the eye level of the surveyor as well as on level ground. A tree can also be measured in segments where the top and bottom of the tree are not both visible from a single location. A single height measurement takes only a matter of a few minutes using separate laser rangefinder and clinometer or less when using instruments with a built in electronic clinometer. The measurements made using these techniques, through averaging multiple shots, are typically within a foot or less of climber deployed tape measurements.</p>
+<p>Some laser hypsometers have a built in height measurement function. Before using this function the user should read the instructions on how it works. In some implementations it calculates tree heights using the flawed tangent method, while in others it allows you to use the better sine top/sine bottom method. The sine top /sine bottom method may be called the vertical distance function or a two-point method. For example, the Nikon Forestry 550 implements the sine top/sine bottom method only, while the successor the Forestry Pro has both a two-point measurement and a three-point measurement function. The three-point measurement function uses the tangent method, while the two point method uses the sine top/sine bottom method. The top and bottom triangles are automatically measured using the two point function and added together, giving an accurate height measurement.</p>
+<p>A more detailed discussion of the laser rangefinder/ clinometer sine method can be found in Blozan<sup id="cite_ref-Blozan2004_4-3" class="reference"><a href="#cite_note-Blozan2004-4">[4]</a></sup><sup id="cite_ref-Blozan2006_5-3" class="reference"><a href="#cite_note-Blozan2006-5">[5]</a></sup> and Frank<sup id="cite_ref-Frank2010_2-4" class="reference"><a href="#cite_note-Frank2010-2">[2]</a></sup> and in discussions on the Native Tree Society website and BBS.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">[25]</a></sup><sup id="cite_ref-26" class="reference"><a href="#cite_note-26">[26]</a></sup></p>
+<p>Reviews of the sine method have been published by U. S. Forest researcher Dr. Don Bragg.<sup id="cite_ref-27" class="reference"><a href="#cite_note-27">[27]</a></sup><sup id="cite_ref-28" class="reference"><a href="#cite_note-28">[28]</a></sup> He writes: "When heights were measured properly and under favorable circumstances, the results obtained by the tangent and sine methods differed only by about 2 percent. Under more challenging conditions, however, errors ranged from 8 to 42 percent. These examples also highlight a number of distinct advantages of using the sine method, especially when exact tree height is required. and Under typical circumstances, the sine method is the most reliable means currently available to determine standing tree height, largely because it is relatively insensitive to some of the underlying assumptions of the tangent method. Unfortunately, only recently has technology permitted the use of the sine method, whereas the tangent method has been ingrained into procedures and instrumentation for many decades."</p>
+<h2><span class="mw-headline" id="Direct_height_measurement">Direct height measurement</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit&amp;section=6" title="Edit section: Direct height measurement">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Tree heights can be directly measured using a pole for shorter trees, or by climbing a larger tree and measuring the height via a long measuring tape. Pole measurements<sup id="cite_ref-29" class="reference"><a href="#cite_note-29">[29]</a></sup><sup id="cite_ref-30" class="reference"><a href="#cite_note-30">[30]</a></sup> work well for small trees eliminating the need for trigonometry involving multiple triangles, and for trees shorter than the minimal range for laser rangefinders. Colby Rucker writes: "For the smallest trees, a carpenter’s six-foot folding ruler works well. Above the ruler’s reach, a pole is needed. An aluminum painter’s pole telescopes to nearly twelve feet, and works quite nicely. It can be adjusted to the height of a small tree, and the pole measured with a steel tape hooked to one end. It can be raised to the top of a slightly taller tree, and the distance to the ground measured with the carpenters’ rule. For additional reach, two aluminum extensions can be made that fit inside one another, and both fit inside the pole. I used a sturdy aluminum ski pole for the top piece. That extends the pole to about twenty feet, which is convenient for most work. Occasionally, additional height is needed and additional lengths can be added, but the pole becomes unwieldy at these greater heights. Standard ten foot sections of PVC pipe can be used for the poles, but they tend to become floppier with increasing length."</p>
+<p>Tree heights can also be directly measured by a tree climber.<sup id="cite_ref-Blozan2004_4-4" class="reference"><a href="#cite_note-Blozan2004-4">[4]</a></sup><sup id="cite_ref-31" class="reference"><a href="#cite_note-31">[31]</a></sup> The climber accesses the top of the tree finding a position as near to the top as can be safely reached. Once safely anchored from that position the climber finds a clear path and drops a weighted line to the ground. A tape is fastened to the end of the drop line and pulled up to the top following the path of the weighted line. The bottom reference point is the mid-slope position of the trunk at ground level. The total height of the tree to the climber’s position is read directly from the tape. Fiberglass tapes are generally used for these measurements because of their light weight, negligible stretch, and because they do not need to be calibrated for use at different temperatures. If the tape is to be used later as a fixed reference for later trunk volume measurements the top is fastened in place using several thumbtacks. This holds the tape in position during the volume measurements, but it still can be pulled free from below when finished.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Tree_Top_Measurement.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tree_Top_Measurement.gif/220px-Tree_Top_Measurement.gif" width="220" height="154" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tree_Top_Measurement.gif/330px-Tree_Top_Measurement.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/8/89/Tree_Top_Measurement.gif 2x" data-file-width="394" data-file-height="275" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Tree_Top_Measurement.gif" class="internal" title="Enlarge"></a></div>
+Tree Top Measurement</div>
+</div>
+</div>
+<p>A pole is generally used to measure the remaining height of the tree. The climber pulls up an extendable pole and uses it to reach to the top of the tree from the point at the upper end of the tape. If not vertical, the slope of the leaning pole is measured and the length of the pole is measured. The vertical distance added by the pole to the tape length is (sin Θ x pole length).</p>
+<h2><span class="mw-headline" id="Additional_height_measurement_techniques">Additional height measurement techniques</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit&amp;section=7" title="Edit section: Additional height measurement techniques">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are several additional methods that can be used to measure tree heights from a distance that can produce reasonably accurate results. These include traditional surveying methods using a theodolite, cross-triangulation, the extended baseline method, the parallax method, and the triangle method.</p>
+<p>Standard surveying techniques may be used to measure tree heights. A theodolite with an electronic distance measurement (EDM0 function or Total Station can provide accurate heights because a specific point on the tree crown could be consistently chosen and "shot" through a high magnification lens with cross hairs mounted on a tripod which further steadied the device The drawbacks are the prohibitive cost of the instrument for average users and the need for a well cut corridor for horizontal distance measurement has to be cleared for every measurement, and the general lack of easy portability.<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">[32]</a></sup></p>
+<p>Cross-triangulation methods can be used.<sup id="cite_ref-Blozan2004_4-5" class="reference"><a href="#cite_note-Blozan2004-4">[4]</a></sup><sup id="cite_ref-Blozan2006_5-4" class="reference"><a href="#cite_note-Blozan2006-5">[5]</a></sup><sup id="cite_ref-blozanleverett_22-1" class="reference"><a href="#cite_note-blozanleverett-22">[22]</a></sup> The top of the tree is sighted from one position and the line along the ground from the viewer toward the top of the tree is marked. The top of the tree is then located from a second viewing position, ideally about 90 degrees around the tree from the first location, and the line along the ground toward the top of the tree is again marked. The intersection of these two lines should be position on the ground directly underneath the top of the tree. Once this position is known the height of the treetop above this point can be measured using the tangent method without the need for a laser rangefinder. Then the relative height of this point to the base of the tree can be measured, and the total height of the tree determined. A two-person team will make this process easier. The drawbacks of this method include among others: 1) difficulty in correctly identifying the actual top of the tree from the ground, 2) being able to locate the same top from both positions, and 3) it is a very time consuming process.</p>
+<p>External baseline method developed by Robert T. Leverett<sup id="cite_ref-33" class="reference"><a href="#cite_note-33">[33]</a></sup><sup id="cite_ref-34" class="reference"><a href="#cite_note-34">[34]</a></sup><sup id="cite_ref-35" class="reference"><a href="#cite_note-35">[35]</a></sup> is based upon the idea that there will be difference in the angle to the top of an object if it is viewed from two different distances along a common baseline. The height of the tree above a level baseline can be determined by measuring the angle to the top of the tree from two different positions, one farther than the other along the same baseline and horizontal plane, if the distance between these two measuring points is known.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Extended_baseline_tree_height_measurement.tif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Extended_baseline_tree_height_measurement.tif/lossy-page1-220px-Extended_baseline_tree_height_measurement.tif.jpg" width="220" height="104" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Extended_baseline_tree_height_measurement.tif/lossy-page1-330px-Extended_baseline_tree_height_measurement.tif.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Extended_baseline_tree_height_measurement.tif/lossy-page1-440px-Extended_baseline_tree_height_measurement.tif.jpg 2x" data-file-width="616" data-file-height="292" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Extended_baseline_tree_height_measurement.tif" class="internal" title="Enlarge"></a></div>
+Extended baseline tree height measurement</div>
+</div>
+</div>
+<p>By accurately measuring the differences between the angles and the distance to the object from the closer position, the height of the object can be calculated. A very accurate angle measurement is required by the process. To use the method for both top and base, requires eight measurements and the use of three separate formulae. The set of formulae is applied once for the top of the tree and once for the bottom. If the baseline cannot be level, a more complex calculation must be made that takes into account the slope of the baseline. An Excel spreadsheet has been developed that automates the calculations and is available on the ENTS BBS/website. It covers the common tangent-based methods and includes error analysis. There are a series of variations for other scenarios where the observation points are not at the same elevation, or not along the same baseline.</p>
+<p>Parallax method 3-D<sup id="cite_ref-36" class="reference"><a href="#cite_note-36">[36]</a></sup><sup id="cite_ref-37" class="reference"><a href="#cite_note-37">[37]</a></sup> is a survey technique for measuring the tree height indirectly by Michael Taylor. The parallax method involves finding two different views to the tree's top, the ground level differential and horizontal sweep angles between the top and the two views. These values can be used in an algebraic equation to determine the height of the tree’s top above the stations can be calculated. No direct measurement to the tree's trunk or top is taken in the parallax Method.</p>
+<p>Three verticals method (formerly the triangle method) is a modification of the simpler parallax method.<sup id="cite_ref-38" class="reference"><a href="#cite_note-38">[38]</a></sup> It is possible to measure the height of a tree indirectly without taking any horizontal sweep angles, which can be difficult to obtain accurately in the field. With this method, find three open views in any space to the treetop. These points ideally should be within view of each other to avoid indirect surveys. Once the surveyor has taken the three vertical angles to the tree's top, the slope distances and angles between the three viewing stations is taken. The height of the treetop can then be derived using a series of equations, which require an iterative numerical solution and the uses of a computer. The Triangle Technique, equations, measurement diagrams, and derivations were developed by Michael Taylor and are available on his website. The software program for the calculations is written in basic and can also be downloaded from his website.<sup id="cite_ref-39" class="reference"><a href="#cite_note-39">[39]</a></sup></p>
+<h2><span class="mw-headline" id="LiDAR">LiDAR</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit&amp;section=8" title="Edit section: LiDAR">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/LiDAR" class="mw-redirect" title="LiDAR">LiDAR</a>, an acronym for Light Detection and Ranging, is an optical remote sensing technology that can measure distance to objects. LiDAR data is publicly available for many areas<sup id="cite_ref-40" class="reference"><a href="#cite_note-40">[40]</a></sup> and these data sets can be used to display tree heights present on any of these locations. Heights are determined by measuring the distance to the ground from the air, the distance to the tops of the trees, and displaying the difference between the two values. A USGS report<sup id="cite_ref-41" class="reference"><a href="#cite_note-41">[41]</a></sup> compared ground based measurements made using a total station at two different sites, one dominated by Douglas-fir (<i><a href="/wiki/Douglas_fir" title="Douglas fir">Pseudotsuga menziesii</a></i>) and another dominated by ponderosa pine (<i><a href="/wiki/Pinus_ponderosa" title="Pinus ponderosa">Pinus ponderosa</a></i>) with results obtained from LiDAR data. They found height measurements obtained from narrow-beam (0.33 m), high-density (6 points/m2) LiDAR were more accurate (mean error i: SD = -0.73 + 0.43 m) than those obtained from wide-beam (0.8 m) LiDAR (-1.12 0.56 m). LiDAR-derived height measurements were more accurate for ponderosa pine (-0.43 i: 0.13 m) than for Douglas-fir (-1.05 i: 0.41 m) at the narrow beam setting. Tree heights acquired using conventional field techniques (-0.27 2 0.27 m) were more accurate than those obtained using LiDAR (-0.73 i: 0.43 m for narrow beam setting).</p>
+<p>Kelly et al.<sup id="cite_ref-42" class="reference"><a href="#cite_note-42">[42]</a></sup> found that LiDAR at a 20-ft (6.1-m) cell size for the target area in North Carolina did not have enough detail to measure individual trees, but was sufficient for identifying the best growing sites with mature forest and most tall trees. They found that highly reflective surfaces, such as water and roofs of houses sometimes erroneously appeared as tall trees in the data maps and recommends that use of LiDAR be coordinated with topographic maps to identify these potential false returns. Underestimations of the true tree heights of individual trees were found for some of the tall tree locations located on the LiDAR maps and was attributed to the failure of the LiDAR at that resolution does not seem to detect all twigs in a forest canopy. They write: "In addition to using LiDAR to locate tall trees, there is great promise for using LiDAR to locate old-growth forests. When comparing known old-growth sites to second-growth in LiDAR, old-growth has a much more textured canopy because of the frequent and often remarkably evenly spaced tree fall gaps. Finding equations that can predict old-growth forests of various types using LiDAR and other data sources is an important area of scientific inquiry that could further conservation of old-growth forest."</p>
+<p>Maps of global canopy heights have been developed using LiDAR by Michael Lefsky in 2010<sup id="cite_ref-43" class="reference"><a href="#cite_note-43">[43]</a></sup> and updated a year later by a team led by Marc Simard of NASA’s Jet Propulsion Laboratory.<sup id="cite_ref-44" class="reference"><a href="#cite_note-44">[44]</a></sup> A smaller version of the map can be found on NASA’s Earth Observatory website.<sup id="cite_ref-45" class="reference"><a href="#cite_note-45">[45]</a></sup></p>
+<p>LiDAR has frequently been used by members of the NTS to search for tall tree sites and to locate areas within a site with the greatest potential for tall tree finds. They have found LiDAR to be a useful tool for scouting locations prior to visits, but the values need to be ground truthed for accuracy. Michael Taylor writes: "In the flat areas like Humboldt Redwoods State Park the LiDAR was usually within 3 feet accuracy and tended to be on the conservative side. For steep hill areas the LIDAR often over-estimated by 20 feet more due to the fact that redwoods tend to lean down-hill in notch canyons as they seek the open areas for more light. If the tree grows near a ravine this over-estimation from LiDAR was more the norm than the exception. Perhaps only 50% of the LiDAR hit list trees from Redwood National Park were actually trees over 350 feet. From Humboldt Redwoods State Park nearly 100% of the LiDAR returns that came back as being over 350 feet were actually trees over 350 feet when confirmed from the ground or climber deployed tape. It depends on the terrain and how well the ground/trunk interface was captured. For steep and dense canopies the ground determination is a great challenge.<sup id="cite_ref-46" class="reference"><a href="#cite_note-46">[46]</a></sup>" An overview of using LiDAR for tree measurement was written by Paul Jost on the NTS website.<sup id="cite_ref-47" class="reference"><a href="#cite_note-47">[47]</a></sup> Data for much of the United States can be downloaded from the USGS<sup id="cite_ref-48" class="reference"><a href="#cite_note-48">[48]</a></sup> or from various state agencies. Several different data viewers are available. Isenburg and Sewchuk have developed software for Visualizing LiDAR in Google Earth.<sup id="cite_ref-49" class="reference"><a href="#cite_note-49">[49]</a></sup> Another viewer is called Fusion, a LiDAR viewing and analysis software tool developed by the Silviculture and Forest Models Team, Research Branch of the US Forest Service. Steve Galehouse<sup id="cite_ref-50" class="reference"><a href="#cite_note-50">[50]</a></sup><sup id="cite_ref-51" class="reference"><a href="#cite_note-51">[51]</a></sup> provides a step by step guide to using the Fusion software to supplement the instructions on the Fusion website itself.</p>
+<h2><span class="mw-headline" id="Google_Earth">Google Earth</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit&amp;section=9" title="Edit section: Google Earth">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In 2012 <a href="/wiki/Google_Earth" title="Google Earth">Google Earth</a> began offering 3D models of some major cities using <a href="/wiki/Photogrammetry#Stereophotogrammetry" title="Photogrammetry">stereophotogrammetry</a><sup id="cite_ref-52" class="reference"><a href="#cite_note-52">[52]</a></sup> which allows users to measure the height of buildings and trees by adjusting the altitude of a Polygon in 3D, or use the Ruler function to measure the height of an object in a 3D path in Google Earth Pro.<sup id="cite_ref-53" class="reference"><a href="#cite_note-53">[53]</a></sup> Other techniques of approximating tree height do exist in Google Earth. Using Street View one may adjust the altitude of a New Placemark to align with the top of a tree or building, and other methods include estimating total building or tree height from shadow length in a 2D Aerial Photo or Satellite image.<sup id="cite_ref-54" class="reference"><a href="#cite_note-54">[54]</a></sup></p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Frank, Edward Forrest. September 19, 2005. Base of Tree.</span></li>
+<li id="cite_note-Frank2010-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-Frank2010_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Frank2010_2-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Frank2010_2-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Frank2010_2-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-Frank2010_2-4"><sup><i><b>e</b></i></sup></a></span> <span class="reference-text">Frank, Edward Forrest. January 12, 2010. The Really, Really Basics of Laser Rangefinder/Clinometer Tree Height Measurements. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/measure/really_basic_3a.pdf">http://www.nativetreesociety.org/measure/really_basic_3a.pdf</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-afmg-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-afmg_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-afmg_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">American Forests Measuring Guidelines. <a rel="nofollow" class="external free" href="http://www.americanforests.org/bigtrees/big-tree-measuring-guidelines/">http://www.americanforests.org/bigtrees/big-tree-measuring-guidelines/</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-Blozan2004-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-Blozan2004_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Blozan2004_4-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Blozan2004_4-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Blozan2004_4-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-Blozan2004_4-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-Blozan2004_4-5"><sup><i><b>f</b></i></sup></a></span> <span class="reference-text">Blozan, Will. 2004, 2008. The Tree Measuring Guidelines of the Eastern Native Tree Society. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/measure/Tree_Measuring_Guidelines-revised1.pdf">http://www.nativetreesociety.org/measure/Tree_Measuring_Guidelines-revised1.pdf</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-Blozan2006-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-Blozan2006_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Blozan2006_5-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Blozan2006_5-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Blozan2006_5-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-Blozan2006_5-4"><sup><i><b>e</b></i></sup></a></span> <span class="reference-text">Blozan, Will. 2006. Tree Measuring Guidelines of the Eastern Native Tree Society. Bulletin of the Eastern Native Tree Society, Volume 1, Number 1, Summer 2006. pp. 3-10. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/bulletin/b1_1/bulletin1_1.htm">http://www.nativetreesociety.org/bulletin/b1_1/bulletin1_1.htm</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">Monumental Trees - The thickest, tallest, and oldest trees in North America. <a rel="nofollow" class="external free" href="http://www.monumentaltrees.com/en/records/northamerica/">http://www.monumentaltrees.com/en/records/northamerica/</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Tallest Coast Redwoods. <a rel="nofollow" class="external free" href="http://landmarktrees.net/redwoods.html">http://landmarktrees.net/redwoods.html</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">World Rucker Index. <a rel="nofollow" class="external free" href="http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=3573">http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=3573</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Historical Accounts of White Pine Heights - A Compilation. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/historic/nwhite_pine_heights.htm">http://www.nativetreesociety.org/historic/nwhite_pine_heights.htm</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">Rucker, Colby. Feb 2004. Tallest Examples of Eastern Native Tree Species. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/bigtree/webpage_tall_tree_list.htm">http://www.nativetreesociety.org/bigtree/webpage_tall_tree_list.htm</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text">Boogerman Pine, GSMNP. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/fieldtrips/gsmnp/boogerman/boogerman.htm">http://www.nativetreesociety.org/fieldtrips/gsmnp/boogerman/boogerman.htm</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">WikiHow. How to measure the height of a tree - Pencil method. <a rel="nofollow" class="external free" href="http://www.wikihow.com/Measure-the-Height-of-a-Tree">http://www.wikihow.com/Measure-the-Height-of-a-Tree</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">Champion Trees of Pennsylvania, Measurement Notes. <a rel="nofollow" class="external free" href="http://www.pabigtrees.com/measure_notes.aspx">http://www.pabigtrees.com/measure_notes.aspx</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text">Environmental Education, How to Use a Clinometer. <a rel="nofollow" class="external free" href="http://elms.smcps.org/student-tutorials/great-trees/using-a-clinometer-to-measure-height">http://elms.smcps.org/student-tutorials/great-trees/using-a-clinometer-to-measure-height</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text">Tree Top Offset/Lean. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/measure/crown/tree_top_offset.htm">http://www.nativetreesociety.org/measure/crown/tree_top_offset.htm</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text">Mismeasured Trees. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/measure/notes/mismeasured_trees.htm">http://www.nativetreesociety.org/measure/notes/mismeasured_trees.htm</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text">Rucker, Colby. 2008. Great Eastern Trees, Past and Present. Bulletin of the Eastern Native Tree Society, Volume 3, Issue 4, Fall 2008, pp. 6-40. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/bulletin/b3_4/B_ENTS_v03_04.pdf">http://www.nativetreesociety.org/bulletin/b3_4/B_ENTS_v03_04.pdf</a></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text">Frank, Edward Forrest. 2012. Beginnings of Laser Rangefinder Sine Based Tree Height Measurement. eNTS: The Magazine of the Native Tree Society, Volume 2, Number 10, October 2012, pp. 95-101. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/magazine/2012/NTS_October2012.pdf">http://www.nativetreesociety.org/magazine/2012/NTS_October2012.pdf</a></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text">Dr. Robert Van Pelt, Associate Faculty of the Institute for Redwood Ecology. <a rel="nofollow" class="external free" href="http://www.humboldt.edu/redwoods/faculty/vanpelt.php">http://www.humboldt.edu/redwoods/faculty/vanpelt.php</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text">Robert T. Leverett. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/people/ents_executive.htm">http://www.nativetreesociety.org/people/ents_executive.htm</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text">Will Blozan. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/people/ents_executive.htm">http://www.nativetreesociety.org/people/ents_executive.htm</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-blozanleverett-22"><span class="mw-cite-backlink">^ <a href="#cite_ref-blozanleverett_22-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-blozanleverett_22-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Blozan, Will and Leverett, Robert T. 1997. Stalking the Forest Monarchs: A Guide to Measuring Champion Trees.</span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text">White Pine Society. Tree Measurement Guide (excerpt from Stalking the Forest Monarchs: A Guide to Measuring Champion Trees(1997) by Will Blozan and Robert T. Leverett). <a rel="nofollow" class="external free" href="http://www.whitepines.org/Tree_Measuring_Guide.html">http://www.whitepines.org/Tree_Measuring_Guide.html</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text">Mifsud, Brett. 2002. Victoria’s tallest trees. Australian Forestry Vol. 66, No. 3 pp. 197–205, Revised manuscript received 25 November 2002, <a rel="nofollow" class="external free" href="http://svc043.wic023v.server-web.com/pdf/pdf-members/afj/AFJ%202003%20v66/AFJ%20Sept%202003%2066-3/Mifsud%20final.pdf">http://svc043.wic023v.server-web.com/pdf/pdf-members/afj/AFJ%202003%20v66/AFJ%20Sept%202003%2066-3/Mifsud%20final.pdf</a></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text">Native Tree Society website. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org">http://www.nativetreesociety.org</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text">Native Tree Society BBS. <a rel="nofollow" class="external free" href="http://www.ents-bbs.org">http://www.ents-bbs.org</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-27">^</a></b></span> <span class="reference-text">Bragg, Don C., 2008. An improved tree height measurement technique tested on mature southern pines. South. J. Appl. For. 32(1): 38-43. <a rel="nofollow" class="external free" href="http://www.treesearch.fs.fed.us/pubs/29564/">http://www.treesearch.fs.fed.us/pubs/29564/</a></span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="#cite_ref-28">^</a></b></span> <span class="reference-text">Bragg, Don C., 2007. The sine method as a more accurate height predictor for hardwoods. P. 23–32 in Proc., 15th Central Hardwood Forest Conf., Buckley, D.S., and W.K. Clatterbuck (eds.). US For. Serv. Gen. Tech. Rep. SRS-101. <a rel="nofollow" class="external free" href="http://www.srs.fs.usda.gov/pubs/gtr/gtr_srs101/gtr_srs101-03.pdf">http://www.srs.fs.usda.gov/pubs/gtr/gtr_srs101/gtr_srs101-03.pdf</a></span></li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text">Rucker, Colby. 2008. Tree Measurement - Measuring Tree Heights by the Pole method. Bulletin of the Eastern Native Tree Society, Volume 3, Issue 4, Fall 2008, pp. 6-40. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/bulletin/b3_4/B_ENTS_v03_04.pdf">http://www.nativetreesociety.org/bulletin/b3_4/B_ENTS_v03_04.pdf</a></span></li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-30">^</a></b></span> <span class="reference-text">Rucker, Colby. 2003. Measuring Tree Heights by the Pole Method. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/measure/notes/pole_method.htm">http://www.nativetreesociety.org/measure/notes/pole_method.htm</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-31">^</a></b></span> <span class="reference-text">Blozan, Will and Riddle, Jess. September 2006. Tsuga Search Measurement Protocols. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/tsuga/tsuga_measurement_protocols.htm">http://www.nativetreesociety.org/tsuga/tsuga_measurement_protocols.htm</a> Accessed March 4, 2013.</span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text">Kostoglou, Perry. 2000. A Survey of Ultra Tall Eucalypts in Southern Tasmania, A report to Forestry Tasmania, June, 2000. <a rel="nofollow" class="external free" href="http://www.forestrytas.com.au/uploads/File/pdf/tall_trees_survey_report.pdf">http://www.forestrytas.com.au/uploads/File/pdf/tall_trees_survey_report.pdf</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text">Leverett, Robert T. 2010. Measuring Tree Height by Tape and Clinometer Scenarios. Bulletin of the Eastern Native Tree Society, Volume 5, Issues 3&amp;4, Summer/Fall 2010, pp. 3-12. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/bulletin/b5_3_4/B_ENTS_v05_03&amp;4.pdf">http://www.nativetreesociety.org/bulletin/b5_3_4/B_ENTS_v05_03&amp;4.pdf</a></span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text">Leverett, Robert T. 2011. External Baseline Method for Measuring Tree Height, Bulletin of the Eastern Native Tree Society, Vol. 6, No. 2 &amp;3, Spring/Summer 2011, p. 3 - 8. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/bulletin/b6_2_3/B_ENTS_v06_02&amp;3.pdf">http://www.nativetreesociety.org/bulletin/b6_2_3/B_ENTS_v06_02&amp;3.pdf</a></span></li>
+<li id="cite_note-35"><span class="mw-cite-backlink"><b><a href="#cite_ref-35">^</a></b></span> <span class="reference-text">Leverett, Robert T. 2011. #8) Re: External Baseline Method. <a rel="nofollow" class="external free" href="http://www.ents-bbs.org/viewtopic.php?p=12857#p12857">http://www.ents-bbs.org/viewtopic.php?p=12857#p12857</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b><a href="#cite_ref-36">^</a></b></span> <span class="reference-text">Taylor, Michael. 2012. Parallax Method 3-D <a rel="nofollow" class="external free" href="http://www.landmarktrees.net/parallax%20method.html">http://www.landmarktrees.net/parallax%20method.html</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b><a href="#cite_ref-37">^</a></b></span> <span class="reference-text">Taylor, Michael. July 01, 2012. #4) Re: Parallax method revisited. <a rel="nofollow" class="external free" href="http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=4186#p18047">http://www.ents-bbs.org/viewtopic.php?f=235&amp;t=4186#p18047</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text">Taylor, Michael. 2012. Triangle method. <a rel="nofollow" class="external free" href="http://landmarktrees.net/triangle.html">http://landmarktrees.net/triangle.html</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-39"><span class="mw-cite-backlink"><b><a href="#cite_ref-39">^</a></b></span> <span class="reference-text">Taylor, Michael. 2012. Triangle Method Solver with Integrated Catenary &amp; Pivot Adjustment (software). <a rel="nofollow" class="external free" href="http://www.landmarktrees.net/software.html">http://www.landmarktrees.net/software.html</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-40">^</a></b></span> <span class="reference-text">USGS Center for LIDAR Information Coordination and Knowledge. <a rel="nofollow" class="external free" href="http://lidar.cr.usgs.gov/">http://lidar.cr.usgs.gov/</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b><a href="#cite_ref-41">^</a></b></span> <span class="reference-text">Anderson, Hans-Erik; Reytebuch, Stephen E.; and McGaughey, Robert J. 2006. A rigorous assessment of tree height measurements obtained using airborne lidar and conventional field methods. Can. Journal of Remote Sensing, Volume 32, number 5, pp. 355-366. <a rel="nofollow" class="external free" href="http://www.fs.fed.us/pnw/pubs/journals/pnw_2006_andersen001.pdf">http://www.fs.fed.us/pnw/pubs/journals/pnw_2006_andersen001.pdf</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b><a href="#cite_ref-42">^</a></b></span> <span class="reference-text">Kelly, Josh; Hushaw, Jennifer; Jost, Paul; Blozan, Will; Irwin,Hugh; and Riddle,Jess. 2010. Using LiDAR to locate exceptionally tall trees in western North Carolina. Bulletin of the Eastern Native Tree Society, Volume 5, Issue 1&amp;2, Spring 2010, pp. 16-21. <a rel="nofollow" class="external free" href="http://www.nativetreesociety.org/bulletin/b5_1_2/B_ENTS_v05_01&amp;2.pdf">http://www.nativetreesociety.org/bulletin/b5_1_2/B_ENTS_v05_01&amp;2.pdf</a></span></li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b><a href="#cite_ref-43">^</a></b></span> <span class="reference-text">Lefsky, M. (2010, August 5). A Global Forest Canopy Height Map from the Moderate Resolution Imaging Spectroradiometer and the Geoscience Laser Altimeter System. Geophysical Research Letters. 37 L15401. <a rel="nofollow" class="external free" href="http://www.agu.org/pubs/crossref/2010/2010GL043622.shtml">http://www.agu.org/pubs/crossref/2010/2010GL043622.shtml</a></span></li>
+<li id="cite_note-44"><span class="mw-cite-backlink"><b><a href="#cite_ref-44">^</a></b></span> <span class="reference-text">Simard, M. (2011, November 2011). Mapping Forest Canopy Height Globally with Spaceborne Lidar. Journal of Geophysical Research. (116) G04021. <a rel="nofollow" class="external free" href="http://www.agu.org/pubs/crossref/2011/2011JG001708.shtml">http://www.agu.org/pubs/crossref/2011/2011JG001708.shtml</a></span></li>
+<li id="cite_note-45"><span class="mw-cite-backlink"><b><a href="#cite_ref-45">^</a></b></span> <span class="reference-text">Global Forest Heights: Take Two, April 13, 2012. <a rel="nofollow" class="external free" href="http://earthobservatory.nasa.gov/IOTD/view.php?id=77637&amp;src=iotdrss">http://earthobservatory.nasa.gov/IOTD/view.php?id=77637&amp;src=iotdrss</a></span></li>
+<li id="cite_note-46"><span class="mw-cite-backlink"><b><a href="#cite_ref-46">^</a></b></span> <span class="reference-text">Taylor, Michael. 2012. 222 Confirmed Redwoods Over 350 ft. LiDAR project concludes, August 19, 2012 <a rel="nofollow" class="external free" href="http://www.ents-bbs.org/viewtopic.php?f=170&amp;t=4440&amp;p=18780#p18791">http://www.ents-bbs.org/viewtopic.php?f=170&amp;t=4440&amp;p=18780#p18791</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-47"><span class="mw-cite-backlink"><b><a href="#cite_ref-47">^</a></b></span> <span class="reference-text">Jost, Paul. 2009. LIDAR. <a rel="nofollow" class="external free" href="http://www.ents-bbs.org/viewtopic.php?f=12&amp;t=87">http://www.ents-bbs.org/viewtopic.php?f=12&amp;t=87</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-48"><span class="mw-cite-backlink"><b><a href="#cite_ref-48">^</a></b></span> <span class="reference-text">USGA LiDAR Portal <a rel="nofollow" class="external free" href="http://lidar.cr.usgs.gov/">http://lidar.cr.usgs.gov/</a></span></li>
+<li id="cite_note-49"><span class="mw-cite-backlink"><b><a href="#cite_ref-49">^</a></b></span> <span class="reference-text">Isenburg, Martin and Shewchuck, Jonathan. Visualizing LIDAR in Google Earth. <a rel="nofollow" class="external free" href="http://www.cs.unc.edu/~isenburg/googleearth/">http://www.cs.unc.edu/~isenburg/googleearth/</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-50"><span class="mw-cite-backlink"><b><a href="#cite_ref-50">^</a></b></span> <span class="reference-text">DataOne. Fusion LiDAR Software. <a rel="nofollow" class="external free" href="http://www.dataone.org/software-tools/fusion-lidar-software">http://www.dataone.org/software-tools/fusion-lidar-software</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-51"><span class="mw-cite-backlink"><b><a href="#cite_ref-51">^</a></b></span> <span class="reference-text">Galehouse, Stephen. January 22, 2011. Fusion view of LiDAR data. <a rel="nofollow" class="external free" href="http://www.ents-bbs.org/viewtopic.php?f=12&amp;t=1944">http://www.ents-bbs.org/viewtopic.php?f=12&amp;t=1944</a> Accessed March 5, 2013.</span></li>
+<li id="cite_note-52"><span class="mw-cite-backlink"><b><a href="#cite_ref-52">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://3dmodeling4business.com/the-story-behind-google-earths-new-3d-cities/">"The Story Behind Google Earth's New 3D Cities"</a>. <i>3D Modeling 4 Business</i><span class="reference-accessdate">. Retrieved <span class="nowrap">16 September</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATree+height+measurement&amp;rft.atitle=The+Story+Behind+Google+Earth%99s+New+3D+Cities&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2F3dmodeling4business.com%2Fthe-story-behind-google-earths-new-3d-cities%2F&amp;rft.jtitle=3D+Modeling+4+Business&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-53"><span class="mw-cite-backlink"><b><a href="#cite_ref-53">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://support.google.com/earth/answer/148134?hl=en">"Measure distances and areas in Google Earth"</a>. <i>Google Earth Help</i><span class="reference-accessdate">. Retrieved <span class="nowrap">16 September</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATree+height+measurement&amp;rft.atitle=Measure+distances+and+areas+in+Google+Earth&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fsupport.google.com%2Fearth%2Fanswer%2F148134%3Fhl%3Den&amp;rft.jtitle=Google+Earth+Help&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-54"><span class="mw-cite-backlink"><b><a href="#cite_ref-54">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.gislounge.com/shadows-angles-measuring-object-heights-satellite-imagery/">"Shadows and Angles: Measuring Object Heights from Satellite Imagery"</a>. <i>GIS Lounge</i><span class="reference-accessdate">. Retrieved <span class="nowrap">16 September</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATree+height+measurement&amp;rft.atitle=Shadows+and+Angles%3A+Measuring+Object+Heights+from+Satellite+Imagery&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.gislounge.com%2Fshadows-angles-measuring-object-heights-satellite-imagery%2F&amp;rft.jtitle=GIS+Lounge&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Forestry" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Forestry" title="Template:Forestry"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Forestry" title="Template talk:Forestry"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Forestry&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Forestry" style="font-size:114%"><a href="/wiki/Forestry" title="Forestry">Forestry</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><i><a href="/wiki/Outline_of_forestry" title="Outline of forestry">Outline</a></i></li>
+<li><i><a href="/wiki/Index_of_forestry_articles" title="Index of forestry articles">Index</a></i></li>
+<li><i><a href="/wiki/List_of_countries_by_forest_area" title="List of countries by forest area">Forest areas</a></i></li>
+<li><i><a href="/wiki/List_of_forestry_ministries" title="List of forestry ministries">Ministries</a></i></li>
+<li><i><a href="/wiki/List_of_forest_research_institutes" title="List of forest research institutes">Research institutes</a></i></li>
+<li><i><a href="/wiki/List_of_forestry_universities_and_colleges" title="List of forestry universities and colleges">Colleges</a></i></li>
+<li><i><a href="/wiki/List_of_forestry_journals" title="List of forestry journals">Journals</a></i></li>
+<li><i><a href="/wiki/Arbor_Day" title="Arbor Day">Arbor Day</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Types</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Agroforestry" title="Agroforestry">Agroforestry</a>&#160;(<i><a href="/wiki/Dehesa" title="Dehesa">dehesa</a></i>)</li>
+<li><a href="/wiki/Analog_forestry" title="Analog forestry">Analog forestry</a></li>
+<li><a href="/wiki/Bamboo#Cultivation" title="Bamboo">Bamboo forestry</a></li>
+<li><a href="/wiki/Close_to_nature_forestry" title="Close to nature forestry">Close to nature forestry</a></li>
+<li><a href="/wiki/Community_forestry" title="Community forestry">Community forestry</a></li>
+<li><a href="/wiki/Ecoforestry" title="Ecoforestry">Ecoforestry</a></li>
+<li><a href="/wiki/Energy_forestry" title="Energy forestry">Energy forestry</a></li>
+<li><a href="/wiki/Mycoforestry" title="Mycoforestry">Mycoforestry</a></li>
+<li><a href="/wiki/Permaforestry" title="Permaforestry">Permaforestry</a></li>
+<li><a href="/wiki/Plantation#Forestry" title="Plantation">Plantation forestry</a></li>
+<li><a href="/wiki/Social_forestry_in_India" title="Social forestry in India">Social forestry</a></li>
+<li><a href="/wiki/Sustainable_forestry" class="mw-redirect" title="Sustainable forestry">Sustainable forestry</a></li>
+<li><a href="/wiki/Urban_forestry" title="Urban forestry">Urban forestry</a></li>
+<li><a href="/wiki/Category:World_forestry" title="Category:World forestry">World forestry</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Forest_ecology" title="Forest ecology">Ecology</a> and<br />
+<a href="/wiki/Forest_management" title="Forest management">management</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Afforestation" title="Afforestation">Afforestation</a></li>
+<li><a href="/wiki/Arboriculture" title="Arboriculture">Arboriculture</a></li>
+<li><a href="/wiki/Controlled_burn" title="Controlled burn">Controlled burn</a></li>
+<li><a href="/wiki/Dendrology" title="Dendrology">Dendrology</a></li>
+<li><a href="/wiki/Ecological_thinning" title="Ecological thinning">Ecological thinning</a></li>
+<li><a href="/wiki/Even_aged_timber_management" class="mw-redirect" title="Even aged timber management">Even-aged management</a></li>
+<li><a href="/wiki/Fire_ecology" title="Fire ecology">Fire ecology</a></li>
+<li><a href="/wiki/Forest" title="Forest">Forest</a>
+<ul>
+<li><a href="/wiki/Forest_informatics" title="Forest informatics">informatics</a></li>
+<li><a href="/wiki/Forest_integrated_pest_management" title="Forest integrated pest management">IPM</a></li>
+<li><a href="/wiki/Forest_inventory" title="Forest inventory">inventory</a></li>
+<li><a href="/wiki/Forest_governance" class="mw-redirect" title="Forest governance">governance</a></li>
+<li><a href="/wiki/Forest_law" class="mw-redirect" title="Forest law">law</a></li>
+<li><a href="/wiki/Old-growth_forest" title="Old-growth forest">old-growth</a></li>
+<li><a href="/wiki/Forest_pathology" title="Forest pathology">pathology</a></li>
+<li><a href="/wiki/Forest_protection" title="Forest protection">protection</a></li>
+<li><a href="/wiki/Forest_restoration" title="Forest restoration">restoration</a></li>
+<li><a href="/wiki/Secondary_forest" title="Secondary forest">secondary</a></li>
+<li><a href="/wiki/Forest_transition" title="Forest transition">transition</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Certified_wood" title="Certified wood">Forest certification</a>
+<ul>
+<li><a href="/wiki/Tree_farm#American_Tree_Farm_System" title="Tree farm">ATFS</a></li>
+<li><a href="/wiki/CarbonFix_Standard" title="CarbonFix Standard">CFS</a></li>
+<li><a href="/wiki/Forest_Stewardship_Council#FSC_standards.2C_certification_and_accreditation" title="Forest Stewardship Council">FSC</a></li>
+<li><a href="/wiki/Programme_for_the_Endorsement_of_Forest_Certification" title="Programme for the Endorsement of Forest Certification">PEFC</a></li>
+<li><a href="/wiki/Sustainable_Forestry_Initiative" title="Sustainable Forestry Initiative">SFI</a></li>
+<li><a href="/wiki/Rainforest_Alliance#Sustainable_forestry_certification" title="Rainforest Alliance">SmartWood</a></li>
+<li><a href="/wiki/Woodland_Carbon_Code" title="Woodland Carbon Code">Woodland Carbon Code</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Growth_and_yield_modelling" title="Growth and yield modelling">Growth and yield modelling</a></li>
+<li><a href="/wiki/Horticulture" title="Horticulture">Horticulture</a>&#160;(<a href="/wiki/Genetically_modified_tree" title="Genetically modified tree">GM trees</a>)</li>
+<li><a href="/wiki/I-Tree" title="I-Tree">i-Tree</a></li>
+<li><a href="/wiki/Reforestation" title="Reforestation">Reforestation</a>&#160;(<a href="/wiki/Urban_reforestation" title="Urban reforestation">urban</a>)</li>
+<li><a href="/wiki/Silviculture" title="Silviculture">Silviculture</a></li>
+<li><a href="/wiki/Sustainable_forest_management" title="Sustainable forest management">Sustainable management</a></li>
+<li><a href="/wiki/Tree" title="Tree">Tree</a>
+<ul>
+<li><a href="/wiki/Tree_allometry" title="Tree allometry">allometry</a></li>
+<li><a href="/wiki/Tree_breeding" title="Tree breeding">breeding</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Tree_measurement" title="Tree measurement">Tree measurement</a>
+<ul>
+<li><a href="/wiki/Tree_crown_measurement" title="Tree crown measurement">crown</a></li>
+<li><a href="/wiki/Tree_girth_measurement" title="Tree girth measurement">girth</a></li>
+<li><strong class="selflink">height</strong></li>
+<li><a href="/wiki/Tree_volume_measurement" title="Tree volume measurement">volume</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Category:Forestry_and_the_environment" title="Category:Forestry and the environment">Environmental<br />
+topics</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Acid_rain#Forests_and_other_vegetation" title="Acid rain">Acid rain</a></li>
+<li><a href="/wiki/Carbon_sequestration" title="Carbon sequestration">Carbon sequestration</a></li>
+<li><a href="/wiki/Clearcutting" title="Clearcutting">Clearcutting</a></li>
+<li><a href="/wiki/Deforestation" title="Deforestation">Deforestation</a></li>
+<li><a href="/wiki/Ecological_services" class="mw-redirect" title="Ecological services">Ecological services</a></li>
+<li><a href="/wiki/Forest_dieback" title="Forest dieback">Forest dieback</a></li>
+<li><a href="/wiki/Forest_fragmentation" class="mw-redirect" title="Forest fragmentation">Forest fragmentation</a></li>
+<li><a href="/wiki/High_grading" title="High grading">High grading</a></li>
+<li><a href="/wiki/Illegal_logging" title="Illegal logging">Illegal logging</a></li>
+<li><a href="/wiki/Invasive_species#Forestry" title="Invasive species">Invasive species</a></li>
+<li><a href="/wiki/Reducing_emissions_from_deforestation_and_forest_degradation" title="Reducing emissions from deforestation and forest degradation">REDD</a></li>
+<li><a href="/wiki/Shifting_cultivation" title="Shifting cultivation">Shifting cultivation</a>
+<ul>
+<li><i><a href="/wiki/Chitemene" title="Chitemene">chitemene</a></i></li>
+<li><a href="/wiki/Slash-and-burn" title="Slash-and-burn">slash-and-burn</a></li>
+<li><a href="/wiki/Slash-and-char" title="Slash-and-char">slash-and-char</a></li>
+<li><i><a href="/wiki/Svedjebruk" title="Svedjebruk">svedjebruk</a></i></li>
+</ul>
+</li>
+<li><a href="/wiki/Timber_recycling" title="Timber recycling">Timber recycling</a></li>
+<li><a href="/wiki/Wildfire" title="Wildfire">Wildfire</a></li>
+<li><a href="/wiki/Wilding_conifer" title="Wilding conifer">Wilding</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Category:Timber_industry" title="Category:Timber industry">Industries</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Coppicing" title="Coppicing">Coppicing</a></li>
+<li><a href="/wiki/Forest_farming" title="Forest farming">Forest farming</a></li>
+<li><a href="/wiki/Forest_gardening" title="Forest gardening">Forest gardening</a></li>
+<li><a href="/wiki/Logging" title="Logging">Logging</a></li>
+<li><a href="/wiki/Manufacturing" title="Manufacturing">Manufacturing</a>
+<ul>
+<li><a href="/wiki/Lumber" title="Lumber">lumber</a></li>
+<li><a href="/wiki/Plywood" title="Plywood">plywood</a></li>
+<li><a href="/wiki/Pulp_and_paper_industry" title="Pulp and paper industry">pulp and paper</a></li>
+<li><a href="/wiki/Sawmill" title="Sawmill">sawmilling</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Forest_product" title="Forest product">Products</a>
+<ul>
+<li><a href="/wiki/Biochar" title="Biochar">biochar</a></li>
+<li><a href="/wiki/Biomass" title="Biomass">biomass</a></li>
+<li><a href="/wiki/Charcoal" title="Charcoal">charcoal</a></li>
+<li><a href="/wiki/Non-timber_forest_product" title="Non-timber forest product">non-timber</a></li>
+<li><a href="/wiki/Palm_oil" title="Palm oil">palm oil</a></li>
+<li><a href="/wiki/Rayon" title="Rayon">rayon</a></li>
+<li><a href="/wiki/Natural_rubber" title="Natural rubber">rubber</a></li>
+<li><a href="/wiki/Tanbark" title="Tanbark">tanbark</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Forest_railway" title="Forest railway">Rail transport</a></li>
+<li><a href="/wiki/Tree_farm" title="Tree farm">Tree farms</a>&#160;(<a href="/wiki/Christmas_tree_cultivation" title="Christmas tree cultivation">Christmas trees</a>)</li>
+<li><a href="/wiki/Wood" title="Wood">Wood</a>
+<ul>
+<li><a href="/wiki/Engineered_wood" title="Engineered wood">engineered</a></li>
+<li><a href="/wiki/Wood_fuel" title="Wood fuel">fuel</a></li>
+<li><a href="/wiki/Mahogany" title="Mahogany">mahogany</a></li>
+<li><a href="/wiki/Teak" title="Teak">teak</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Woodworking" title="Woodworking">Woodworking</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Category:Forestry_occupations" title="Category:Forestry occupations">Occupations</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Forester" title="Forester">Forester</a></li>
+<li><a href="/wiki/Arborist" title="Arborist">Arborist</a></li>
+<li><a href="/wiki/Log_bucking" title="Log bucking">Bucker</a></li>
+<li><a href="/wiki/Choker_setter" title="Choker setter">Choker setter</a></li>
+<li><a href="/wiki/Forest_ecology" title="Forest ecology">Ecologist</a></li>
+<li><a href="/wiki/Felling" title="Felling">Feller</a></li>
+<li><a href="/wiki/Wildland_firefighter" class="mw-redirect" title="Wildland firefighter">Firefighter</a>
+<ul>
+<li><a href="/wiki/Handcrew" title="Handcrew">handcrew</a></li>
+<li><a href="/wiki/Interagency_hotshot_crew" title="Interagency hotshot crew">hotshot</a></li>
+<li><a href="/wiki/Fire_lookout" title="Fire lookout">lookout</a></li>
+<li><a href="/wiki/Smokejumper" title="Smokejumper">smokejumper</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Log_driving" title="Log driving">River driver</a></li>
+<li><a href="/wiki/Logging_truck" title="Logging truck">Truck driver</a></li>
+<li><a href="/wiki/Log_scaler" title="Log scaler">Log scaler</a></li>
+<li><a href="/wiki/Lumberjack" title="Lumberjack">Lumberjack</a></li>
+<li><a href="/wiki/Park_ranger" title="Park ranger">Ranger</a></li>
+<li><a href="/wiki/Resin_extraction" title="Resin extraction">Resin tapper</a></li>
+<li><a href="/wiki/Rubber_tapping" title="Rubber tapping">Rubber tapper</a></li>
+<li><a href="/wiki/Shingle_weaver" title="Shingle weaver">Shingle weaver</a></li>
+<li><a href="/wiki/Forest_inventory" title="Forest inventory">Timber cruiser</a></li>
+<li><a href="/wiki/Tree_planting" title="Tree planting">Tree planter</a></li>
+<li><a href="/wiki/Wood_processing" title="Wood processing">Wood process engineer</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><b><a href="/wiki/File:Pine_forest_in_Sweden.jpg" class="image"><img alt="Pine forest in Sweden.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pine_forest_in_Sweden.jpg/15px-Pine_forest_in_Sweden.jpg" width="15" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pine_forest_in_Sweden.jpg/23px-Pine_forest_in_Sweden.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pine_forest_in_Sweden.jpg/31px-Pine_forest_in_Sweden.jpg 2x" data-file-width="860" data-file-height="900" /></a> <a href="/wiki/Portal:Forestry" title="Portal:Forestry">Forestry portal</a></b></li>
+<li><img alt="WikiProject" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/16px-People_icon.svg.png" title="WikiProject" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/24px-People_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/People_icon.svg/32px-People_icon.svg.png 2x" data-file-width="100" data-file-height="100" /> <b><a href="/wiki/Wikipedia:WikiProject_Forestry" title="Wikipedia:WikiProject Forestry">WikiProject</a></b></li>
+<li><img alt="Commons page" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" title="Commons page" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /> <b><a href="https://commons.wikimedia.org/wiki/Category:Forestry" class="extiw" title="commons:Category:Forestry"><span style="color:mediumblue">Commons</span></a></b></li>
+</ul>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b><a href="/wiki/Category:Forestry" title="Category:Forestry">Category</a></b>
+<ul>
+<li><a href="/wiki/Category:Forestry_by_continent" title="Category:Forestry by continent">by continent</a></li>
+<li><a href="/wiki/Category:Forestry_by_country" title="Category:Forestry by country">by country</a></li>
+<li><a href="/wiki/Category:Forestry_education" title="Category:Forestry education">education</a></li>
+<li><a href="/wiki/Category:Forestry_events" title="Category:Forestry events">events</a></li>
+<li><a href="/wiki/Category:History_of_forestry" title="Category:History of forestry">history</a></li>
+<li><a href="/wiki/Category:Forestry_initiatives" title="Category:Forestry initiatives">initiatives</a></li>
+<li><a href="/wiki/Category:Forestry-related_lists" title="Category:Forestry-related lists">lists</a></li>
+<li><a href="/wiki/Category:Forestry_organizations" title="Category:Forestry organizations">organizations</a></li>
+<li><a href="/wiki/Category:Forestry_tools" title="Category:Forestry tools">tools</a></li>
+<li><a href="/wiki/Category:Forestry_equipment" title="Category:Forestry equipment">equipment</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1263
+Cached time: 20161211003346
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.172 seconds
+Real time usage: 0.211 seconds
+Preprocessor visited node count: 895/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 28484/2097152 bytes
+Template argument size: 77/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Lua time usage: 0.038/10.000 seconds
+Lua memory usage: 2.31 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  108.148      1 - -total
+ 76.67%   82.912      1 - Template:Reflist
+ 52.10%   56.348      3 - Template:Cite_web
+ 23.27%   25.161      1 - Template:Forestry
+ 21.57%   23.323      1 - Template:Navbox
+  6.03%    6.520      3 - Template:Icon
+  5.58%    6.036      1 - Template:Portal-inline
+  1.16%    1.255      1 - Template:Column-width
+  0.84%    0.909      1 - Template:Color
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:39003927-0!*!0!!en!4!* and timestamp 20161211003345 and revision id 739902060
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Tree_height_measurement&amp;oldid=739902060">https://en.wikipedia.org/w/index.php?title=Tree_height_measurement&amp;oldid=739902060</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Forest_modelling" title="Category:Forest modelling">Forest modelling</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Tree+height+measurement" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Tree+height+measurement" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Tree_height_measurement"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Tree_height_measurement"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Tree_height_measurement" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Tree_height_measurement&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Tree_height_measurement&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Tree_height_measurement" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Tree_height_measurement" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Tree_height_measurement&amp;oldid=739902060" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Tree_height_measurement&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q17165847" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Tree_height_measurement&amp;id=739902060" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Tree+height+measurement">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Tree+height+measurement&amp;returnto=Tree+height+measurement&amp;oldid=739902060&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Tree_height_measurement&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q17165847#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 17 September 2016, at 20:09.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Tree_height_measurement&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":287,"wgHostname":"mw1263"});});</script>
+	</body>
+</html>

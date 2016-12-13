@@ -1,0 +1,101 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+
+  $(document).ready(function(){
+      $("#search_button").click(function(){
+
+
+           $.ajax({
+          url: '/search',
+          data: $('form').serialize(),
+          dataType: 'json',
+          type: 'POST',
+          success: function(response) {
+
+          $('#total-time').html('');
+          $('#total-time').append(response.totaltime)
+          $("#resulttable tr").remove();
+          for(var i = 0; i < 10; i++) {
+            console.log(response.urls[i])
+            $('#resulttable').append('<tr><td><br>' + (i+1) + '  <a href="' + response.urls[i] + '">' + response.urls[i] + '</a><br></td><tr>');
+             <!--$('#resulttable').append("<tr><td><br>" + (i+1) + "  <a href=\""+ response.urls[i] + "\"></a><br></td><tr>");-->
+          }
+
+          },
+          error: function(error) {
+            alert("error");
+            console.log(error);
+          }
+        });
+
+      });
+  });
+
+      </script>
+
+    </head>
+    <body>
+
+      <div class="jumbotron text-center">
+        <h1>Wiki Search Engine</h1>
+        <p>This is limited domain search engine. Please enter queries related to energy</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+
+
+          </div>
+          <div class="col-sm-4">
+           <form class="form-inline">
+            <div class="input-group">
+              <input id="query" name="query" class="form-control" size="150" placeholder="Enter query" required>
+              <div class="input-group-btn">
+                <button id="search_button" type="button" class="btn btn-danger">Search</button>
+              </div>
+            </div>
+          </form>
+
+
+
+
+        </div>
+          <div class="col-sm-4">
+
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="container">
+             <h4 id="total-time" name="total-time"></h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container">
+              <table class="table" id="resulttable" name="resulttable"></table>
+           </div>
+        </div>
+
+        <div class="row">
+          <div class="container">
+            <footer class="footer">
+              <p>        Example queries : sustainable enery, global warming, etc.</p>
+          </footer>
+          </div>
+        </div>
+
+    </div>
+
+
+
+  </body>
+  </html>
