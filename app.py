@@ -72,4 +72,4 @@ def application(env, start_response):
     return ["Hello!"]
 
 if __name__ == "__main__":
-    app.run(host='wiki-search-engine.herokuapp.com')
+    app.run(host='https://wiki-search-engine.herokuapp.com/')
