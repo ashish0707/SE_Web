@@ -59,8 +59,7 @@ class NGramGenerator:
         docId = 1
         for filename in os.listdir(folder):
 
-            if docId > 1000:
-                break
+            
             abs_fileName = os.path.join(folder, filename)
             for word in open(abs_fileName).read().split():
                 self.add_to_one_gram_corpus(word, filename[:-4])  # adds unique words to the unigram corpus
