@@ -1,4 +1,5 @@
 import json
+import os
 from collections import defaultdict
 import requests
 
@@ -72,4 +73,5 @@ def application(env, start_response):
     return ["Hello!"]
 
 if __name__ == "__main__":
-    app.run(host='https://216.15.123.213')
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
