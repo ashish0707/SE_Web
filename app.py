@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 
 myGenerator = NGramGenerator()
-myGenerator.generateUnigramCorpus("cleaned_files")
+myGenerator.generateIndex("cleaned_files")
 
 
 
@@ -24,7 +24,7 @@ myGenerator.generateUnigramCorpus("cleaned_files")
 
 cs = CosineSimilarity()
 
-cs.createMatix(myGenerator.one_gram_corpus)
+cs.createMatix(myGenerator.one_gram_corpus,myGenerator.bi_gram_index,myGenerator.tri_gram_index)
 
 def index(request):
     r = requests.get('http://httpbin.org/status/418')

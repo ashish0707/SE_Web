@@ -13,7 +13,7 @@ myGenerator.generate_stopped_cleaned_files("/Users/ashishbulchandani/PycharmProj
                                         "/Users/ashishbulchandani/PycharmProjects/SE_Web/cleaned_files",
                                         "/Users/ashishbulchandani/PycharmProjects/SE_Web/common_words.txt")
 
-myGenerator.generateUnigramCorpus("/Users/ashishbulchandani/PycharmProjects/SE_Web/cleaned_files")
+myGenerator.generateIndex("/Users/ashishbulchandani/PycharmProjects/SE_Web/cleaned_files")
 
 
 
@@ -24,7 +24,7 @@ myGenerator.generateUnigramCorpus("/Users/ashishbulchandani/PycharmProjects/SE_W
 
 cs = CosineSimilarity()
 
-cs.createMatix(myGenerator.one_gram_corpus)
+cs.createMatix(myGenerator.one_gram_corpus,myGenerator.bi_gram_index,myGenerator.tri_gram_index)
 # Input, parse the query and generate weight for each term
 query_word_and_tf = defaultdict(int)
 query_number = 1

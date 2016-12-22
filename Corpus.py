@@ -10,7 +10,10 @@ from DocumentParser import Parser
 class NGramGenerator:
 
     def __init__(self):
-        pass
+        self.bi_gram_index = dict()
+        self.tri_gram_index = dict()
+        self.bi_gram_window = []
+        self.tri_gram_window = []
 
     one_gram_corpus = dict()
     myParser = Parser()
@@ -52,7 +55,7 @@ class NGramGenerator:
         else:
             return re.sub(r'[^\-\w\s]', '', word).lower()
 
-    def generateUnigramCorpus(self, folder):
+    def generateIndex(self, folder):
 
         print "Generating corpus... will take around 15 secs. please be patient."
         begin = datetime.datetime.now()
@@ -63,6 +66,8 @@ class NGramGenerator:
             abs_fileName = os.path.join(folder, filename)
             for word in open(abs_fileName).read().split():
                 self.add_to_one_gram_corpus(word, filename[:-4])  # adds unique words to the unigram corpus
+                # self.add_to_bi_gram_corpus(word,filename[:-4])
+                # self.add_to_tri_gram_corpus(word,filename[:-4])
             docId += 1
 
         print "Time to generate Unigram Corpus => " + str(datetime.datetime.now() - begin)
@@ -75,6 +80,40 @@ class NGramGenerator:
             self.one_gram_corpus[word] = Posting()
         self.one_gram_corpus[word].addToDocTermFreqDict(documenId)
         # print len(self.one_gram_corpus)
+
+
+    # GIVEN   : a cleaned word and a documentId which is an integer
+    # RETURNS : adds the word to bi gram index.
+
+    def add_to_bi_gram_corpus(self, word, documenId):
+
+        self.bi_gram_window.append(word)
+
+        if len(self.bi_gram_window) == 2:
+            temp = self.bi_gram_window[0] + self.bi_gram_window[1]
+            if temp not in self.bi_gram_index:
+                self.bi_gram_index[temp] = Posting()
+            self.bi_gram_index[temp].addToDocTermFreqDict(documenId)
+            self.bi_gram_window = []
+
+
+    # GIVEN   : a cleaned word and a documentId which is an integer
+    # RETURNS : adds the word to tri gram index.
+
+    def add_to_tri_gram_corpus(self, word, documenId):
+
+        self.tri_gram_window.append(word)
+
+        if len(self.tri_gram_window) == 3:
+            temp = self.tri_gram_window[0] + self.tri_gram_window[1] + self.tri_gram_window[2]
+            if temp not in self.tri_gram_index:
+                self.tri_gram_index[temp] = Posting()
+            self.tri_gram_index[temp].addToDocTermFreqDict(documenId)
+            self.tri_gram_window = []
+
+
+
+    # print len(self.one_gram_corpus)
 
     def saveMapping(self, doc_id, filename):
         with open("mapping.txt", 'a') as _file_:
@@ -90,7 +129,7 @@ class Posting:
     def __init__(self):
         self.total = 0
         self.docTermFreqDict = defaultdict(int)
-        pass
+
 
     def addToDocTermFreqDict(self,documentId):
         self.docTermFreqDict[documentId] += 1
