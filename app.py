@@ -31,7 +31,7 @@ cs.createMatix(myGenerator.one_gram_corpus,myGenerator.bi_gram_index,myGenerator
 def main():
     return render_template('/index.html')
 
-@app.route('/search' ,methods=['GET'])
+@app.route('/search' ,methods=['POST'])
 def search():
     resultArray = []
     now = time.time()
