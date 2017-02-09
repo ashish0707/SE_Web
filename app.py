@@ -26,17 +26,12 @@ cs = CosineSimilarity()
 
 cs.createMatix(myGenerator.one_gram_corpus,myGenerator.bi_gram_index,myGenerator.tri_gram_index)
 
-def index(request):
-    r = requests.get('http://httpbin.org/status/418')
-    print r.text
-    return HttpResponse('<pre>' + r.text + '</pre>')
-
 
 @app.route("/")
 def main():
     return render_template('/index.html')
 
-@app.route('/search' ,methods=['POST'])
+@app.route('/search' ,methods=['GET'])
 def search():
     resultArray = []
     now = time.time()
